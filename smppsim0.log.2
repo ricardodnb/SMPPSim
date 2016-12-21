@@ -1,0 +1,2288 @@
+2016.12.16 10:52:53 357 INFO    1 ==============================================================
+2016.12.16 10:52:53 433 INFO    1 =  SMPPSim Copyright (C) 2006 Selenium Software Ltd
+2016.12.16 10:52:53 434 INFO    1 =  SMPPSim comes with ABSOLUTELY NO WARRANTY; for details
+2016.12.16 10:52:53 434 INFO    1 =  read the license.txt file that was included in the SMPPSim distribution
+2016.12.16 10:52:53 434 INFO    1 =  This is free software, and you are welcome to redistribute it under
+2016.12.16 10:52:53 434 INFO    1 =  certain conditions; Again, see license.txt for details or read the GNU
+2016.12.16 10:52:53 435 INFO    1 =  GPL license at http://www.gnu.org/licenses/gpl.html
+2016.12.16 10:52:53 435 INFO    1 =  ...... end of legal stuff ......
+2016.12.16 10:52:53 435 INFO    1 ==============================================================
+2016.12.16 10:52:53 435 INFO    1 =  
+2016.12.16 10:52:53 436 INFO    1 =  com.seleniumsoftware.SMPPSim 2.6.11
+2016.12.16 10:52:53 436 INFO    1 =  by Martin Woolley (martin@seleniumsoftware.com)
+2016.12.16 10:52:53 436 INFO    1 =  http://www.seleniumsoftware.com
+2016.12.16 10:52:53 436 INFO    1 =  Running with the following parameters:
+2016.12.16 10:52:53 436 INFO    1 =  SMPP_PORT                               :2775
+2016.12.16 10:52:53 437 INFO    1 =  SMPP_CONNECTION_HANDLERS                :10
+2016.12.16 10:52:53 437 INFO    1 =  CONNECTION_HANDLER_CLASS                :com.seleniumsoftware.SMPPSim.StandardConnectionHandler
+2016.12.16 10:52:53 437 INFO    1 =  PROTOCOL_HANDLER_CLASS                  :com.seleniumsoftware.SMPPSim.StandardProtocolHandler
+2016.12.16 10:52:53 437 INFO    1 =  LIFE_CYCLE_MANAGER                      :com.seleniumsoftware.SMPPSim.LifeCycleManager
+2016.12.16 10:52:53 437 INFO    1 =  SMPP_CONNECTION_HANDLERS                :10
+2016.12.16 10:52:53 438 INFO    1 =  INBOUND_QUEUE_CAPACITY                  :1000
+2016.12.16 10:52:53 438 INFO    1 =  OUTBOUND_QUEUE_CAPACITY                 :1000
+2016.12.16 10:52:53 438 INFO    1 =  MESSAGE_STATE_CHECK_FREQUENCY           :5000
+2016.12.16 10:52:53 438 INFO    1 =  MAX_TIME_ENROUTE                        :10000
+2016.12.16 10:52:53 438 INFO    1 =  PERCENTAGE_THAT_TRANSITION              :75
+2016.12.16 10:52:53 438 INFO    1 =  PERCENTAGE_DELIVERED                    :90
+2016.12.16 10:52:53 439 INFO    1 =  PERCENTAGE_UNDELIVERABLE                :6
+2016.12.16 10:52:53 439 INFO    1 =  PERCENTAGE_ACCEPTED                     :2
+2016.12.16 10:52:53 439 INFO    1 =  PERCENTAGE_REJECTED                     :2
+2016.12.16 10:52:53 439 INFO    1 =  DISCARD_FROM_QUEUE_AFTER                :60000
+2016.12.16 10:52:53 439 INFO    1 =  OUTBIND_ENABLED                         :false
+2016.12.16 10:52:53 439 INFO    1 =  OUTBIND_ESME_IP_ADDRESS                 :null
+2016.12.16 10:52:53 440 INFO    1 =  OUTBIND_ESME_PORT		                :0
+2016.12.16 10:52:53 440 INFO    1 =  OUTBIND_ESME_PASSWORD                   :password
+2016.12.16 10:52:53 440 INFO    1 =  HTTP_PORT                               :88
+2016.12.16 10:52:53 440 INFO    1 =  HTTP_THREADS                            :1
+2016.12.16 10:52:53 440 INFO    1 =  DOCROOT                                 :www
+2016.12.16 10:52:53 440 INFO    1 =  AUTHORISED_FILES                        :/css/style.css,/index.htm,/inject_mo.htm,/favicon.ico,/images/logo.gif,/images/dots.gif,/user-guide.htm,/images/homepage.gif,/images/inject_mo.gif
+2016.12.16 10:52:53 440 INFO    1 =  INJECT_MO_PAGE                          :/inject_mo.htm
+2016.12.16 10:52:53 441 INFO    1 =  SMSCID                                  :SMPPSim
+2016.12.16 10:52:53 441 INFO    1 =  DELIVERY_MESSAGES_PER_MINUTE            :0
+2016.12.16 10:52:53 441 INFO    1 =  DELIVER_MESSAGES_FILE                   :N/A
+2016.12.16 10:52:53 441 INFO    1 =  LOOPBACK                                :false
+2016.12.16 10:52:53 441 INFO    1 =  CAPTURE_REQUESTS_BINARY                 :false
+2016.12.16 10:52:53 441 INFO    1 =  CAPTURE_REQUESTS_BINARY_TO_FILE         :sme_binary.capture
+2016.12.16 10:52:53 441 INFO    1 =  CAPTURE_RESPONSES_BINARY                :false
+2016.12.16 10:52:53 442 INFO    1 =  CAPTURE_RESPONSES_BINARY_TO_FILE        :smppsim_binary.capture
+2016.12.16 10:52:53 442 INFO    1 =  CAPTURE_REQUESTS_DECODED                :false
+2016.12.16 10:52:53 442 INFO    1 =  CAPTURE_REQUESTS_DECODED_TO_FILE        :sme_decoded.capture
+2016.12.16 10:52:53 442 INFO    1 =  CAPTURE_RESPONSES_DECODED               :false
+2016.12.16 10:52:53 442 INFO    1 =  CAPTURE_RESPONSES_DECODED_TO_FILE       :smppsim_decoded.capture
+2016.12.16 10:52:53 442 INFO    1 =  CALLBACK                                :false
+2016.12.16 10:52:53 444 INFO    1 = Delivery receipts will always have optional parameter with TLV=5123/10/34343132333435363738
+2016.12.16 10:52:53 444 INFO    1 = Delivery receipts will include standard optional parameters if client supports 3.4 or later
+2016.12.16 10:52:53 444 INFO    1 =  
+2016.12.16 10:52:53 444 INFO    1 ==============================================================
+2016.12.16 10:52:53 467 INFO    10 StandardConnectionHandler waiting for connection
+2016.12.16 10:52:53 467 INFO    13 StandardConnectionHandler waiting for connection
+2016.12.16 10:52:53 467 INFO    15 StandardConnectionHandler waiting for connection
+2016.12.16 10:52:53 467 INFO    12 StandardConnectionHandler waiting for connection
+2016.12.16 10:52:53 467 INFO    11 StandardConnectionHandler waiting for connection
+2016.12.16 10:52:53 467 INFO    16 StandardConnectionHandler waiting for connection
+2016.12.16 10:52:53 468 INFO    17 StandardConnectionHandler waiting for connection
+2016.12.16 10:52:53 467 INFO    14 StandardConnectionHandler waiting for connection
+2016.12.16 10:52:53 469 INFO    18 StandardConnectionHandler waiting for connection
+2016.12.16 10:52:53 470 INFO    19 StandardConnectionHandler waiting for connection
+2016.12.16 10:52:53 475 INFO    20 Starting HttpHandler thread. Listening on port 88 for connections
+2016.12.16 10:52:53 476 INFO    21 Starting InboundQueue service....
+2016.12.16 10:52:53 476 INFO    22 Starting Lifecycle Service (OutboundQueue)
+2016.12.16 10:52:53 476 INFO    22 Lifecycle Service: OutboundQueue is empty  - waiting
+2016.12.16 10:52:53 477 INFO    21 InboundQueue: empty  - waiting
+2016.12.16 10:52:53 477 INFO    24 Starting DelayedInboundQueue service....
+2016.12.16 10:53:53 486 INFO    24 Processing 0 messages in the delayed inbound queue
+2016.12.16 10:54:53 492 INFO    24 Processing 0 messages in the delayed inbound queue
+2016.12.16 10:55:53 498 INFO    24 Processing 0 messages in the delayed inbound queue
+2016.12.16 10:56:53 506 INFO    24 Processing 0 messages in the delayed inbound queue
+2016.12.16 10:57:53 511 INFO    24 Processing 0 messages in the delayed inbound queue
+2016.12.16 10:58:53 521 INFO    24 Processing 0 messages in the delayed inbound queue
+2016.12.16 10:59:53 529 INFO    24 Processing 0 messages in the delayed inbound queue
+2016.12.16 11:00:53 538 INFO    24 Processing 0 messages in the delayed inbound queue
+2016.12.16 11:01:53 545 INFO    24 Processing 0 messages in the delayed inbound queue
+2016.12.16 11:02:53 553 INFO    24 Processing 0 messages in the delayed inbound queue
+2016.12.16 11:03:53 558 INFO    24 Processing 0 messages in the delayed inbound queue
+2016.12.16 11:04:53 567 INFO    24 Processing 0 messages in the delayed inbound queue
+2016.12.16 11:05:53 577 INFO    24 Processing 0 messages in the delayed inbound queue
+2016.12.16 11:06:53 585 INFO    24 Processing 0 messages in the delayed inbound queue
+2016.12.16 11:07:23 342 INFO    18 StandardConnectionHandler accepted a connection
+2016.12.16 11:07:23 363 INFO    18 Protocol handler is of type StandardProtocolHandler
+2016.12.16 11:07:23 364 INFO    18 : BIND_TRANSMITTER:
+2016.12.16 11:07:23 364 INFO    18 Hex dump (45) bytes:
+2016.12.16 11:07:23 364 INFO    18 0000002D:00000002:00000000:00000001:
+2016.12.16 11:07:23 365 INFO    18 736D7070:636C6965:6E743100:70617373:
+2016.12.16 11:07:23 365 INFO    18 776F7264:00575757:00340000:00
+2016.12.16 11:07:23 366 INFO    18 cmd_len=45,cmd_id=2,cmd_status=0,seq_no=1,system_id=smppclient1
+2016.12.16 11:07:23 366 INFO    18 password=password,system_type=WWW,interface_version=52,addr_ton=0,addr_npi=0
+2016.12.16 11:07:23 367 INFO    18 address_range=
+2016.12.16 11:07:23 367 INFO    18  
+2016.12.16 11:07:23 367 INFO    18 New transmitter session bound to SMPPSim
+2016.12.16 11:07:23 368 INFO    18 : BIND_TRANSMITTER_RESP:
+2016.12.16 11:07:23 368 INFO    18 Hex dump (24) bytes:
+2016.12.16 11:07:23 368 INFO    18 00000018:80000002:00000000:00000001:
+2016.12.16 11:07:23 368 INFO    18 534D5050:53696D00:
+2016.12.16 11:07:23 368 INFO    18 cmd_len=0,cmd_id=-2147483646,cmd_status=0,seq_no=1,system_id=SMPPSim
+2016.12.16 11:07:23 369 INFO    18  
+2016.12.16 11:07:23 370 INFO    18 : Standard SUBMIT_SM:
+2016.12.16 11:07:23 370 INFO    18 Hex dump (53) bytes:
+2016.12.16 11:07:23 371 INFO    18 00000035:00000004:00000000:00000002:
+2016.12.16 11:07:23 371 INFO    18 00050054:65737446:726F6D00:01010000:
+2016.12.16 11:07:23 371 INFO    18 00000000:01000000:0C546573:74204D65:
+2016.12.16 11:07:23 371 INFO    18 73736167:65
+2016.12.16 11:07:23 372 INFO    18 cmd_len=53,cmd_id=4,cmd_status=0,seq_no=2,service_type=,source_addr_ton=5
+2016.12.16 11:07:23 372 INFO    18 source_addr_npi=0,source_addr=TestFrom,dest_addr_ton=1,dest_addr_npi=1
+2016.12.16 11:07:23 372 INFO    18 dest_addr=,esm_class=0,protocol_ID=0,priority_flag=0,schedule_delivery_time=
+2016.12.16 11:07:23 373 INFO    18 validity_period=,registered_delivery_flag=1,replace_if_present_flag=0
+2016.12.16 11:07:23 373 INFO    18 data_coding=0,sm_default_msg_id=0,sm_length=12,short_message=Test Message
+2016.12.16 11:07:23 373 INFO    18  
+2016.12.16 11:07:23 373 INFO    18 :SUBMIT_SM_RESP (ESME_RINVDSTADR):
+2016.12.16 11:07:23 373 INFO    18 Hex dump (16) bytes:
+2016.12.16 11:07:23 374 INFO    18 00000010:80000004:0000000B:00000002:
+2016.12.16 11:07:23 374 INFO    18 
+2016.12.16 11:07:23 374 INFO    18 cmd_len=16,cmd_id=-2147483644,cmd_status=11,seq_no=2,message_id=0
+2016.12.16 11:07:23 376 INFO    18 : Standard SUBMIT_SM:
+2016.12.16 11:07:23 376 INFO    18 Hex dump (53) bytes:
+2016.12.16 11:07:23 376 INFO    18 00000035:00000004:00000000:00000002:
+2016.12.16 11:07:23 377 INFO    18 00050054:65737446:726F6D00:01010000:
+2016.12.16 11:07:23 377 INFO    18 00000000:01000000:0C546573:74204D65:
+2016.12.16 11:07:23 377 INFO    18 73736167:65
+2016.12.16 11:07:23 378 INFO    18 cmd_len=53,cmd_id=4,cmd_status=0,seq_no=2,service_type=,source_addr_ton=5
+2016.12.16 11:07:23 378 INFO    18 source_addr_npi=0,source_addr=TestFrom,dest_addr_ton=1,dest_addr_npi=1
+2016.12.16 11:07:23 378 INFO    18 dest_addr=,esm_class=0,protocol_ID=0,priority_flag=0,schedule_delivery_time=
+2016.12.16 11:07:23 378 INFO    18 validity_period=,registered_delivery_flag=1,replace_if_present_flag=0
+2016.12.16 11:07:23 379 INFO    18 data_coding=0,sm_default_msg_id=0,sm_length=12,short_message=Test Message
+2016.12.16 11:07:23 379 INFO    18  
+2016.12.16 11:07:23 380 INFO    18 :SUBMIT_SM_RESP (ESME_RINVDSTADR):
+2016.12.16 11:07:23 380 INFO    18 Hex dump (16) bytes:
+2016.12.16 11:07:23 380 INFO    18 00000010:80000004:0000000B:00000002:
+2016.12.16 11:07:23 380 INFO    18 
+2016.12.16 11:07:23 381 INFO    18 cmd_len=16,cmd_id=-2147483644,cmd_status=11,seq_no=2,message_id=1
+2016.12.16 11:07:23 381 INFO    18 : Standard SUBMIT_SM:
+2016.12.16 11:07:23 381 INFO    18 Hex dump (53) bytes:
+2016.12.16 11:07:23 381 INFO    18 00000035:00000004:00000000:00000002:
+2016.12.16 11:07:23 381 INFO    18 00050054:65737446:726F6D00:01010000:
+2016.12.16 11:07:23 382 INFO    18 00000000:01000000:0C546573:74204D65:
+2016.12.16 11:07:23 382 INFO    18 73736167:65
+2016.12.16 11:07:23 382 INFO    18 cmd_len=53,cmd_id=4,cmd_status=0,seq_no=2,service_type=,source_addr_ton=5
+2016.12.16 11:07:23 383 INFO    18 source_addr_npi=0,source_addr=TestFrom,dest_addr_ton=1,dest_addr_npi=1
+2016.12.16 11:07:23 383 INFO    18 dest_addr=,esm_class=0,protocol_ID=0,priority_flag=0,schedule_delivery_time=
+2016.12.16 11:07:23 383 INFO    18 validity_period=,registered_delivery_flag=1,replace_if_present_flag=0
+2016.12.16 11:07:23 383 INFO    18 data_coding=0,sm_default_msg_id=0,sm_length=12,short_message=Test Message
+2016.12.16 11:07:23 383 INFO    18  
+2016.12.16 11:07:23 383 INFO    18 :SUBMIT_SM_RESP (ESME_RINVDSTADR):
+2016.12.16 11:07:23 384 INFO    18 Hex dump (16) bytes:
+2016.12.16 11:07:23 384 INFO    18 00000010:80000004:0000000B:00000002:
+2016.12.16 11:07:23 384 INFO    18 
+2016.12.16 11:07:23 384 INFO    18 cmd_len=16,cmd_id=-2147483644,cmd_status=11,seq_no=2,message_id=2
+2016.12.16 11:07:23 384 INFO    18 : Standard SUBMIT_SM:
+2016.12.16 11:07:23 384 INFO    18 Hex dump (53) bytes:
+2016.12.16 11:07:23 385 INFO    18 00000035:00000004:00000000:00000002:
+2016.12.16 11:07:23 385 INFO    18 00050054:65737446:726F6D00:01010000:
+2016.12.16 11:07:23 385 INFO    18 00000000:01000000:0C546573:74204D65:
+2016.12.16 11:07:23 385 INFO    18 73736167:65
+2016.12.16 11:07:23 385 INFO    18 cmd_len=53,cmd_id=4,cmd_status=0,seq_no=2,service_type=,source_addr_ton=5
+2016.12.16 11:07:23 386 INFO    18 source_addr_npi=0,source_addr=TestFrom,dest_addr_ton=1,dest_addr_npi=1
+2016.12.16 11:07:23 386 INFO    18 dest_addr=,esm_class=0,protocol_ID=0,priority_flag=0,schedule_delivery_time=
+2016.12.16 11:07:23 386 INFO    18 validity_period=,registered_delivery_flag=1,replace_if_present_flag=0
+2016.12.16 11:07:23 386 INFO    18 data_coding=0,sm_default_msg_id=0,sm_length=12,short_message=Test Message
+2016.12.16 11:07:23 387 INFO    18  
+2016.12.16 11:07:23 387 INFO    18 :SUBMIT_SM_RESP (ESME_RINVDSTADR):
+2016.12.16 11:07:23 387 INFO    18 Hex dump (16) bytes:
+2016.12.16 11:07:23 387 INFO    18 00000010:80000004:0000000B:00000002:
+2016.12.16 11:07:23 387 INFO    18 
+2016.12.16 11:07:23 388 INFO    18 cmd_len=16,cmd_id=-2147483644,cmd_status=11,seq_no=2,message_id=3
+2016.12.16 11:07:23 389 INFO    18 Socket exception: probably connection closed by client without UNBIND
+2016.12.16 11:07:23 391 INFO    18 StandardConnectionHandler waiting for connection
+2016.12.16 11:07:23 410 INFO    18 StandardConnectionHandler accepted a connection
+2016.12.16 11:07:23 410 INFO    18 Protocol handler is of type StandardProtocolHandler
+2016.12.16 11:07:23 411 INFO    18 : BIND_TRANSMITTER:
+2016.12.16 11:07:23 411 INFO    18 Hex dump (45) bytes:
+2016.12.16 11:07:23 411 INFO    18 0000002D:00000002:00000000:00000001:
+2016.12.16 11:07:23 411 INFO    18 736D7070:636C6965:6E743100:70617373:
+2016.12.16 11:07:23 411 INFO    18 776F7264:00575757:00340000:00
+2016.12.16 11:07:23 411 INFO    18 cmd_len=45,cmd_id=2,cmd_status=0,seq_no=1,system_id=smppclient1
+2016.12.16 11:07:23 411 INFO    18 password=password,system_type=WWW,interface_version=52,addr_ton=0,addr_npi=0
+2016.12.16 11:07:23 412 INFO    18 address_range=
+2016.12.16 11:07:23 412 INFO    18  
+2016.12.16 11:07:23 412 INFO    18 New transmitter session bound to SMPPSim
+2016.12.16 11:07:23 412 INFO    18 : BIND_TRANSMITTER_RESP:
+2016.12.16 11:07:23 412 INFO    18 Hex dump (24) bytes:
+2016.12.16 11:07:23 412 INFO    18 00000018:80000002:00000000:00000001:
+2016.12.16 11:07:23 412 INFO    18 534D5050:53696D00:
+2016.12.16 11:07:23 412 INFO    18 cmd_len=0,cmd_id=-2147483646,cmd_status=0,seq_no=1,system_id=SMPPSim
+2016.12.16 11:07:23 413 INFO    18  
+2016.12.16 11:07:23 415 INFO    18 : Standard SUBMIT_SM:
+2016.12.16 11:07:23 415 INFO    18 Hex dump (51) bytes:
+2016.12.16 11:07:23 415 INFO    18 00000033:00000004:00000000:00000002:
+2016.12.16 11:07:23 415 INFO    18 00050000:01013132:33313233:00000000:
+2016.12.16 11:07:23 415 INFO    18 00000100:00000C54:65737420:4D657373:
+2016.12.16 11:07:23 415 INFO    18 616765
+2016.12.16 11:07:23 415 INFO    18 cmd_len=51,cmd_id=4,cmd_status=0,seq_no=2,service_type=,source_addr_ton=5
+2016.12.16 11:07:23 416 INFO    18 source_addr_npi=0,source_addr=,dest_addr_ton=1,dest_addr_npi=1,dest_addr=123123
+2016.12.16 11:07:23 416 INFO    18 esm_class=0,protocol_ID=0,priority_flag=0,schedule_delivery_time=
+2016.12.16 11:07:23 416 INFO    18 validity_period=,registered_delivery_flag=1,replace_if_present_flag=0
+2016.12.16 11:07:23 416 INFO    18 data_coding=0,sm_default_msg_id=0,sm_length=12,short_message=Test Message
+2016.12.16 11:07:23 416 INFO    18  
+2016.12.16 11:07:23 417 INFO    18 Validity period is not set: defaulting to 5 minutes from now
+2016.12.16 11:07:23 420 INFO    18 Generated default validity period=161216111223000+
+2016.12.16 11:07:23 420 INFO    18 :SUBMIT_SM_RESP:
+2016.12.16 11:07:23 420 INFO    22 Assessing state of 1 messages in the OutboundQueue
+2016.12.16 11:07:23 420 INFO    18 Hex dump (18) bytes:
+2016.12.16 11:07:23 420 INFO    18 00000012:80000004:00000000:00000002:
+2016.12.16 11:07:23 420 INFO    18 3400
+2016.12.16 11:07:23 421 INFO    18 cmd_len=0,cmd_id=-2147483644,cmd_status=0,seq_no=2,message_id=4
+2016.12.16 11:07:23 421 INFO    18  
+2016.12.16 11:07:23 421 INFO    18 SubmitSM processing - response written to connection
+2016.12.16 11:07:23 422 INFO    18 : UNBIND:
+2016.12.16 11:07:23 422 INFO    18 Hex dump (16) bytes:
+2016.12.16 11:07:23 422 INFO    18 00000010:00000006:00000000:00000003:
+2016.12.16 11:07:23 422 INFO    18 
+2016.12.16 11:07:23 422 INFO    18 cmd_len=16,cmd_id=6,cmd_status=0,seq_no=3
+2016.12.16 11:07:23 423 INFO    18  
+2016.12.16 11:07:23 423 INFO    18 : UNBIND_RESP
+2016.12.16 11:07:23 423 INFO    18 Hex dump (16) bytes:
+2016.12.16 11:07:23 423 INFO    18 00000010:80000006:00000000:00000003:
+2016.12.16 11:07:23 423 INFO    18 
+2016.12.16 11:07:23 423 INFO    18 cmd_len=0,cmd_id=-2147483642,cmd_status=0,seq_no=3
+2016.12.16 11:07:23 423 INFO    18  
+2016.12.16 11:07:23 424 INFO    18 StandardConnectionHandler waiting for connection
+2016.12.16 11:07:28 424 INFO    22 Assessing state of 1 messages in the OutboundQueue
+2016.12.16 11:07:28 427 INFO    22 Message:2 state=DELIVERED
+2016.12.16 11:07:28 427 INFO    22 Delivery Receipt requested
+2016.12.16 11:07:28 429 INFO    21 InboundQueue: no available receiver sessions - moving message(s) to pending queue
+2016.12.16 11:07:28 430 INFO    21 Moved 1 MO messages to the pending queue
+2016.12.16 11:07:33 427 INFO    22 Assessing state of 1 messages in the OutboundQueue
+2016.12.16 11:07:38 429 INFO    22 Assessing state of 1 messages in the OutboundQueue
+2016.12.16 11:07:39 33  INFO    14 StandardConnectionHandler accepted a connection
+2016.12.16 11:07:39 33  INFO    14 Protocol handler is of type StandardProtocolHandler
+2016.12.16 11:07:39 34  INFO    14 : BIND_TRANSMITTER:
+2016.12.16 11:07:39 34  INFO    14 Hex dump (45) bytes:
+2016.12.16 11:07:39 34  INFO    14 0000002D:00000002:00000000:00000001:
+2016.12.16 11:07:39 34  INFO    14 736D7070:636C6965:6E743100:70617373:
+2016.12.16 11:07:39 34  INFO    14 776F7264:00575757:00340000:00
+2016.12.16 11:07:39 34  INFO    14 cmd_len=45,cmd_id=2,cmd_status=0,seq_no=1,system_id=smppclient1
+2016.12.16 11:07:39 35  INFO    14 password=password,system_type=WWW,interface_version=52,addr_ton=0,addr_npi=0
+2016.12.16 11:07:39 35  INFO    14 address_range=
+2016.12.16 11:07:39 35  INFO    14  
+2016.12.16 11:07:39 35  INFO    14 New transmitter session bound to SMPPSim
+2016.12.16 11:07:39 35  INFO    14 : BIND_TRANSMITTER_RESP:
+2016.12.16 11:07:39 35  INFO    14 Hex dump (24) bytes:
+2016.12.16 11:07:39 35  INFO    14 00000018:80000002:00000000:00000001:
+2016.12.16 11:07:39 35  INFO    14 534D5050:53696D00:
+2016.12.16 11:07:39 36  INFO    14 cmd_len=0,cmd_id=-2147483646,cmd_status=0,seq_no=1,system_id=SMPPSim
+2016.12.16 11:07:39 36  INFO    14  
+2016.12.16 11:07:39 37  INFO    14 : Standard SUBMIT_SM:
+2016.12.16 11:07:39 37  INFO    14 Hex dump (53) bytes:
+2016.12.16 11:07:39 37  INFO    14 00000035:00000004:00000000:00000002:
+2016.12.16 11:07:39 38  INFO    14 00050054:65737446:726F6D00:01010000:
+2016.12.16 11:07:39 38  INFO    14 00000000:01000000:0C546573:74204D65:
+2016.12.16 11:07:39 38  INFO    14 73736167:65
+2016.12.16 11:07:39 38  INFO    14 cmd_len=53,cmd_id=4,cmd_status=0,seq_no=2,service_type=,source_addr_ton=5
+2016.12.16 11:07:39 38  INFO    14 source_addr_npi=0,source_addr=TestFrom,dest_addr_ton=1,dest_addr_npi=1
+2016.12.16 11:07:39 38  INFO    14 dest_addr=,esm_class=0,protocol_ID=0,priority_flag=0,schedule_delivery_time=
+2016.12.16 11:07:39 38  INFO    14 validity_period=,registered_delivery_flag=1,replace_if_present_flag=0
+2016.12.16 11:07:39 38  INFO    14 data_coding=0,sm_default_msg_id=0,sm_length=12,short_message=Test Message
+2016.12.16 11:07:39 38  INFO    14  
+2016.12.16 11:07:39 38  INFO    14 :SUBMIT_SM_RESP (ESME_RINVDSTADR):
+2016.12.16 11:07:39 38  INFO    14 Hex dump (16) bytes:
+2016.12.16 11:07:39 39  INFO    14 00000010:80000004:0000000B:00000002:
+2016.12.16 11:07:39 39  INFO    14 
+2016.12.16 11:07:39 39  INFO    14 cmd_len=16,cmd_id=-2147483644,cmd_status=11,seq_no=2,message_id=5
+2016.12.16 11:07:39 39  INFO    14 : Standard SUBMIT_SM:
+2016.12.16 11:07:39 40  INFO    14 Hex dump (53) bytes:
+2016.12.16 11:07:39 40  INFO    14 00000035:00000004:00000000:00000002:
+2016.12.16 11:07:39 40  INFO    14 00050054:65737446:726F6D00:01010000:
+2016.12.16 11:07:39 40  INFO    14 00000000:01000000:0C546573:74204D65:
+2016.12.16 11:07:39 40  INFO    14 73736167:65
+2016.12.16 11:07:39 41  INFO    14 cmd_len=53,cmd_id=4,cmd_status=0,seq_no=2,service_type=,source_addr_ton=5
+2016.12.16 11:07:39 41  INFO    14 source_addr_npi=0,source_addr=TestFrom,dest_addr_ton=1,dest_addr_npi=1
+2016.12.16 11:07:39 41  INFO    14 dest_addr=,esm_class=0,protocol_ID=0,priority_flag=0,schedule_delivery_time=
+2016.12.16 11:07:39 41  INFO    14 validity_period=,registered_delivery_flag=1,replace_if_present_flag=0
+2016.12.16 11:07:39 41  INFO    14 data_coding=0,sm_default_msg_id=0,sm_length=12,short_message=Test Message
+2016.12.16 11:07:39 41  INFO    14  
+2016.12.16 11:07:39 41  INFO    14 :SUBMIT_SM_RESP (ESME_RINVDSTADR):
+2016.12.16 11:07:39 42  INFO    14 Hex dump (16) bytes:
+2016.12.16 11:07:39 42  INFO    14 00000010:80000004:0000000B:00000002:
+2016.12.16 11:07:39 42  INFO    14 
+2016.12.16 11:07:39 42  INFO    14 cmd_len=16,cmd_id=-2147483644,cmd_status=11,seq_no=2,message_id=6
+2016.12.16 11:07:39 42  INFO    14 : Standard SUBMIT_SM:
+2016.12.16 11:07:39 42  INFO    14 Hex dump (53) bytes:
+2016.12.16 11:07:39 42  INFO    14 00000035:00000004:00000000:00000002:
+2016.12.16 11:07:39 42  INFO    14 00050054:65737446:726F6D00:01010000:
+2016.12.16 11:07:39 42  INFO    14 00000000:01000000:0C546573:74204D65:
+2016.12.16 11:07:39 43  INFO    14 73736167:65
+2016.12.16 11:07:39 43  INFO    14 cmd_len=53,cmd_id=4,cmd_status=0,seq_no=2,service_type=,source_addr_ton=5
+2016.12.16 11:07:39 43  INFO    14 source_addr_npi=0,source_addr=TestFrom,dest_addr_ton=1,dest_addr_npi=1
+2016.12.16 11:07:39 43  INFO    14 dest_addr=,esm_class=0,protocol_ID=0,priority_flag=0,schedule_delivery_time=
+2016.12.16 11:07:39 43  INFO    14 validity_period=,registered_delivery_flag=1,replace_if_present_flag=0
+2016.12.16 11:07:39 43  INFO    14 data_coding=0,sm_default_msg_id=0,sm_length=12,short_message=Test Message
+2016.12.16 11:07:39 43  INFO    14  
+2016.12.16 11:07:39 44  INFO    14 :SUBMIT_SM_RESP (ESME_RINVDSTADR):
+2016.12.16 11:07:39 44  INFO    14 Hex dump (16) bytes:
+2016.12.16 11:07:39 44  INFO    14 00000010:80000004:0000000B:00000002:
+2016.12.16 11:07:39 44  INFO    14 
+2016.12.16 11:07:39 44  INFO    14 cmd_len=16,cmd_id=-2147483644,cmd_status=11,seq_no=2,message_id=7
+2016.12.16 11:07:39 44  INFO    14 : Standard SUBMIT_SM:
+2016.12.16 11:07:39 44  INFO    14 Hex dump (53) bytes:
+2016.12.16 11:07:39 45  INFO    14 00000035:00000004:00000000:00000002:
+2016.12.16 11:07:39 45  INFO    14 00050054:65737446:726F6D00:01010000:
+2016.12.16 11:07:39 45  INFO    14 00000000:01000000:0C546573:74204D65:
+2016.12.16 11:07:39 45  INFO    14 73736167:65
+2016.12.16 11:07:39 45  INFO    14 cmd_len=53,cmd_id=4,cmd_status=0,seq_no=2,service_type=,source_addr_ton=5
+2016.12.16 11:07:39 45  INFO    14 source_addr_npi=0,source_addr=TestFrom,dest_addr_ton=1,dest_addr_npi=1
+2016.12.16 11:07:39 45  INFO    14 dest_addr=,esm_class=0,protocol_ID=0,priority_flag=0,schedule_delivery_time=
+2016.12.16 11:07:39 45  INFO    14 validity_period=,registered_delivery_flag=1,replace_if_present_flag=0
+2016.12.16 11:07:39 46  INFO    14 data_coding=0,sm_default_msg_id=0,sm_length=12,short_message=Test Message
+2016.12.16 11:07:39 46  INFO    14  
+2016.12.16 11:07:39 46  INFO    14 :SUBMIT_SM_RESP (ESME_RINVDSTADR):
+2016.12.16 11:07:39 46  INFO    14 Hex dump (16) bytes:
+2016.12.16 11:07:39 46  INFO    14 00000010:80000004:0000000B:00000002:
+2016.12.16 11:07:39 46  INFO    14 
+2016.12.16 11:07:39 46  INFO    14 cmd_len=16,cmd_id=-2147483644,cmd_status=11,seq_no=2,message_id=8
+2016.12.16 11:07:39 47  INFO    14 Socket exception: probably connection closed by client without UNBIND
+2016.12.16 11:07:39 47  INFO    14 StandardConnectionHandler waiting for connection
+2016.12.16 11:07:39 56  INFO    14 StandardConnectionHandler accepted a connection
+2016.12.16 11:07:39 56  INFO    14 Protocol handler is of type StandardProtocolHandler
+2016.12.16 11:07:39 57  INFO    14 : BIND_TRANSMITTER:
+2016.12.16 11:07:39 57  INFO    14 Hex dump (45) bytes:
+2016.12.16 11:07:39 57  INFO    14 0000002D:00000002:00000000:00000001:
+2016.12.16 11:07:39 57  INFO    14 736D7070:636C6965:6E743100:70617373:
+2016.12.16 11:07:39 58  INFO    14 776F7264:00575757:00340000:00
+2016.12.16 11:07:39 58  INFO    14 cmd_len=45,cmd_id=2,cmd_status=0,seq_no=1,system_id=smppclient1
+2016.12.16 11:07:39 58  INFO    14 password=password,system_type=WWW,interface_version=52,addr_ton=0,addr_npi=0
+2016.12.16 11:07:39 58  INFO    14 address_range=
+2016.12.16 11:07:39 58  INFO    14  
+2016.12.16 11:07:39 58  INFO    14 New transmitter session bound to SMPPSim
+2016.12.16 11:07:39 58  INFO    14 : BIND_TRANSMITTER_RESP:
+2016.12.16 11:07:39 59  INFO    14 Hex dump (24) bytes:
+2016.12.16 11:07:39 59  INFO    14 00000018:80000002:00000000:00000001:
+2016.12.16 11:07:39 59  INFO    14 534D5050:53696D00:
+2016.12.16 11:07:39 59  INFO    14 cmd_len=0,cmd_id=-2147483646,cmd_status=0,seq_no=1,system_id=SMPPSim
+2016.12.16 11:07:39 59  INFO    14  
+2016.12.16 11:07:39 61  INFO    14 : Standard SUBMIT_SM:
+2016.12.16 11:07:39 62  INFO    14 Hex dump (51) bytes:
+2016.12.16 11:07:39 62  INFO    14 00000033:00000004:00000000:00000002:
+2016.12.16 11:07:39 62  INFO    14 00050000:01013132:33313233:00000000:
+2016.12.16 11:07:39 62  INFO    14 00000100:00000C54:65737420:4D657373:
+2016.12.16 11:07:39 62  INFO    14 616765
+2016.12.16 11:07:39 62  INFO    14 cmd_len=51,cmd_id=4,cmd_status=0,seq_no=2,service_type=,source_addr_ton=5
+2016.12.16 11:07:39 62  INFO    14 source_addr_npi=0,source_addr=,dest_addr_ton=1,dest_addr_npi=1,dest_addr=123123
+2016.12.16 11:07:39 62  INFO    14 esm_class=0,protocol_ID=0,priority_flag=0,schedule_delivery_time=
+2016.12.16 11:07:39 62  INFO    14 validity_period=,registered_delivery_flag=1,replace_if_present_flag=0
+2016.12.16 11:07:39 62  INFO    14 data_coding=0,sm_default_msg_id=0,sm_length=12,short_message=Test Message
+2016.12.16 11:07:39 62  INFO    14  
+2016.12.16 11:07:39 62  INFO    14 Validity period is not set: defaulting to 5 minutes from now
+2016.12.16 11:07:39 63  INFO    14 Generated default validity period=161216111239000+
+2016.12.16 11:07:39 63  INFO    14 :SUBMIT_SM_RESP:
+2016.12.16 11:07:39 63  INFO    14 Hex dump (18) bytes:
+2016.12.16 11:07:39 64  INFO    14 00000012:80000004:00000000:00000002:
+2016.12.16 11:07:39 64  INFO    14 3900
+2016.12.16 11:07:39 64  INFO    14 cmd_len=0,cmd_id=-2147483644,cmd_status=0,seq_no=2,message_id=9
+2016.12.16 11:07:39 64  INFO    14  
+2016.12.16 11:07:39 64  INFO    14 SubmitSM processing - response written to connection
+2016.12.16 11:07:39 65  INFO    14 : UNBIND:
+2016.12.16 11:07:39 65  INFO    14 Hex dump (16) bytes:
+2016.12.16 11:07:39 66  INFO    14 00000010:00000006:00000000:00000003:
+2016.12.16 11:07:39 66  INFO    14 
+2016.12.16 11:07:39 66  INFO    14 cmd_len=16,cmd_id=6,cmd_status=0,seq_no=3
+2016.12.16 11:07:39 66  INFO    14  
+2016.12.16 11:07:39 66  INFO    14 : UNBIND_RESP
+2016.12.16 11:07:39 66  INFO    14 Hex dump (16) bytes:
+2016.12.16 11:07:39 66  INFO    14 00000010:80000006:00000000:00000003:
+2016.12.16 11:07:39 66  INFO    14 
+2016.12.16 11:07:39 66  INFO    14 cmd_len=0,cmd_id=-2147483642,cmd_status=0,seq_no=3
+2016.12.16 11:07:39 66  INFO    14  
+2016.12.16 11:07:39 66  INFO    14 StandardConnectionHandler waiting for connection
+2016.12.16 11:07:43 433 INFO    22 Assessing state of 2 messages in the OutboundQueue
+2016.12.16 11:07:43 433 INFO    22 Message:2 state=UNDELIVERABLE
+2016.12.16 11:07:43 433 INFO    22 Delivery Receipt requested
+2016.12.16 11:07:43 434 INFO    21 InboundQueue: no available receiver sessions - moving message(s) to pending queue
+2016.12.16 11:07:43 435 INFO    21 Moved 1 MO messages to the pending queue
+2016.12.16 11:07:48 438 INFO    22 Assessing state of 2 messages in the OutboundQueue
+2016.12.16 11:07:53 441 INFO    22 Assessing state of 2 messages in the OutboundQueue
+2016.12.16 11:07:53 595 INFO    24 Processing 0 messages in the delayed inbound queue
+2016.12.16 11:07:58 442 INFO    22 Assessing state of 2 messages in the OutboundQueue
+2016.12.16 11:08:03 446 INFO    22 Assessing state of 2 messages in the OutboundQueue
+2016.12.16 11:08:08 448 INFO    22 Assessing state of 2 messages in the OutboundQueue
+2016.12.16 11:08:10 206 INFO    18 StandardConnectionHandler accepted a connection
+2016.12.16 11:08:10 206 INFO    18 Protocol handler is of type StandardProtocolHandler
+2016.12.16 11:08:10 207 INFO    18 : BIND_TRANSMITTER:
+2016.12.16 11:08:10 207 INFO    18 Hex dump (45) bytes:
+2016.12.16 11:08:10 207 INFO    18 0000002D:00000002:00000000:00000001:
+2016.12.16 11:08:10 207 INFO    18 736D7070:636C6965:6E743100:70617373:
+2016.12.16 11:08:10 207 INFO    18 776F7264:00575757:00340000:00
+2016.12.16 11:08:10 207 INFO    18 cmd_len=45,cmd_id=2,cmd_status=0,seq_no=1,system_id=smppclient1
+2016.12.16 11:08:10 207 INFO    18 password=password,system_type=WWW,interface_version=52,addr_ton=0,addr_npi=0
+2016.12.16 11:08:10 207 INFO    18 address_range=
+2016.12.16 11:08:10 207 INFO    18  
+2016.12.16 11:08:10 208 INFO    18 New transmitter session bound to SMPPSim
+2016.12.16 11:08:10 208 INFO    18 : BIND_TRANSMITTER_RESP:
+2016.12.16 11:08:10 208 INFO    18 Hex dump (24) bytes:
+2016.12.16 11:08:10 208 INFO    18 00000018:80000002:00000000:00000001:
+2016.12.16 11:08:10 208 INFO    18 534D5050:53696D00:
+2016.12.16 11:08:10 208 INFO    18 cmd_len=0,cmd_id=-2147483646,cmd_status=0,seq_no=1,system_id=SMPPSim
+2016.12.16 11:08:10 208 INFO    18  
+2016.12.16 11:08:10 210 INFO    18 : Standard SUBMIT_SM:
+2016.12.16 11:08:10 210 INFO    18 Hex dump (54) bytes:
+2016.12.16 11:08:10 210 INFO    18 00000036:00000004:00000000:00000002:
+2016.12.16 11:08:10 210 INFO    18 00050000:01013132:33343536:37383900:
+2016.12.16 11:08:10 210 INFO    18 00000000:00010000:000C5465:7374204D:
+2016.12.16 11:08:10 210 INFO    18 65737361:6765
+2016.12.16 11:08:10 210 INFO    18 cmd_len=54,cmd_id=4,cmd_status=0,seq_no=2,service_type=,source_addr_ton=5
+2016.12.16 11:08:10 210 INFO    18 source_addr_npi=0,source_addr=,dest_addr_ton=1,dest_addr_npi=1
+2016.12.16 11:08:10 210 INFO    18 dest_addr=123456789,esm_class=0,protocol_ID=0,priority_flag=0
+2016.12.16 11:08:10 211 INFO    18 schedule_delivery_time=,validity_period=,registered_delivery_flag=1
+2016.12.16 11:08:10 211 INFO    18 replace_if_present_flag=0,data_coding=0,sm_default_msg_id=0,sm_length=12
+2016.12.16 11:08:10 211 INFO    18 short_message=Test Message
+2016.12.16 11:08:10 211 INFO    18  
+2016.12.16 11:08:10 211 INFO    18 Validity period is not set: defaulting to 5 minutes from now
+2016.12.16 11:08:10 212 INFO    18 Generated default validity period=161216111310000+
+2016.12.16 11:08:10 212 INFO    18 :SUBMIT_SM_RESP:
+2016.12.16 11:08:10 212 INFO    18 Hex dump (19) bytes:
+2016.12.16 11:08:10 212 INFO    18 00000013:80000004:00000000:00000002:
+2016.12.16 11:08:10 212 INFO    18 313000
+2016.12.16 11:08:10 212 INFO    18 cmd_len=0,cmd_id=-2147483644,cmd_status=0,seq_no=2,message_id=10
+2016.12.16 11:08:10 212 INFO    18  
+2016.12.16 11:08:10 213 INFO    18 SubmitSM processing - response written to connection
+2016.12.16 11:08:10 214 INFO    18 : UNBIND:
+2016.12.16 11:08:10 214 INFO    18 Hex dump (16) bytes:
+2016.12.16 11:08:10 214 INFO    18 00000010:00000006:00000000:00000003:
+2016.12.16 11:08:10 214 INFO    18 
+2016.12.16 11:08:10 214 INFO    18 cmd_len=16,cmd_id=6,cmd_status=0,seq_no=3
+2016.12.16 11:08:10 214 INFO    18  
+2016.12.16 11:08:10 214 INFO    18 : UNBIND_RESP
+2016.12.16 11:08:10 214 INFO    18 Hex dump (16) bytes:
+2016.12.16 11:08:10 214 INFO    18 00000010:80000006:00000000:00000003:
+2016.12.16 11:08:10 214 INFO    18 
+2016.12.16 11:08:10 214 INFO    18 cmd_len=0,cmd_id=-2147483642,cmd_status=0,seq_no=3
+2016.12.16 11:08:10 214 INFO    18  
+2016.12.16 11:08:10 214 INFO    18 StandardConnectionHandler waiting for connection
+2016.12.16 11:08:10 221 INFO    18 StandardConnectionHandler accepted a connection
+2016.12.16 11:08:10 221 INFO    18 Protocol handler is of type StandardProtocolHandler
+2016.12.16 11:08:10 222 INFO    18 : BIND_TRANSMITTER:
+2016.12.16 11:08:10 222 INFO    18 Hex dump (45) bytes:
+2016.12.16 11:08:10 222 INFO    18 0000002D:00000002:00000000:00000001:
+2016.12.16 11:08:10 222 INFO    18 736D7070:636C6965:6E743100:70617373:
+2016.12.16 11:08:10 222 INFO    18 776F7264:00575757:00340000:00
+2016.12.16 11:08:10 223 INFO    18 cmd_len=45,cmd_id=2,cmd_status=0,seq_no=1,system_id=smppclient1
+2016.12.16 11:08:10 223 INFO    18 password=password,system_type=WWW,interface_version=52,addr_ton=0,addr_npi=0
+2016.12.16 11:08:10 223 INFO    18 address_range=
+2016.12.16 11:08:10 223 INFO    18  
+2016.12.16 11:08:10 223 INFO    18 New transmitter session bound to SMPPSim
+2016.12.16 11:08:10 223 INFO    18 : BIND_TRANSMITTER_RESP:
+2016.12.16 11:08:10 223 INFO    18 Hex dump (24) bytes:
+2016.12.16 11:08:10 223 INFO    18 00000018:80000002:00000000:00000001:
+2016.12.16 11:08:10 223 INFO    18 534D5050:53696D00:
+2016.12.16 11:08:10 223 INFO    18 cmd_len=0,cmd_id=-2147483646,cmd_status=0,seq_no=1,system_id=SMPPSim
+2016.12.16 11:08:10 223 INFO    18  
+2016.12.16 11:08:10 226 INFO    18 : Standard SUBMIT_SM:
+2016.12.16 11:08:10 226 INFO    18 Hex dump (51) bytes:
+2016.12.16 11:08:10 226 INFO    18 00000033:00000004:00000000:00000002:
+2016.12.16 11:08:10 226 INFO    18 00050000:01013132:33313233:00000000:
+2016.12.16 11:08:10 226 INFO    18 00000100:00000C54:65737420:4D657373:
+2016.12.16 11:08:10 226 INFO    18 616765
+2016.12.16 11:08:10 226 INFO    18 cmd_len=51,cmd_id=4,cmd_status=0,seq_no=2,service_type=,source_addr_ton=5
+2016.12.16 11:08:10 226 INFO    18 source_addr_npi=0,source_addr=,dest_addr_ton=1,dest_addr_npi=1,dest_addr=123123
+2016.12.16 11:08:10 226 INFO    18 esm_class=0,protocol_ID=0,priority_flag=0,schedule_delivery_time=
+2016.12.16 11:08:10 226 INFO    18 validity_period=,registered_delivery_flag=1,replace_if_present_flag=0
+2016.12.16 11:08:10 226 INFO    18 data_coding=0,sm_default_msg_id=0,sm_length=12,short_message=Test Message
+2016.12.16 11:08:10 226 INFO    18  
+2016.12.16 11:08:10 227 INFO    18 Validity period is not set: defaulting to 5 minutes from now
+2016.12.16 11:08:10 227 INFO    18 Generated default validity period=161216111310000+
+2016.12.16 11:08:10 227 INFO    18 :SUBMIT_SM_RESP:
+2016.12.16 11:08:10 228 INFO    18 Hex dump (19) bytes:
+2016.12.16 11:08:10 228 INFO    18 00000013:80000004:00000000:00000002:
+2016.12.16 11:08:10 228 INFO    18 313100
+2016.12.16 11:08:10 228 INFO    18 cmd_len=0,cmd_id=-2147483644,cmd_status=0,seq_no=2,message_id=11
+2016.12.16 11:08:10 228 INFO    18  
+2016.12.16 11:08:10 228 INFO    18 SubmitSM processing - response written to connection
+2016.12.16 11:08:10 229 INFO    18 : UNBIND:
+2016.12.16 11:08:10 229 INFO    18 Hex dump (16) bytes:
+2016.12.16 11:08:10 229 INFO    18 00000010:00000006:00000000:00000003:
+2016.12.16 11:08:10 229 INFO    18 
+2016.12.16 11:08:10 229 INFO    18 cmd_len=16,cmd_id=6,cmd_status=0,seq_no=3
+2016.12.16 11:08:10 230 INFO    18  
+2016.12.16 11:08:10 230 INFO    18 : UNBIND_RESP
+2016.12.16 11:08:10 230 INFO    18 Hex dump (16) bytes:
+2016.12.16 11:08:10 230 INFO    18 00000010:80000006:00000000:00000003:
+2016.12.16 11:08:10 230 INFO    18 
+2016.12.16 11:08:10 230 INFO    18 cmd_len=0,cmd_id=-2147483642,cmd_status=0,seq_no=3
+2016.12.16 11:08:10 230 INFO    18  
+2016.12.16 11:08:10 230 INFO    18 StandardConnectionHandler waiting for connection
+2016.12.16 11:08:13 450 INFO    22 Assessing state of 4 messages in the OutboundQueue
+2016.12.16 11:08:13 451 INFO    22 Message:2 state=DELIVERED
+2016.12.16 11:08:13 451 INFO    22 Delivery Receipt requested
+2016.12.16 11:08:13 451 INFO    21 InboundQueue: no available receiver sessions - moving message(s) to pending queue
+2016.12.16 11:08:13 451 INFO    21 Moved 1 MO messages to the pending queue
+2016.12.16 11:08:13 452 INFO    22 Message:2 state=DELIVERED
+2016.12.16 11:08:13 452 INFO    22 Delivery Receipt requested
+2016.12.16 11:08:13 452 INFO    21 InboundQueue: no available receiver sessions - moving message(s) to pending queue
+2016.12.16 11:08:13 452 INFO    21 Moved 1 MO messages to the pending queue
+2016.12.16 11:08:18 451 INFO    22 Assessing state of 4 messages in the OutboundQueue
+2016.12.16 11:08:23 452 INFO    22 Assessing state of 4 messages in the OutboundQueue
+2016.12.16 11:08:28 456 INFO    22 Assessing state of 3 messages in the OutboundQueue
+2016.12.16 11:08:32 949 INFO    12 StandardConnectionHandler accepted a connection
+2016.12.16 11:08:32 949 INFO    12 Protocol handler is of type StandardProtocolHandler
+2016.12.16 11:08:32 950 INFO    12 : BIND_TRANSMITTER:
+2016.12.16 11:08:32 950 INFO    12 Hex dump (45) bytes:
+2016.12.16 11:08:32 950 INFO    12 0000002D:00000002:00000000:00000001:
+2016.12.16 11:08:32 950 INFO    12 736D7070:636C6965:6E743100:70617373:
+2016.12.16 11:08:32 950 INFO    12 776F7264:00575757:00340000:00
+2016.12.16 11:08:32 950 INFO    12 cmd_len=45,cmd_id=2,cmd_status=0,seq_no=1,system_id=smppclient1
+2016.12.16 11:08:32 950 INFO    12 password=password,system_type=WWW,interface_version=52,addr_ton=0,addr_npi=0
+2016.12.16 11:08:32 950 INFO    12 address_range=
+2016.12.16 11:08:32 950 INFO    12  
+2016.12.16 11:08:32 950 INFO    12 New transmitter session bound to SMPPSim
+2016.12.16 11:08:32 950 INFO    12 : BIND_TRANSMITTER_RESP:
+2016.12.16 11:08:32 950 INFO    12 Hex dump (24) bytes:
+2016.12.16 11:08:32 950 INFO    12 00000018:80000002:00000000:00000001:
+2016.12.16 11:08:32 950 INFO    12 534D5050:53696D00:
+2016.12.16 11:08:32 950 INFO    12 cmd_len=0,cmd_id=-2147483646,cmd_status=0,seq_no=1,system_id=SMPPSim
+2016.12.16 11:08:32 950 INFO    12  
+2016.12.16 11:08:32 952 INFO    12 : Standard SUBMIT_SM:
+2016.12.16 11:08:32 952 INFO    12 Hex dump (54) bytes:
+2016.12.16 11:08:32 952 INFO    12 00000036:00000004:00000000:00000002:
+2016.12.16 11:08:32 952 INFO    12 00050000:01013132:33343536:37383900:
+2016.12.16 11:08:32 952 INFO    12 00000000:00010000:000C5465:7374204D:
+2016.12.16 11:08:32 952 INFO    12 65737361:6765
+2016.12.16 11:08:32 952 INFO    12 cmd_len=54,cmd_id=4,cmd_status=0,seq_no=2,service_type=,source_addr_ton=5
+2016.12.16 11:08:32 952 INFO    12 source_addr_npi=0,source_addr=,dest_addr_ton=1,dest_addr_npi=1
+2016.12.16 11:08:32 952 INFO    12 dest_addr=123456789,esm_class=0,protocol_ID=0,priority_flag=0
+2016.12.16 11:08:32 952 INFO    12 schedule_delivery_time=,validity_period=,registered_delivery_flag=1
+2016.12.16 11:08:32 952 INFO    12 replace_if_present_flag=0,data_coding=0,sm_default_msg_id=0,sm_length=12
+2016.12.16 11:08:32 952 INFO    12 short_message=Test Message
+2016.12.16 11:08:32 952 INFO    12  
+2016.12.16 11:08:32 952 INFO    12 Validity period is not set: defaulting to 5 minutes from now
+2016.12.16 11:08:32 953 INFO    12 Generated default validity period=161216111332000+
+2016.12.16 11:08:32 953 INFO    12 :SUBMIT_SM_RESP:
+2016.12.16 11:08:32 953 INFO    12 Hex dump (19) bytes:
+2016.12.16 11:08:32 953 INFO    12 00000013:80000004:00000000:00000002:
+2016.12.16 11:08:32 953 INFO    12 313200
+2016.12.16 11:08:32 953 INFO    12 cmd_len=0,cmd_id=-2147483644,cmd_status=0,seq_no=2,message_id=12
+2016.12.16 11:08:32 953 INFO    12  
+2016.12.16 11:08:32 953 INFO    12 SubmitSM processing - response written to connection
+2016.12.16 11:08:32 954 INFO    12 : UNBIND:
+2016.12.16 11:08:32 954 INFO    12 Hex dump (16) bytes:
+2016.12.16 11:08:32 954 INFO    12 00000010:00000006:00000000:00000003:
+2016.12.16 11:08:32 954 INFO    12 
+2016.12.16 11:08:32 954 INFO    12 cmd_len=16,cmd_id=6,cmd_status=0,seq_no=3
+2016.12.16 11:08:32 954 INFO    12  
+2016.12.16 11:08:32 954 INFO    12 : UNBIND_RESP
+2016.12.16 11:08:32 955 INFO    12 Hex dump (16) bytes:
+2016.12.16 11:08:32 955 INFO    12 00000010:80000006:00000000:00000003:
+2016.12.16 11:08:32 955 INFO    12 
+2016.12.16 11:08:32 955 INFO    12 cmd_len=0,cmd_id=-2147483642,cmd_status=0,seq_no=3
+2016.12.16 11:08:32 955 INFO    12  
+2016.12.16 11:08:32 955 INFO    12 StandardConnectionHandler waiting for connection
+2016.12.16 11:08:32 962 INFO    12 StandardConnectionHandler accepted a connection
+2016.12.16 11:08:32 962 INFO    12 Protocol handler is of type StandardProtocolHandler
+2016.12.16 11:08:32 963 INFO    12 : BIND_TRANSMITTER:
+2016.12.16 11:08:32 963 INFO    12 Hex dump (45) bytes:
+2016.12.16 11:08:32 963 INFO    12 0000002D:00000002:00000000:00000001:
+2016.12.16 11:08:32 963 INFO    12 736D7070:636C6965:6E743100:70617373:
+2016.12.16 11:08:32 963 INFO    12 776F7264:00575757:00340000:00
+2016.12.16 11:08:32 963 INFO    12 cmd_len=45,cmd_id=2,cmd_status=0,seq_no=1,system_id=smppclient1
+2016.12.16 11:08:32 963 INFO    12 password=password,system_type=WWW,interface_version=52,addr_ton=0,addr_npi=0
+2016.12.16 11:08:32 963 INFO    12 address_range=
+2016.12.16 11:08:32 963 INFO    12  
+2016.12.16 11:08:32 963 INFO    12 New transmitter session bound to SMPPSim
+2016.12.16 11:08:32 963 INFO    12 : BIND_TRANSMITTER_RESP:
+2016.12.16 11:08:32 963 INFO    12 Hex dump (24) bytes:
+2016.12.16 11:08:32 963 INFO    12 00000018:80000002:00000000:00000001:
+2016.12.16 11:08:32 963 INFO    12 534D5050:53696D00:
+2016.12.16 11:08:32 963 INFO    12 cmd_len=0,cmd_id=-2147483646,cmd_status=0,seq_no=1,system_id=SMPPSim
+2016.12.16 11:08:32 963 INFO    12  
+2016.12.16 11:08:32 965 INFO    12 : Standard SUBMIT_SM:
+2016.12.16 11:08:32 965 INFO    12 Hex dump (51) bytes:
+2016.12.16 11:08:32 965 INFO    12 00000033:00000004:00000000:00000002:
+2016.12.16 11:08:32 965 INFO    12 00050000:01013132:33313233:00000000:
+2016.12.16 11:08:32 965 INFO    12 00000100:00000C54:65737420:4D657373:
+2016.12.16 11:08:32 965 INFO    12 616765
+2016.12.16 11:08:32 965 INFO    12 cmd_len=51,cmd_id=4,cmd_status=0,seq_no=2,service_type=,source_addr_ton=5
+2016.12.16 11:08:32 965 INFO    12 source_addr_npi=0,source_addr=,dest_addr_ton=1,dest_addr_npi=1,dest_addr=123123
+2016.12.16 11:08:32 965 INFO    12 esm_class=0,protocol_ID=0,priority_flag=0,schedule_delivery_time=
+2016.12.16 11:08:32 965 INFO    12 validity_period=,registered_delivery_flag=1,replace_if_present_flag=0
+2016.12.16 11:08:32 965 INFO    12 data_coding=0,sm_default_msg_id=0,sm_length=12,short_message=Test Message
+2016.12.16 11:08:32 965 INFO    12  
+2016.12.16 11:08:32 965 INFO    12 Validity period is not set: defaulting to 5 minutes from now
+2016.12.16 11:08:32 966 INFO    12 Generated default validity period=161216111332000+
+2016.12.16 11:08:32 966 INFO    12 :SUBMIT_SM_RESP:
+2016.12.16 11:08:32 966 INFO    12 Hex dump (19) bytes:
+2016.12.16 11:08:32 966 INFO    12 00000013:80000004:00000000:00000002:
+2016.12.16 11:08:32 966 INFO    12 313300
+2016.12.16 11:08:32 966 INFO    12 cmd_len=0,cmd_id=-2147483644,cmd_status=0,seq_no=2,message_id=13
+2016.12.16 11:08:32 966 INFO    12  
+2016.12.16 11:08:32 966 INFO    12 SubmitSM processing - response written to connection
+2016.12.16 11:08:32 967 INFO    12 : UNBIND:
+2016.12.16 11:08:32 967 INFO    12 Hex dump (16) bytes:
+2016.12.16 11:08:32 967 INFO    12 00000010:00000006:00000000:00000003:
+2016.12.16 11:08:32 967 INFO    12 
+2016.12.16 11:08:32 967 INFO    12 cmd_len=16,cmd_id=6,cmd_status=0,seq_no=3
+2016.12.16 11:08:32 967 INFO    12  
+2016.12.16 11:08:32 967 INFO    12 : UNBIND_RESP
+2016.12.16 11:08:32 967 INFO    12 Hex dump (16) bytes:
+2016.12.16 11:08:32 967 INFO    12 00000010:80000006:00000000:00000003:
+2016.12.16 11:08:32 967 INFO    12 
+2016.12.16 11:08:32 968 INFO    12 cmd_len=0,cmd_id=-2147483642,cmd_status=0,seq_no=3
+2016.12.16 11:08:32 968 INFO    12  
+2016.12.16 11:08:32 968 INFO    12 StandardConnectionHandler waiting for connection
+2016.12.16 11:08:33 461 INFO    22 Assessing state of 5 messages in the OutboundQueue
+2016.12.16 11:08:33 461 INFO    22 Message:2 state=DELIVERED
+2016.12.16 11:08:33 461 INFO    22 Delivery Receipt requested
+2016.12.16 11:08:33 462 INFO    21 InboundQueue: no available receiver sessions - moving message(s) to pending queue
+2016.12.16 11:08:33 462 INFO    21 Moved 1 MO messages to the pending queue
+2016.12.16 11:08:33 462 INFO    22 Message:2 state=DELIVERED
+2016.12.16 11:08:33 462 INFO    22 Delivery Receipt requested
+2016.12.16 11:08:33 462 INFO    21 InboundQueue: no available receiver sessions - moving message(s) to pending queue
+2016.12.16 11:08:33 462 INFO    21 Moved 1 MO messages to the pending queue
+2016.12.16 11:08:38 465 INFO    22 Assessing state of 5 messages in the OutboundQueue
+2016.12.16 11:08:43 471 INFO    22 Assessing state of 5 messages in the OutboundQueue
+2016.12.16 11:08:48 477 INFO    22 Assessing state of 4 messages in the OutboundQueue
+2016.12.16 11:08:53 481 INFO    22 Assessing state of 4 messages in the OutboundQueue
+2016.12.16 11:08:53 601 INFO    24 Processing 0 messages in the delayed inbound queue
+2016.12.16 11:08:58 482 INFO    22 Assessing state of 4 messages in the OutboundQueue
+2016.12.16 11:09:03 484 INFO    22 Assessing state of 4 messages in the OutboundQueue
+2016.12.16 11:09:08 484 INFO    22 Assessing state of 4 messages in the OutboundQueue
+2016.12.16 11:09:13 488 INFO    22 Assessing state of 4 messages in the OutboundQueue
+2016.12.16 11:09:18 493 INFO    22 Assessing state of 2 messages in the OutboundQueue
+2016.12.16 11:09:23 495 INFO    22 Assessing state of 2 messages in the OutboundQueue
+2016.12.16 11:09:28 499 INFO    22 Assessing state of 2 messages in the OutboundQueue
+2016.12.16 11:09:33 504 INFO    22 Assessing state of 2 messages in the OutboundQueue
+2016.12.16 11:09:38 506 INFO    22 Lifecycle Service: OutboundQueue is empty  - waiting
+2016.12.16 11:09:53 607 INFO    24 Processing 0 messages in the delayed inbound queue
+2016.12.16 11:10:12 742 INFO    15 StandardConnectionHandler accepted a connection
+2016.12.16 11:10:12 742 INFO    15 Protocol handler is of type StandardProtocolHandler
+2016.12.16 11:10:12 742 INFO    15 : BIND_TRANSMITTER:
+2016.12.16 11:10:12 743 INFO    15 Hex dump (45) bytes:
+2016.12.16 11:10:12 743 INFO    15 0000002D:00000002:00000000:00000001:
+2016.12.16 11:10:12 743 INFO    15 736D7070:636C6965:6E743100:70617373:
+2016.12.16 11:10:12 743 INFO    15 776F7264:00575757:00340000:00
+2016.12.16 11:10:12 743 INFO    15 cmd_len=45,cmd_id=2,cmd_status=0,seq_no=1,system_id=smppclient1
+2016.12.16 11:10:12 743 INFO    15 password=password,system_type=WWW,interface_version=52,addr_ton=0,addr_npi=0
+2016.12.16 11:10:12 743 INFO    15 address_range=
+2016.12.16 11:10:12 743 INFO    15  
+2016.12.16 11:10:12 743 INFO    15 New transmitter session bound to SMPPSim
+2016.12.16 11:10:12 743 INFO    15 : BIND_TRANSMITTER_RESP:
+2016.12.16 11:10:12 743 INFO    15 Hex dump (24) bytes:
+2016.12.16 11:10:12 743 INFO    15 00000018:80000002:00000000:00000001:
+2016.12.16 11:10:12 743 INFO    15 534D5050:53696D00:
+2016.12.16 11:10:12 743 INFO    15 cmd_len=0,cmd_id=-2147483646,cmd_status=0,seq_no=1,system_id=SMPPSim
+2016.12.16 11:10:12 743 INFO    15  
+2016.12.16 11:10:12 744 INFO    15 : Standard SUBMIT_SM:
+2016.12.16 11:10:12 744 INFO    15 Hex dump (45) bytes:
+2016.12.16 11:10:12 744 INFO    15 0000002D:00000004:00000000:00000002:
+2016.12.16 11:10:12 744 INFO    15 00050000:01010000:00000000:01000000:
+2016.12.16 11:10:12 744 INFO    15 0C546573:74204D65:73736167:65
+2016.12.16 11:10:12 745 INFO    15 cmd_len=45,cmd_id=4,cmd_status=0,seq_no=2,service_type=,source_addr_ton=5
+2016.12.16 11:10:12 745 INFO    15 source_addr_npi=0,source_addr=,dest_addr_ton=1,dest_addr_npi=1,dest_addr=
+2016.12.16 11:10:12 745 INFO    15 esm_class=0,protocol_ID=0,priority_flag=0,schedule_delivery_time=
+2016.12.16 11:10:12 745 INFO    15 validity_period=,registered_delivery_flag=1,replace_if_present_flag=0
+2016.12.16 11:10:12 745 INFO    15 data_coding=0,sm_default_msg_id=0,sm_length=12,short_message=Test Message
+2016.12.16 11:10:12 745 INFO    15  
+2016.12.16 11:10:12 745 INFO    15 :SUBMIT_SM_RESP (ESME_RINVDSTADR):
+2016.12.16 11:10:12 745 INFO    15 Hex dump (16) bytes:
+2016.12.16 11:10:12 745 INFO    15 00000010:80000004:0000000B:00000002:
+2016.12.16 11:10:12 745 INFO    15 
+2016.12.16 11:10:12 745 INFO    15 cmd_len=16,cmd_id=-2147483644,cmd_status=11,seq_no=2,message_id=14
+2016.12.16 11:10:12 746 INFO    15 : Standard SUBMIT_SM:
+2016.12.16 11:10:12 746 INFO    15 Hex dump (45) bytes:
+2016.12.16 11:10:12 746 INFO    15 0000002D:00000004:00000000:00000002:
+2016.12.16 11:10:12 746 INFO    15 00050000:01010000:00000000:01000000:
+2016.12.16 11:10:12 746 INFO    15 0C546573:74204D65:73736167:65
+2016.12.16 11:10:12 746 INFO    15 cmd_len=45,cmd_id=4,cmd_status=0,seq_no=2,service_type=,source_addr_ton=5
+2016.12.16 11:10:12 746 INFO    15 source_addr_npi=0,source_addr=,dest_addr_ton=1,dest_addr_npi=1,dest_addr=
+2016.12.16 11:10:12 746 INFO    15 esm_class=0,protocol_ID=0,priority_flag=0,schedule_delivery_time=
+2016.12.16 11:10:12 746 INFO    15 validity_period=,registered_delivery_flag=1,replace_if_present_flag=0
+2016.12.16 11:10:12 747 INFO    15 data_coding=0,sm_default_msg_id=0,sm_length=12,short_message=Test Message
+2016.12.16 11:10:12 747 INFO    15  
+2016.12.16 11:10:12 747 INFO    15 :SUBMIT_SM_RESP (ESME_RINVDSTADR):
+2016.12.16 11:10:12 747 INFO    15 Hex dump (16) bytes:
+2016.12.16 11:10:12 747 INFO    15 00000010:80000004:0000000B:00000002:
+2016.12.16 11:10:12 747 INFO    15 
+2016.12.16 11:10:12 747 INFO    15 cmd_len=16,cmd_id=-2147483644,cmd_status=11,seq_no=2,message_id=15
+2016.12.16 11:10:12 747 INFO    15 : Standard SUBMIT_SM:
+2016.12.16 11:10:12 747 INFO    15 Hex dump (45) bytes:
+2016.12.16 11:10:12 747 INFO    15 0000002D:00000004:00000000:00000002:
+2016.12.16 11:10:12 747 INFO    15 00050000:01010000:00000000:01000000:
+2016.12.16 11:10:12 747 INFO    15 0C546573:74204D65:73736167:65
+2016.12.16 11:10:12 747 INFO    15 cmd_len=45,cmd_id=4,cmd_status=0,seq_no=2,service_type=,source_addr_ton=5
+2016.12.16 11:10:12 747 INFO    15 source_addr_npi=0,source_addr=,dest_addr_ton=1,dest_addr_npi=1,dest_addr=
+2016.12.16 11:10:12 747 INFO    15 esm_class=0,protocol_ID=0,priority_flag=0,schedule_delivery_time=
+2016.12.16 11:10:12 747 INFO    15 validity_period=,registered_delivery_flag=1,replace_if_present_flag=0
+2016.12.16 11:10:12 747 INFO    15 data_coding=0,sm_default_msg_id=0,sm_length=12,short_message=Test Message
+2016.12.16 11:10:12 747 INFO    15  
+2016.12.16 11:10:12 748 INFO    15 :SUBMIT_SM_RESP (ESME_RINVDSTADR):
+2016.12.16 11:10:12 748 INFO    15 Hex dump (16) bytes:
+2016.12.16 11:10:12 748 INFO    15 00000010:80000004:0000000B:00000002:
+2016.12.16 11:10:12 748 INFO    15 
+2016.12.16 11:10:12 748 INFO    15 cmd_len=16,cmd_id=-2147483644,cmd_status=11,seq_no=2,message_id=16
+2016.12.16 11:10:12 748 INFO    15 : Standard SUBMIT_SM:
+2016.12.16 11:10:12 748 INFO    15 Hex dump (45) bytes:
+2016.12.16 11:10:12 748 INFO    15 0000002D:00000004:00000000:00000002:
+2016.12.16 11:10:12 748 INFO    15 00050000:01010000:00000000:01000000:
+2016.12.16 11:10:12 748 INFO    15 0C546573:74204D65:73736167:65
+2016.12.16 11:10:12 748 INFO    15 cmd_len=45,cmd_id=4,cmd_status=0,seq_no=2,service_type=,source_addr_ton=5
+2016.12.16 11:10:12 748 INFO    15 source_addr_npi=0,source_addr=,dest_addr_ton=1,dest_addr_npi=1,dest_addr=
+2016.12.16 11:10:12 748 INFO    15 esm_class=0,protocol_ID=0,priority_flag=0,schedule_delivery_time=
+2016.12.16 11:10:12 748 INFO    15 validity_period=,registered_delivery_flag=1,replace_if_present_flag=0
+2016.12.16 11:10:12 748 INFO    15 data_coding=0,sm_default_msg_id=0,sm_length=12,short_message=Test Message
+2016.12.16 11:10:12 748 INFO    15  
+2016.12.16 11:10:12 748 INFO    15 :SUBMIT_SM_RESP (ESME_RINVDSTADR):
+2016.12.16 11:10:12 748 INFO    15 Hex dump (16) bytes:
+2016.12.16 11:10:12 749 INFO    15 00000010:80000004:0000000B:00000002:
+2016.12.16 11:10:12 749 INFO    15 
+2016.12.16 11:10:12 749 INFO    15 cmd_len=16,cmd_id=-2147483644,cmd_status=11,seq_no=2,message_id=17
+2016.12.16 11:10:12 749 INFO    15 : Standard SUBMIT_SM:
+2016.12.16 11:10:12 749 INFO    15 Hex dump (45) bytes:
+2016.12.16 11:10:12 749 INFO    15 0000002D:00000004:00000000:00000002:
+2016.12.16 11:10:12 749 INFO    15 00050000:01010000:00000000:01000000:
+2016.12.16 11:10:12 749 INFO    15 0C546573:74204D65:73736167:65
+2016.12.16 11:10:12 749 INFO    15 cmd_len=45,cmd_id=4,cmd_status=0,seq_no=2,service_type=,source_addr_ton=5
+2016.12.16 11:10:12 749 INFO    15 source_addr_npi=0,source_addr=,dest_addr_ton=1,dest_addr_npi=1,dest_addr=
+2016.12.16 11:10:12 749 INFO    15 esm_class=0,protocol_ID=0,priority_flag=0,schedule_delivery_time=
+2016.12.16 11:10:12 749 INFO    15 validity_period=,registered_delivery_flag=1,replace_if_present_flag=0
+2016.12.16 11:10:12 749 INFO    15 data_coding=0,sm_default_msg_id=0,sm_length=12,short_message=Test Message
+2016.12.16 11:10:12 749 INFO    15  
+2016.12.16 11:10:12 750 INFO    15 :SUBMIT_SM_RESP (ESME_RINVDSTADR):
+2016.12.16 11:10:12 750 INFO    15 Hex dump (16) bytes:
+2016.12.16 11:10:12 750 INFO    15 00000010:80000004:0000000B:00000002:
+2016.12.16 11:10:12 750 INFO    15 
+2016.12.16 11:10:12 750 INFO    15 cmd_len=16,cmd_id=-2147483644,cmd_status=11,seq_no=2,message_id=18
+2016.12.16 11:10:12 750 INFO    15 : Standard SUBMIT_SM:
+2016.12.16 11:10:12 750 INFO    15 Hex dump (45) bytes:
+2016.12.16 11:10:12 750 INFO    15 0000002D:00000004:00000000:00000002:
+2016.12.16 11:10:12 750 INFO    15 00050000:01010000:00000000:01000000:
+2016.12.16 11:10:12 750 INFO    15 0C546573:74204D65:73736167:65
+2016.12.16 11:10:12 750 INFO    15 cmd_len=45,cmd_id=4,cmd_status=0,seq_no=2,service_type=,source_addr_ton=5
+2016.12.16 11:10:12 750 INFO    15 source_addr_npi=0,source_addr=,dest_addr_ton=1,dest_addr_npi=1,dest_addr=
+2016.12.16 11:10:12 750 INFO    15 esm_class=0,protocol_ID=0,priority_flag=0,schedule_delivery_time=
+2016.12.16 11:10:12 750 INFO    15 validity_period=,registered_delivery_flag=1,replace_if_present_flag=0
+2016.12.16 11:10:12 750 INFO    15 data_coding=0,sm_default_msg_id=0,sm_length=12,short_message=Test Message
+2016.12.16 11:10:12 750 INFO    15  
+2016.12.16 11:10:12 750 INFO    15 :SUBMIT_SM_RESP (ESME_RINVDSTADR):
+2016.12.16 11:10:12 750 INFO    15 Hex dump (16) bytes:
+2016.12.16 11:10:12 751 INFO    15 00000010:80000004:0000000B:00000002:
+2016.12.16 11:10:12 751 INFO    15 
+2016.12.16 11:10:12 751 INFO    15 cmd_len=16,cmd_id=-2147483644,cmd_status=11,seq_no=2,message_id=19
+2016.12.16 11:10:12 751 INFO    15 : Standard SUBMIT_SM:
+2016.12.16 11:10:12 751 INFO    15 Hex dump (45) bytes:
+2016.12.16 11:10:12 751 INFO    15 0000002D:00000004:00000000:00000002:
+2016.12.16 11:10:12 751 INFO    15 00050000:01010000:00000000:01000000:
+2016.12.16 11:10:12 751 INFO    15 0C546573:74204D65:73736167:65
+2016.12.16 11:10:12 751 INFO    15 cmd_len=45,cmd_id=4,cmd_status=0,seq_no=2,service_type=,source_addr_ton=5
+2016.12.16 11:10:12 751 INFO    15 source_addr_npi=0,source_addr=,dest_addr_ton=1,dest_addr_npi=1,dest_addr=
+2016.12.16 11:10:12 751 INFO    15 esm_class=0,protocol_ID=0,priority_flag=0,schedule_delivery_time=
+2016.12.16 11:10:12 751 INFO    15 validity_period=,registered_delivery_flag=1,replace_if_present_flag=0
+2016.12.16 11:10:12 751 INFO    15 data_coding=0,sm_default_msg_id=0,sm_length=12,short_message=Test Message
+2016.12.16 11:10:12 751 INFO    15  
+2016.12.16 11:10:12 751 INFO    15 :SUBMIT_SM_RESP (ESME_RINVDSTADR):
+2016.12.16 11:10:12 751 INFO    15 Hex dump (16) bytes:
+2016.12.16 11:10:12 751 INFO    15 00000010:80000004:0000000B:00000002:
+2016.12.16 11:10:12 751 INFO    15 
+2016.12.16 11:10:12 751 INFO    15 cmd_len=16,cmd_id=-2147483644,cmd_status=11,seq_no=2,message_id=20
+2016.12.16 11:10:12 752 INFO    15 Socket exception: probably connection closed by client without UNBIND
+2016.12.16 11:10:12 752 INFO    15 StandardConnectionHandler waiting for connection
+2016.12.16 11:10:12 757 INFO    12 StandardConnectionHandler accepted a connection
+2016.12.16 11:10:12 757 INFO    12 Protocol handler is of type StandardProtocolHandler
+2016.12.16 11:10:12 758 INFO    12 : BIND_TRANSMITTER:
+2016.12.16 11:10:12 758 INFO    12 Hex dump (45) bytes:
+2016.12.16 11:10:12 758 INFO    12 0000002D:00000002:00000000:00000001:
+2016.12.16 11:10:12 758 INFO    12 736D7070:636C6965:6E743100:70617373:
+2016.12.16 11:10:12 758 INFO    12 776F7264:00575757:00340000:00
+2016.12.16 11:10:12 758 INFO    12 cmd_len=45,cmd_id=2,cmd_status=0,seq_no=1,system_id=smppclient1
+2016.12.16 11:10:12 758 INFO    12 password=password,system_type=WWW,interface_version=52,addr_ton=0,addr_npi=0
+2016.12.16 11:10:12 758 INFO    12 address_range=
+2016.12.16 11:10:12 758 INFO    12  
+2016.12.16 11:10:12 758 INFO    12 New transmitter session bound to SMPPSim
+2016.12.16 11:10:12 758 INFO    12 : BIND_TRANSMITTER_RESP:
+2016.12.16 11:10:12 758 INFO    12 Hex dump (24) bytes:
+2016.12.16 11:10:12 759 INFO    12 00000018:80000002:00000000:00000001:
+2016.12.16 11:10:12 759 INFO    12 534D5050:53696D00:
+2016.12.16 11:10:12 759 INFO    12 cmd_len=0,cmd_id=-2147483646,cmd_status=0,seq_no=1,system_id=SMPPSim
+2016.12.16 11:10:12 759 INFO    12  
+2016.12.16 11:10:12 760 INFO    12 : Standard SUBMIT_SM:
+2016.12.16 11:10:12 760 INFO    12 Hex dump (51) bytes:
+2016.12.16 11:10:12 760 INFO    12 00000033:00000004:00000000:00000002:
+2016.12.16 11:10:12 760 INFO    12 00050000:01013132:33313233:00000000:
+2016.12.16 11:10:12 760 INFO    12 00000100:00000C54:65737420:4D657373:
+2016.12.16 11:10:12 760 INFO    12 616765
+2016.12.16 11:10:12 760 INFO    12 cmd_len=51,cmd_id=4,cmd_status=0,seq_no=2,service_type=,source_addr_ton=5
+2016.12.16 11:10:12 760 INFO    12 source_addr_npi=0,source_addr=,dest_addr_ton=1,dest_addr_npi=1,dest_addr=123123
+2016.12.16 11:10:12 760 INFO    12 esm_class=0,protocol_ID=0,priority_flag=0,schedule_delivery_time=
+2016.12.16 11:10:12 760 INFO    12 validity_period=,registered_delivery_flag=1,replace_if_present_flag=0
+2016.12.16 11:10:12 760 INFO    12 data_coding=0,sm_default_msg_id=0,sm_length=12,short_message=Test Message
+2016.12.16 11:10:12 760 INFO    12  
+2016.12.16 11:10:12 760 INFO    12 Validity period is not set: defaulting to 5 minutes from now
+2016.12.16 11:10:12 761 INFO    12 Generated default validity period=161216111512000+
+2016.12.16 11:10:12 761 INFO    12 :SUBMIT_SM_RESP:
+2016.12.16 11:10:12 761 INFO    22 Assessing state of 1 messages in the OutboundQueue
+2016.12.16 11:10:12 761 INFO    12 Hex dump (19) bytes:
+2016.12.16 11:10:12 761 INFO    12 00000013:80000004:00000000:00000002:
+2016.12.16 11:10:12 761 INFO    12 323100
+2016.12.16 11:10:12 761 INFO    12 cmd_len=0,cmd_id=-2147483644,cmd_status=0,seq_no=2,message_id=21
+2016.12.16 11:10:12 761 INFO    12  
+2016.12.16 11:10:12 761 INFO    12 SubmitSM processing - response written to connection
+2016.12.16 11:10:12 762 INFO    12 : UNBIND:
+2016.12.16 11:10:12 762 INFO    12 Hex dump (16) bytes:
+2016.12.16 11:10:12 762 INFO    12 00000010:00000006:00000000:00000003:
+2016.12.16 11:10:12 762 INFO    12 
+2016.12.16 11:10:12 762 INFO    12 cmd_len=16,cmd_id=6,cmd_status=0,seq_no=3
+2016.12.16 11:10:12 762 INFO    12  
+2016.12.16 11:10:12 762 INFO    12 : UNBIND_RESP
+2016.12.16 11:10:12 762 INFO    12 Hex dump (16) bytes:
+2016.12.16 11:10:12 763 INFO    12 00000010:80000006:00000000:00000003:
+2016.12.16 11:10:12 763 INFO    12 
+2016.12.16 11:10:12 763 INFO    12 cmd_len=0,cmd_id=-2147483642,cmd_status=0,seq_no=3
+2016.12.16 11:10:12 763 INFO    12  
+2016.12.16 11:10:12 763 INFO    12 StandardConnectionHandler waiting for connection
+2016.12.16 11:10:17 762 INFO    22 Assessing state of 1 messages in the OutboundQueue
+2016.12.16 11:10:17 763 INFO    22 Message:2 state=DELIVERED
+2016.12.16 11:10:17 763 INFO    22 Delivery Receipt requested
+2016.12.16 11:10:17 764 INFO    21 InboundQueue: no available receiver sessions - moving message(s) to pending queue
+2016.12.16 11:10:17 764 INFO    21 Moved 1 MO messages to the pending queue
+2016.12.16 11:10:22 765 INFO    22 Assessing state of 1 messages in the OutboundQueue
+2016.12.16 11:10:27 468 INFO    12 StandardConnectionHandler accepted a connection
+2016.12.16 11:10:27 468 INFO    12 Protocol handler is of type StandardProtocolHandler
+2016.12.16 11:10:27 469 INFO    12 : BIND_TRANSMITTER:
+2016.12.16 11:10:27 469 INFO    12 Hex dump (45) bytes:
+2016.12.16 11:10:27 469 INFO    12 0000002D:00000002:00000000:00000001:
+2016.12.16 11:10:27 469 INFO    12 736D7070:636C6965:6E743100:70617373:
+2016.12.16 11:10:27 469 INFO    12 776F7264:00575757:00340000:00
+2016.12.16 11:10:27 469 INFO    12 cmd_len=45,cmd_id=2,cmd_status=0,seq_no=1,system_id=smppclient1
+2016.12.16 11:10:27 469 INFO    12 password=password,system_type=WWW,interface_version=52,addr_ton=0,addr_npi=0
+2016.12.16 11:10:27 469 INFO    12 address_range=
+2016.12.16 11:10:27 469 INFO    12  
+2016.12.16 11:10:27 469 INFO    12 New transmitter session bound to SMPPSim
+2016.12.16 11:10:27 469 INFO    12 : BIND_TRANSMITTER_RESP:
+2016.12.16 11:10:27 469 INFO    12 Hex dump (24) bytes:
+2016.12.16 11:10:27 469 INFO    12 00000018:80000002:00000000:00000001:
+2016.12.16 11:10:27 469 INFO    12 534D5050:53696D00:
+2016.12.16 11:10:27 469 INFO    12 cmd_len=0,cmd_id=-2147483646,cmd_status=0,seq_no=1,system_id=SMPPSim
+2016.12.16 11:10:27 469 INFO    12  
+2016.12.16 11:10:27 470 INFO    12 : Standard SUBMIT_SM:
+2016.12.16 11:10:27 471 INFO    12 Hex dump (45) bytes:
+2016.12.16 11:10:27 471 INFO    12 0000002D:00000004:00000000:00000002:
+2016.12.16 11:10:27 471 INFO    12 00050000:01010000:00000000:01000000:
+2016.12.16 11:10:27 471 INFO    12 0C546573:74204D65:73736167:65
+2016.12.16 11:10:27 471 INFO    12 cmd_len=45,cmd_id=4,cmd_status=0,seq_no=2,service_type=,source_addr_ton=5
+2016.12.16 11:10:27 471 INFO    12 source_addr_npi=0,source_addr=,dest_addr_ton=1,dest_addr_npi=1,dest_addr=
+2016.12.16 11:10:27 471 INFO    12 esm_class=0,protocol_ID=0,priority_flag=0,schedule_delivery_time=
+2016.12.16 11:10:27 471 INFO    12 validity_period=,registered_delivery_flag=1,replace_if_present_flag=0
+2016.12.16 11:10:27 471 INFO    12 data_coding=0,sm_default_msg_id=0,sm_length=12,short_message=Test Message
+2016.12.16 11:10:27 471 INFO    12  
+2016.12.16 11:10:27 471 INFO    12 :SUBMIT_SM_RESP (ESME_RINVDSTADR):
+2016.12.16 11:10:27 471 INFO    12 Hex dump (16) bytes:
+2016.12.16 11:10:27 471 INFO    12 00000010:80000004:0000000B:00000002:
+2016.12.16 11:10:27 471 INFO    12 
+2016.12.16 11:10:27 471 INFO    12 cmd_len=16,cmd_id=-2147483644,cmd_status=11,seq_no=2,message_id=22
+2016.12.16 11:10:27 472 INFO    12 : Standard SUBMIT_SM:
+2016.12.16 11:10:27 472 INFO    12 Hex dump (45) bytes:
+2016.12.16 11:10:27 472 INFO    12 0000002D:00000004:00000000:00000002:
+2016.12.16 11:10:27 472 INFO    12 00050000:01010000:00000000:01000000:
+2016.12.16 11:10:27 472 INFO    12 0C546573:74204D65:73736167:65
+2016.12.16 11:10:27 473 INFO    12 cmd_len=45,cmd_id=4,cmd_status=0,seq_no=2,service_type=,source_addr_ton=5
+2016.12.16 11:10:27 473 INFO    12 source_addr_npi=0,source_addr=,dest_addr_ton=1,dest_addr_npi=1,dest_addr=
+2016.12.16 11:10:27 473 INFO    12 esm_class=0,protocol_ID=0,priority_flag=0,schedule_delivery_time=
+2016.12.16 11:10:27 473 INFO    12 validity_period=,registered_delivery_flag=1,replace_if_present_flag=0
+2016.12.16 11:10:27 473 INFO    12 data_coding=0,sm_default_msg_id=0,sm_length=12,short_message=Test Message
+2016.12.16 11:10:27 473 INFO    12  
+2016.12.16 11:10:27 473 INFO    12 :SUBMIT_SM_RESP (ESME_RINVDSTADR):
+2016.12.16 11:10:27 473 INFO    12 Hex dump (16) bytes:
+2016.12.16 11:10:27 473 INFO    12 00000010:80000004:0000000B:00000002:
+2016.12.16 11:10:27 473 INFO    12 
+2016.12.16 11:10:27 473 INFO    12 cmd_len=16,cmd_id=-2147483644,cmd_status=11,seq_no=2,message_id=23
+2016.12.16 11:10:27 473 INFO    12 : Standard SUBMIT_SM:
+2016.12.16 11:10:27 473 INFO    12 Hex dump (45) bytes:
+2016.12.16 11:10:27 473 INFO    12 0000002D:00000004:00000000:00000002:
+2016.12.16 11:10:27 474 INFO    12 00050000:01010000:00000000:01000000:
+2016.12.16 11:10:27 474 INFO    12 0C546573:74204D65:73736167:65
+2016.12.16 11:10:27 474 INFO    12 cmd_len=45,cmd_id=4,cmd_status=0,seq_no=2,service_type=,source_addr_ton=5
+2016.12.16 11:10:27 474 INFO    12 source_addr_npi=0,source_addr=,dest_addr_ton=1,dest_addr_npi=1,dest_addr=
+2016.12.16 11:10:27 474 INFO    12 esm_class=0,protocol_ID=0,priority_flag=0,schedule_delivery_time=
+2016.12.16 11:10:27 474 INFO    12 validity_period=,registered_delivery_flag=1,replace_if_present_flag=0
+2016.12.16 11:10:27 474 INFO    12 data_coding=0,sm_default_msg_id=0,sm_length=12,short_message=Test Message
+2016.12.16 11:10:27 474 INFO    12  
+2016.12.16 11:10:27 474 INFO    12 :SUBMIT_SM_RESP (ESME_RINVDSTADR):
+2016.12.16 11:10:27 474 INFO    12 Hex dump (16) bytes:
+2016.12.16 11:10:27 475 INFO    12 00000010:80000004:0000000B:00000002:
+2016.12.16 11:10:27 475 INFO    12 
+2016.12.16 11:10:27 475 INFO    12 cmd_len=16,cmd_id=-2147483644,cmd_status=11,seq_no=2,message_id=24
+2016.12.16 11:10:27 475 INFO    12 : Standard SUBMIT_SM:
+2016.12.16 11:10:27 475 INFO    12 Hex dump (45) bytes:
+2016.12.16 11:10:27 475 INFO    12 0000002D:00000004:00000000:00000002:
+2016.12.16 11:10:27 475 INFO    12 00050000:01010000:00000000:01000000:
+2016.12.16 11:10:27 475 INFO    12 0C546573:74204D65:73736167:65
+2016.12.16 11:10:27 475 INFO    12 cmd_len=45,cmd_id=4,cmd_status=0,seq_no=2,service_type=,source_addr_ton=5
+2016.12.16 11:10:27 475 INFO    12 source_addr_npi=0,source_addr=,dest_addr_ton=1,dest_addr_npi=1,dest_addr=
+2016.12.16 11:10:27 475 INFO    12 esm_class=0,protocol_ID=0,priority_flag=0,schedule_delivery_time=
+2016.12.16 11:10:27 475 INFO    12 validity_period=,registered_delivery_flag=1,replace_if_present_flag=0
+2016.12.16 11:10:27 475 INFO    12 data_coding=0,sm_default_msg_id=0,sm_length=12,short_message=Test Message
+2016.12.16 11:10:27 475 INFO    12  
+2016.12.16 11:10:27 475 INFO    12 :SUBMIT_SM_RESP (ESME_RINVDSTADR):
+2016.12.16 11:10:27 475 INFO    12 Hex dump (16) bytes:
+2016.12.16 11:10:27 475 INFO    12 00000010:80000004:0000000B:00000002:
+2016.12.16 11:10:27 475 INFO    12 
+2016.12.16 11:10:27 475 INFO    12 cmd_len=16,cmd_id=-2147483644,cmd_status=11,seq_no=2,message_id=25
+2016.12.16 11:10:27 476 INFO    12 Socket exception: probably connection closed by client without UNBIND
+2016.12.16 11:10:27 476 INFO    12 StandardConnectionHandler waiting for connection
+2016.12.16 11:10:27 482 INFO    15 StandardConnectionHandler accepted a connection
+2016.12.16 11:10:27 483 INFO    15 Protocol handler is of type StandardProtocolHandler
+2016.12.16 11:10:27 483 INFO    15 : BIND_TRANSMITTER:
+2016.12.16 11:10:27 483 INFO    15 Hex dump (45) bytes:
+2016.12.16 11:10:27 483 INFO    15 0000002D:00000002:00000000:00000001:
+2016.12.16 11:10:27 484 INFO    15 736D7070:636C6965:6E743100:70617373:
+2016.12.16 11:10:27 484 INFO    15 776F7264:00575757:00340000:00
+2016.12.16 11:10:27 484 INFO    15 cmd_len=45,cmd_id=2,cmd_status=0,seq_no=1,system_id=smppclient1
+2016.12.16 11:10:27 484 INFO    15 password=password,system_type=WWW,interface_version=52,addr_ton=0,addr_npi=0
+2016.12.16 11:10:27 484 INFO    15 address_range=
+2016.12.16 11:10:27 484 INFO    15  
+2016.12.16 11:10:27 484 INFO    15 New transmitter session bound to SMPPSim
+2016.12.16 11:10:27 484 INFO    15 : BIND_TRANSMITTER_RESP:
+2016.12.16 11:10:27 484 INFO    15 Hex dump (24) bytes:
+2016.12.16 11:10:27 484 INFO    15 00000018:80000002:00000000:00000001:
+2016.12.16 11:10:27 484 INFO    15 534D5050:53696D00:
+2016.12.16 11:10:27 484 INFO    15 cmd_len=0,cmd_id=-2147483646,cmd_status=0,seq_no=1,system_id=SMPPSim
+2016.12.16 11:10:27 484 INFO    15  
+2016.12.16 11:10:27 485 INFO    15 : Standard SUBMIT_SM:
+2016.12.16 11:10:27 485 INFO    15 Hex dump (51) bytes:
+2016.12.16 11:10:27 485 INFO    15 00000033:00000004:00000000:00000002:
+2016.12.16 11:10:27 485 INFO    15 00050000:01013132:33313233:00000000:
+2016.12.16 11:10:27 485 INFO    15 00000100:00000C54:65737420:4D657373:
+2016.12.16 11:10:27 485 INFO    15 616765
+2016.12.16 11:10:27 486 INFO    15 cmd_len=51,cmd_id=4,cmd_status=0,seq_no=2,service_type=,source_addr_ton=5
+2016.12.16 11:10:27 486 INFO    15 source_addr_npi=0,source_addr=,dest_addr_ton=1,dest_addr_npi=1,dest_addr=123123
+2016.12.16 11:10:27 486 INFO    15 esm_class=0,protocol_ID=0,priority_flag=0,schedule_delivery_time=
+2016.12.16 11:10:27 486 INFO    15 validity_period=,registered_delivery_flag=1,replace_if_present_flag=0
+2016.12.16 11:10:27 486 INFO    15 data_coding=0,sm_default_msg_id=0,sm_length=12,short_message=Test Message
+2016.12.16 11:10:27 486 INFO    15  
+2016.12.16 11:10:27 486 INFO    15 Validity period is not set: defaulting to 5 minutes from now
+2016.12.16 11:10:27 486 INFO    15 Generated default validity period=161216111527000+
+2016.12.16 11:10:27 486 INFO    15 :SUBMIT_SM_RESP:
+2016.12.16 11:10:27 486 INFO    15 Hex dump (19) bytes:
+2016.12.16 11:10:27 486 INFO    15 00000013:80000004:00000000:00000002:
+2016.12.16 11:10:27 486 INFO    15 323600
+2016.12.16 11:10:27 486 INFO    15 cmd_len=0,cmd_id=-2147483644,cmd_status=0,seq_no=2,message_id=26
+2016.12.16 11:10:27 486 INFO    15  
+2016.12.16 11:10:27 487 INFO    15 SubmitSM processing - response written to connection
+2016.12.16 11:10:27 487 INFO    15 : UNBIND:
+2016.12.16 11:10:27 487 INFO    15 Hex dump (16) bytes:
+2016.12.16 11:10:27 487 INFO    15 00000010:00000006:00000000:00000003:
+2016.12.16 11:10:27 487 INFO    15 
+2016.12.16 11:10:27 488 INFO    15 cmd_len=16,cmd_id=6,cmd_status=0,seq_no=3
+2016.12.16 11:10:27 488 INFO    15  
+2016.12.16 11:10:27 488 INFO    15 : UNBIND_RESP
+2016.12.16 11:10:27 488 INFO    15 Hex dump (16) bytes:
+2016.12.16 11:10:27 488 INFO    15 00000010:80000006:00000000:00000003:
+2016.12.16 11:10:27 488 INFO    15 
+2016.12.16 11:10:27 488 INFO    15 cmd_len=0,cmd_id=-2147483642,cmd_status=0,seq_no=3
+2016.12.16 11:10:27 488 INFO    15  
+2016.12.16 11:10:27 488 INFO    15 StandardConnectionHandler waiting for connection
+2016.12.16 11:10:27 766 INFO    22 Assessing state of 2 messages in the OutboundQueue
+2016.12.16 11:10:32 771 INFO    22 Assessing state of 2 messages in the OutboundQueue
+2016.12.16 11:10:32 771 INFO    22 Message:2 state=ACCEPTED
+2016.12.16 11:10:32 771 INFO    22 Delivery Receipt requested
+2016.12.16 11:10:32 771 INFO    21 InboundQueue: no available receiver sessions - moving message(s) to pending queue
+2016.12.16 11:10:32 772 INFO    21 Moved 1 MO messages to the pending queue
+2016.12.16 11:10:37 777 INFO    22 Assessing state of 2 messages in the OutboundQueue
+2016.12.16 11:10:42 780 INFO    22 Assessing state of 2 messages in the OutboundQueue
+2016.12.16 11:10:47 784 INFO    22 Assessing state of 2 messages in the OutboundQueue
+2016.12.16 11:10:52 788 INFO    22 Assessing state of 2 messages in the OutboundQueue
+2016.12.16 11:10:53 612 INFO    24 Processing 0 messages in the delayed inbound queue
+2016.12.16 11:10:57 791 INFO    22 Assessing state of 2 messages in the OutboundQueue
+2016.12.16 11:11:02 796 INFO    22 Assessing state of 2 messages in the OutboundQueue
+2016.12.16 11:11:07 799 INFO    22 Assessing state of 2 messages in the OutboundQueue
+2016.12.16 11:11:12 803 INFO    22 Assessing state of 2 messages in the OutboundQueue
+2016.12.16 11:11:17 806 INFO    22 Assessing state of 1 messages in the OutboundQueue
+2016.12.16 11:11:22 806 INFO    22 Assessing state of 1 messages in the OutboundQueue
+2016.12.16 11:11:24 965 INFO    12 StandardConnectionHandler accepted a connection
+2016.12.16 11:11:24 965 INFO    12 Protocol handler is of type StandardProtocolHandler
+2016.12.16 11:11:24 966 INFO    12 : BIND_TRANSMITTER:
+2016.12.16 11:11:24 966 INFO    12 Hex dump (45) bytes:
+2016.12.16 11:11:24 966 INFO    12 0000002D:00000002:00000000:00000001:
+2016.12.16 11:11:24 966 INFO    12 736D7070:636C6965:6E743100:70617373:
+2016.12.16 11:11:24 966 INFO    12 776F7264:00575757:00340000:00
+2016.12.16 11:11:24 966 INFO    12 cmd_len=45,cmd_id=2,cmd_status=0,seq_no=1,system_id=smppclient1
+2016.12.16 11:11:24 966 INFO    12 password=password,system_type=WWW,interface_version=52,addr_ton=0,addr_npi=0
+2016.12.16 11:11:24 966 INFO    12 address_range=
+2016.12.16 11:11:24 966 INFO    12  
+2016.12.16 11:11:24 966 INFO    12 New transmitter session bound to SMPPSim
+2016.12.16 11:11:24 967 INFO    12 : BIND_TRANSMITTER_RESP:
+2016.12.16 11:11:24 967 INFO    12 Hex dump (24) bytes:
+2016.12.16 11:11:24 967 INFO    12 00000018:80000002:00000000:00000001:
+2016.12.16 11:11:24 967 INFO    12 534D5050:53696D00:
+2016.12.16 11:11:24 967 INFO    12 cmd_len=0,cmd_id=-2147483646,cmd_status=0,seq_no=1,system_id=SMPPSim
+2016.12.16 11:11:24 967 INFO    12  
+2016.12.16 11:11:24 968 INFO    12 : Standard SUBMIT_SM:
+2016.12.16 11:11:24 968 INFO    12 Hex dump (45) bytes:
+2016.12.16 11:11:24 968 INFO    12 0000002D:00000004:00000000:00000002:
+2016.12.16 11:11:24 968 INFO    12 00050000:01010000:00000000:01000000:
+2016.12.16 11:11:24 968 INFO    12 0C546573:74204D65:73736167:65
+2016.12.16 11:11:24 968 INFO    12 cmd_len=45,cmd_id=4,cmd_status=0,seq_no=2,service_type=,source_addr_ton=5
+2016.12.16 11:11:24 968 INFO    12 source_addr_npi=0,source_addr=,dest_addr_ton=1,dest_addr_npi=1,dest_addr=
+2016.12.16 11:11:24 968 INFO    12 esm_class=0,protocol_ID=0,priority_flag=0,schedule_delivery_time=
+2016.12.16 11:11:24 968 INFO    12 validity_period=,registered_delivery_flag=1,replace_if_present_flag=0
+2016.12.16 11:11:24 968 INFO    12 data_coding=0,sm_default_msg_id=0,sm_length=12,short_message=Test Message
+2016.12.16 11:11:24 968 INFO    12  
+2016.12.16 11:11:24 968 INFO    12 :SUBMIT_SM_RESP (ESME_RINVDSTADR):
+2016.12.16 11:11:24 968 INFO    12 Hex dump (16) bytes:
+2016.12.16 11:11:24 968 INFO    12 00000010:80000004:0000000B:00000002:
+2016.12.16 11:11:24 969 INFO    12 
+2016.12.16 11:11:24 969 INFO    12 cmd_len=16,cmd_id=-2147483644,cmd_status=11,seq_no=2,message_id=27
+2016.12.16 11:11:24 969 INFO    12 : Standard SUBMIT_SM:
+2016.12.16 11:11:24 970 INFO    12 Hex dump (45) bytes:
+2016.12.16 11:11:24 970 INFO    12 0000002D:00000004:00000000:00000002:
+2016.12.16 11:11:24 970 INFO    12 00050000:01010000:00000000:01000000:
+2016.12.16 11:11:24 970 INFO    12 0C546573:74204D65:73736167:65
+2016.12.16 11:11:24 970 INFO    12 cmd_len=45,cmd_id=4,cmd_status=0,seq_no=2,service_type=,source_addr_ton=5
+2016.12.16 11:11:24 970 INFO    12 source_addr_npi=0,source_addr=,dest_addr_ton=1,dest_addr_npi=1,dest_addr=
+2016.12.16 11:11:24 970 INFO    12 esm_class=0,protocol_ID=0,priority_flag=0,schedule_delivery_time=
+2016.12.16 11:11:24 970 INFO    12 validity_period=,registered_delivery_flag=1,replace_if_present_flag=0
+2016.12.16 11:11:24 970 INFO    12 data_coding=0,sm_default_msg_id=0,sm_length=12,short_message=Test Message
+2016.12.16 11:11:24 970 INFO    12  
+2016.12.16 11:11:24 970 INFO    12 :SUBMIT_SM_RESP (ESME_RINVDSTADR):
+2016.12.16 11:11:24 970 INFO    12 Hex dump (16) bytes:
+2016.12.16 11:11:24 970 INFO    12 00000010:80000004:0000000B:00000002:
+2016.12.16 11:11:24 970 INFO    12 
+2016.12.16 11:11:24 970 INFO    12 cmd_len=16,cmd_id=-2147483644,cmd_status=11,seq_no=2,message_id=28
+2016.12.16 11:11:24 970 INFO    12 : Standard SUBMIT_SM:
+2016.12.16 11:11:24 970 INFO    12 Hex dump (45) bytes:
+2016.12.16 11:11:24 970 INFO    12 0000002D:00000004:00000000:00000002:
+2016.12.16 11:11:24 971 INFO    12 00050000:01010000:00000000:01000000:
+2016.12.16 11:11:24 971 INFO    12 0C546573:74204D65:73736167:65
+2016.12.16 11:11:24 971 INFO    12 cmd_len=45,cmd_id=4,cmd_status=0,seq_no=2,service_type=,source_addr_ton=5
+2016.12.16 11:11:24 971 INFO    12 source_addr_npi=0,source_addr=,dest_addr_ton=1,dest_addr_npi=1,dest_addr=
+2016.12.16 11:11:24 971 INFO    12 esm_class=0,protocol_ID=0,priority_flag=0,schedule_delivery_time=
+2016.12.16 11:11:24 971 INFO    12 validity_period=,registered_delivery_flag=1,replace_if_present_flag=0
+2016.12.16 11:11:24 971 INFO    12 data_coding=0,sm_default_msg_id=0,sm_length=12,short_message=Test Message
+2016.12.16 11:11:24 971 INFO    12  
+2016.12.16 11:11:24 971 INFO    12 :SUBMIT_SM_RESP (ESME_RINVDSTADR):
+2016.12.16 11:11:24 971 INFO    12 Hex dump (16) bytes:
+2016.12.16 11:11:24 971 INFO    12 00000010:80000004:0000000B:00000002:
+2016.12.16 11:11:24 971 INFO    12 
+2016.12.16 11:11:24 971 INFO    12 cmd_len=16,cmd_id=-2147483644,cmd_status=11,seq_no=2,message_id=29
+2016.12.16 11:11:24 972 INFO    12 : Standard SUBMIT_SM:
+2016.12.16 11:11:24 972 INFO    12 Hex dump (45) bytes:
+2016.12.16 11:11:24 972 INFO    12 0000002D:00000004:00000000:00000002:
+2016.12.16 11:11:24 972 INFO    12 00050000:01010000:00000000:01000000:
+2016.12.16 11:11:24 972 INFO    12 0C546573:74204D65:73736167:65
+2016.12.16 11:11:24 972 INFO    12 cmd_len=45,cmd_id=4,cmd_status=0,seq_no=2,service_type=,source_addr_ton=5
+2016.12.16 11:11:24 972 INFO    12 source_addr_npi=0,source_addr=,dest_addr_ton=1,dest_addr_npi=1,dest_addr=
+2016.12.16 11:11:24 972 INFO    12 esm_class=0,protocol_ID=0,priority_flag=0,schedule_delivery_time=
+2016.12.16 11:11:24 972 INFO    12 validity_period=,registered_delivery_flag=1,replace_if_present_flag=0
+2016.12.16 11:11:24 972 INFO    12 data_coding=0,sm_default_msg_id=0,sm_length=12,short_message=Test Message
+2016.12.16 11:11:24 972 INFO    12  
+2016.12.16 11:11:24 972 INFO    12 :SUBMIT_SM_RESP (ESME_RINVDSTADR):
+2016.12.16 11:11:24 972 INFO    12 Hex dump (16) bytes:
+2016.12.16 11:11:24 972 INFO    12 00000010:80000004:0000000B:00000002:
+2016.12.16 11:11:24 972 INFO    12 
+2016.12.16 11:11:24 973 INFO    12 cmd_len=16,cmd_id=-2147483644,cmd_status=11,seq_no=2,message_id=30
+2016.12.16 11:11:24 973 INFO    12 Socket exception: probably connection closed by client without UNBIND
+2016.12.16 11:11:24 973 INFO    12 StandardConnectionHandler waiting for connection
+2016.12.16 11:11:24 982 INFO    14 StandardConnectionHandler accepted a connection
+2016.12.16 11:11:24 982 INFO    14 Protocol handler is of type StandardProtocolHandler
+2016.12.16 11:11:24 983 INFO    14 : BIND_TRANSMITTER:
+2016.12.16 11:11:24 983 INFO    14 Hex dump (45) bytes:
+2016.12.16 11:11:24 983 INFO    14 0000002D:00000002:00000000:00000001:
+2016.12.16 11:11:24 984 INFO    14 736D7070:636C6965:6E743100:70617373:
+2016.12.16 11:11:24 984 INFO    14 776F7264:00575757:00340000:00
+2016.12.16 11:11:24 984 INFO    14 cmd_len=45,cmd_id=2,cmd_status=0,seq_no=1,system_id=smppclient1
+2016.12.16 11:11:24 984 INFO    14 password=password,system_type=WWW,interface_version=52,addr_ton=0,addr_npi=0
+2016.12.16 11:11:24 984 INFO    14 address_range=
+2016.12.16 11:11:24 984 INFO    14  
+2016.12.16 11:11:24 984 INFO    14 New transmitter session bound to SMPPSim
+2016.12.16 11:11:24 984 INFO    14 : BIND_TRANSMITTER_RESP:
+2016.12.16 11:11:24 984 INFO    14 Hex dump (24) bytes:
+2016.12.16 11:11:24 984 INFO    14 00000018:80000002:00000000:00000001:
+2016.12.16 11:11:24 984 INFO    14 534D5050:53696D00:
+2016.12.16 11:11:24 984 INFO    14 cmd_len=0,cmd_id=-2147483646,cmd_status=0,seq_no=1,system_id=SMPPSim
+2016.12.16 11:11:24 984 INFO    14  
+2016.12.16 11:11:24 985 INFO    14 : Standard SUBMIT_SM:
+2016.12.16 11:11:24 985 INFO    14 Hex dump (60) bytes:
+2016.12.16 11:11:24 985 INFO    14 0000003C:00000004:00000000:00000002:
+2016.12.16 11:11:24 985 INFO    14 00050054:65737446:726F6D58:00010131:
+2016.12.16 11:11:24 985 INFO    14 32333132:33000000:00000001:0000000C:
+2016.12.16 11:11:24 985 INFO    14 54657374:204D6573:73616765:
+2016.12.16 11:11:24 985 INFO    14 cmd_len=60,cmd_id=4,cmd_status=0,seq_no=2,service_type=,source_addr_ton=5
+2016.12.16 11:11:24 986 INFO    14 source_addr_npi=0,source_addr=TestFromX,dest_addr_ton=1,dest_addr_npi=1
+2016.12.16 11:11:24 986 INFO    14 dest_addr=123123,esm_class=0,protocol_ID=0,priority_flag=0
+2016.12.16 11:11:24 986 INFO    14 schedule_delivery_time=,validity_period=,registered_delivery_flag=1
+2016.12.16 11:11:24 986 INFO    14 replace_if_present_flag=0,data_coding=0,sm_default_msg_id=0,sm_length=12
+2016.12.16 11:11:24 986 INFO    14 short_message=Test Message
+2016.12.16 11:11:24 986 INFO    14  
+2016.12.16 11:11:24 986 INFO    14 Validity period is not set: defaulting to 5 minutes from now
+2016.12.16 11:11:24 986 INFO    14 Generated default validity period=161216111624000+
+2016.12.16 11:11:24 986 INFO    14 :SUBMIT_SM_RESP:
+2016.12.16 11:11:24 986 INFO    14 Hex dump (19) bytes:
+2016.12.16 11:11:24 986 INFO    14 00000013:80000004:00000000:00000002:
+2016.12.16 11:11:24 986 INFO    14 333100
+2016.12.16 11:11:24 987 INFO    14 cmd_len=0,cmd_id=-2147483644,cmd_status=0,seq_no=2,message_id=31
+2016.12.16 11:11:24 987 INFO    14  
+2016.12.16 11:11:24 987 INFO    14 SubmitSM processing - response written to connection
+2016.12.16 11:11:24 987 INFO    14 : UNBIND:
+2016.12.16 11:11:24 988 INFO    14 Hex dump (16) bytes:
+2016.12.16 11:11:24 988 INFO    14 00000010:00000006:00000000:00000003:
+2016.12.16 11:11:24 988 INFO    14 
+2016.12.16 11:11:24 988 INFO    14 cmd_len=16,cmd_id=6,cmd_status=0,seq_no=3
+2016.12.16 11:11:24 988 INFO    14  
+2016.12.16 11:11:24 988 INFO    14 : UNBIND_RESP
+2016.12.16 11:11:24 988 INFO    14 Hex dump (16) bytes:
+2016.12.16 11:11:24 988 INFO    14 00000010:80000006:00000000:00000003:
+2016.12.16 11:11:24 988 INFO    14 
+2016.12.16 11:11:24 988 INFO    14 cmd_len=0,cmd_id=-2147483642,cmd_status=0,seq_no=3
+2016.12.16 11:11:24 988 INFO    14  
+2016.12.16 11:11:24 988 INFO    14 StandardConnectionHandler waiting for connection
+2016.12.16 11:11:27 809 INFO    22 Assessing state of 2 messages in the OutboundQueue
+2016.12.16 11:11:27 810 INFO    22 Message:2 state=DELIVERED
+2016.12.16 11:11:27 810 INFO    22 Delivery Receipt requested
+2016.12.16 11:11:27 810 INFO    21 InboundQueue: no available receiver sessions - moving message(s) to pending queue
+2016.12.16 11:11:27 810 INFO    21 Moved 1 MO messages to the pending queue
+2016.12.16 11:11:32 812 INFO    22 Assessing state of 1 messages in the OutboundQueue
+2016.12.16 11:11:37 816 INFO    22 Assessing state of 1 messages in the OutboundQueue
+2016.12.16 11:11:42 820 INFO    22 Assessing state of 1 messages in the OutboundQueue
+2016.12.16 11:11:47 826 INFO    22 Assessing state of 1 messages in the OutboundQueue
+2016.12.16 11:11:52 829 INFO    22 Assessing state of 1 messages in the OutboundQueue
+2016.12.16 11:11:53 617 INFO    24 Processing 0 messages in the delayed inbound queue
+2016.12.16 11:11:57 833 INFO    22 Assessing state of 1 messages in the OutboundQueue
+2016.12.16 11:12:02 838 INFO    22 Assessing state of 1 messages in the OutboundQueue
+2016.12.16 11:12:07 841 INFO    22 Assessing state of 1 messages in the OutboundQueue
+2016.12.16 11:12:12 842 INFO    22 Assessing state of 1 messages in the OutboundQueue
+2016.12.16 11:12:17 843 INFO    22 Assessing state of 1 messages in the OutboundQueue
+2016.12.16 11:12:22 843 INFO    22 Assessing state of 1 messages in the OutboundQueue
+2016.12.16 11:12:27 849 INFO    22 Assessing state of 1 messages in the OutboundQueue
+2016.12.16 11:12:32 853 INFO    22 Lifecycle Service: OutboundQueue is empty  - waiting
+2016.12.16 11:12:53 623 INFO    24 Processing 0 messages in the delayed inbound queue
+2016.12.16 11:13:53 627 INFO    24 Processing 0 messages in the delayed inbound queue
+2016.12.16 11:14:53 634 INFO    24 Processing 0 messages in the delayed inbound queue
+2016.12.16 11:15:07 856 INFO    14 StandardConnectionHandler accepted a connection
+2016.12.16 11:15:07 857 INFO    14 Protocol handler is of type StandardProtocolHandler
+2016.12.16 11:15:07 857 INFO    14 : BIND_TRANSMITTER:
+2016.12.16 11:15:07 857 INFO    14 Hex dump (45) bytes:
+2016.12.16 11:15:07 857 INFO    14 0000002D:00000002:00000000:00000001:
+2016.12.16 11:15:07 857 INFO    14 736D7070:636C6965:6E743100:70617373:
+2016.12.16 11:15:07 857 INFO    14 776F7264:00575757:00340000:00
+2016.12.16 11:15:07 857 INFO    14 cmd_len=45,cmd_id=2,cmd_status=0,seq_no=1,system_id=smppclient1
+2016.12.16 11:15:07 857 INFO    14 password=password,system_type=WWW,interface_version=52,addr_ton=0,addr_npi=0
+2016.12.16 11:15:07 857 INFO    14 address_range=
+2016.12.16 11:15:07 857 INFO    14  
+2016.12.16 11:15:07 857 INFO    14 New transmitter session bound to SMPPSim
+2016.12.16 11:15:07 857 INFO    14 : BIND_TRANSMITTER_RESP:
+2016.12.16 11:15:07 857 INFO    14 Hex dump (24) bytes:
+2016.12.16 11:15:07 857 INFO    14 00000018:80000002:00000000:00000001:
+2016.12.16 11:15:07 858 INFO    14 534D5050:53696D00:
+2016.12.16 11:15:07 858 INFO    14 cmd_len=0,cmd_id=-2147483646,cmd_status=0,seq_no=1,system_id=SMPPSim
+2016.12.16 11:15:07 858 INFO    14  
+2016.12.16 11:15:07 859 INFO    14 : Standard SUBMIT_SM:
+2016.12.16 11:15:07 859 INFO    14 Hex dump (45) bytes:
+2016.12.16 11:15:07 859 INFO    14 0000002D:00000004:00000000:00000002:
+2016.12.16 11:15:07 859 INFO    14 00050000:01010000:00000000:01000000:
+2016.12.16 11:15:07 859 INFO    14 0C546573:74204D65:73736167:65
+2016.12.16 11:15:07 859 INFO    14 cmd_len=45,cmd_id=4,cmd_status=0,seq_no=2,service_type=,source_addr_ton=5
+2016.12.16 11:15:07 859 INFO    14 source_addr_npi=0,source_addr=,dest_addr_ton=1,dest_addr_npi=1,dest_addr=
+2016.12.16 11:15:07 859 INFO    14 esm_class=0,protocol_ID=0,priority_flag=0,schedule_delivery_time=
+2016.12.16 11:15:07 859 INFO    14 validity_period=,registered_delivery_flag=1,replace_if_present_flag=0
+2016.12.16 11:15:07 859 INFO    14 data_coding=0,sm_default_msg_id=0,sm_length=12,short_message=Test Message
+2016.12.16 11:15:07 859 INFO    14  
+2016.12.16 11:15:07 859 INFO    14 :SUBMIT_SM_RESP (ESME_RINVDSTADR):
+2016.12.16 11:15:07 859 INFO    14 Hex dump (16) bytes:
+2016.12.16 11:15:07 860 INFO    14 00000010:80000004:0000000B:00000002:
+2016.12.16 11:15:07 860 INFO    14 
+2016.12.16 11:15:07 860 INFO    14 cmd_len=16,cmd_id=-2147483644,cmd_status=11,seq_no=2,message_id=32
+2016.12.16 11:15:07 895 INFO    14 : Standard SUBMIT_SM:
+2016.12.16 11:15:07 896 INFO    14 Hex dump (45) bytes:
+2016.12.16 11:15:07 896 INFO    14 0000002D:00000004:00000000:00000002:
+2016.12.16 11:15:07 896 INFO    14 00050000:01010000:00000000:01000000:
+2016.12.16 11:15:07 896 INFO    14 0C546573:74204D65:73736167:65
+2016.12.16 11:15:07 896 INFO    14 cmd_len=45,cmd_id=4,cmd_status=0,seq_no=2,service_type=,source_addr_ton=5
+2016.12.16 11:15:07 896 INFO    14 source_addr_npi=0,source_addr=,dest_addr_ton=1,dest_addr_npi=1,dest_addr=
+2016.12.16 11:15:07 896 INFO    14 esm_class=0,protocol_ID=0,priority_flag=0,schedule_delivery_time=
+2016.12.16 11:15:07 896 INFO    14 validity_period=,registered_delivery_flag=1,replace_if_present_flag=0
+2016.12.16 11:15:07 896 INFO    14 data_coding=0,sm_default_msg_id=0,sm_length=12,short_message=Test Message
+2016.12.16 11:15:07 896 INFO    14  
+2016.12.16 11:15:07 896 INFO    14 :SUBMIT_SM_RESP (ESME_RINVDSTADR):
+2016.12.16 11:15:07 896 INFO    14 Hex dump (16) bytes:
+2016.12.16 11:15:07 896 INFO    14 00000010:80000004:0000000B:00000002:
+2016.12.16 11:15:07 896 INFO    14 
+2016.12.16 11:15:07 896 INFO    14 cmd_len=16,cmd_id=-2147483644,cmd_status=11,seq_no=2,message_id=33
+2016.12.16 11:15:07 897 INFO    14 : Standard SUBMIT_SM:
+2016.12.16 11:15:07 897 INFO    14 Hex dump (45) bytes:
+2016.12.16 11:15:07 897 INFO    14 0000002D:00000004:00000000:00000002:
+2016.12.16 11:15:07 897 INFO    14 00050000:01010000:00000000:01000000:
+2016.12.16 11:15:07 897 INFO    14 0C546573:74204D65:73736167:65
+2016.12.16 11:15:07 897 INFO    14 cmd_len=45,cmd_id=4,cmd_status=0,seq_no=2,service_type=,source_addr_ton=5
+2016.12.16 11:15:07 897 INFO    14 source_addr_npi=0,source_addr=,dest_addr_ton=1,dest_addr_npi=1,dest_addr=
+2016.12.16 11:15:07 897 INFO    14 esm_class=0,protocol_ID=0,priority_flag=0,schedule_delivery_time=
+2016.12.16 11:15:07 897 INFO    14 validity_period=,registered_delivery_flag=1,replace_if_present_flag=0
+2016.12.16 11:15:07 897 INFO    14 data_coding=0,sm_default_msg_id=0,sm_length=12,short_message=Test Message
+2016.12.16 11:15:07 897 INFO    14  
+2016.12.16 11:15:07 897 INFO    14 :SUBMIT_SM_RESP (ESME_RINVDSTADR):
+2016.12.16 11:15:07 897 INFO    14 Hex dump (16) bytes:
+2016.12.16 11:15:07 897 INFO    14 00000010:80000004:0000000B:00000002:
+2016.12.16 11:15:07 897 INFO    14 
+2016.12.16 11:15:07 897 INFO    14 cmd_len=16,cmd_id=-2147483644,cmd_status=11,seq_no=2,message_id=34
+2016.12.16 11:15:07 897 INFO    14 : Standard SUBMIT_SM:
+2016.12.16 11:15:07 897 INFO    14 Hex dump (45) bytes:
+2016.12.16 11:15:07 897 INFO    14 0000002D:00000004:00000000:00000002:
+2016.12.16 11:15:07 897 INFO    14 00050000:01010000:00000000:01000000:
+2016.12.16 11:15:07 897 INFO    14 0C546573:74204D65:73736167:65
+2016.12.16 11:15:07 898 INFO    14 cmd_len=45,cmd_id=4,cmd_status=0,seq_no=2,service_type=,source_addr_ton=5
+2016.12.16 11:15:07 898 INFO    14 source_addr_npi=0,source_addr=,dest_addr_ton=1,dest_addr_npi=1,dest_addr=
+2016.12.16 11:15:07 898 INFO    14 esm_class=0,protocol_ID=0,priority_flag=0,schedule_delivery_time=
+2016.12.16 11:15:07 898 INFO    14 validity_period=,registered_delivery_flag=1,replace_if_present_flag=0
+2016.12.16 11:15:07 898 INFO    14 data_coding=0,sm_default_msg_id=0,sm_length=12,short_message=Test Message
+2016.12.16 11:15:07 898 INFO    14  
+2016.12.16 11:15:07 898 INFO    14 :SUBMIT_SM_RESP (ESME_RINVDSTADR):
+2016.12.16 11:15:07 898 INFO    14 Hex dump (16) bytes:
+2016.12.16 11:15:07 898 INFO    14 00000010:80000004:0000000B:00000002:
+2016.12.16 11:15:07 898 INFO    14 
+2016.12.16 11:15:07 898 INFO    14 cmd_len=16,cmd_id=-2147483644,cmd_status=11,seq_no=2,message_id=35
+2016.12.16 11:15:07 898 INFO    14 Socket exception: probably connection closed by client without UNBIND
+2016.12.16 11:15:07 898 INFO    14 StandardConnectionHandler waiting for connection
+2016.12.16 11:15:07 908 INFO    16 StandardConnectionHandler accepted a connection
+2016.12.16 11:15:07 911 INFO    16 Protocol handler is of type StandardProtocolHandler
+2016.12.16 11:15:07 912 INFO    16 : BIND_TRANSMITTER:
+2016.12.16 11:15:07 912 INFO    16 Hex dump (45) bytes:
+2016.12.16 11:15:07 912 INFO    16 0000002D:00000002:00000000:00000001:
+2016.12.16 11:15:07 912 INFO    16 736D7070:636C6965:6E743100:70617373:
+2016.12.16 11:15:07 912 INFO    16 776F7264:00575757:00340000:00
+2016.12.16 11:15:07 912 INFO    16 cmd_len=45,cmd_id=2,cmd_status=0,seq_no=1,system_id=smppclient1
+2016.12.16 11:15:07 912 INFO    16 password=password,system_type=WWW,interface_version=52,addr_ton=0,addr_npi=0
+2016.12.16 11:15:07 912 INFO    16 address_range=
+2016.12.16 11:15:07 912 INFO    16  
+2016.12.16 11:15:07 912 INFO    16 New transmitter session bound to SMPPSim
+2016.12.16 11:15:07 912 INFO    16 : BIND_TRANSMITTER_RESP:
+2016.12.16 11:15:07 912 INFO    16 Hex dump (24) bytes:
+2016.12.16 11:15:07 912 INFO    16 00000018:80000002:00000000:00000001:
+2016.12.16 11:15:07 912 INFO    16 534D5050:53696D00:
+2016.12.16 11:15:07 912 INFO    16 cmd_len=0,cmd_id=-2147483646,cmd_status=0,seq_no=1,system_id=SMPPSim
+2016.12.16 11:15:07 912 INFO    16  
+2016.12.16 11:15:07 913 INFO    16 : Standard SUBMIT_SM:
+2016.12.16 11:15:07 914 INFO    16 Hex dump (60) bytes:
+2016.12.16 11:15:07 914 INFO    16 0000003C:00000004:00000000:00000002:
+2016.12.16 11:15:07 914 INFO    16 00050054:65737446:726F6D58:00010131:
+2016.12.16 11:15:07 914 INFO    16 32333132:33000000:00000001:0000000C:
+2016.12.16 11:15:07 914 INFO    16 54657374:204D6573:73616765:
+2016.12.16 11:15:07 914 INFO    16 cmd_len=60,cmd_id=4,cmd_status=0,seq_no=2,service_type=,source_addr_ton=5
+2016.12.16 11:15:07 914 INFO    16 source_addr_npi=0,source_addr=TestFromX,dest_addr_ton=1,dest_addr_npi=1
+2016.12.16 11:15:07 914 INFO    16 dest_addr=123123,esm_class=0,protocol_ID=0,priority_flag=0
+2016.12.16 11:15:07 914 INFO    16 schedule_delivery_time=,validity_period=,registered_delivery_flag=1
+2016.12.16 11:15:07 914 INFO    16 replace_if_present_flag=0,data_coding=0,sm_default_msg_id=0,sm_length=12
+2016.12.16 11:15:07 914 INFO    16 short_message=Test Message
+2016.12.16 11:15:07 914 INFO    16  
+2016.12.16 11:15:07 914 INFO    16 Validity period is not set: defaulting to 5 minutes from now
+2016.12.16 11:15:07 915 INFO    16 Generated default validity period=161216112007000+
+2016.12.16 11:15:07 915 INFO    16 :SUBMIT_SM_RESP:
+2016.12.16 11:15:07 915 INFO    22 Assessing state of 1 messages in the OutboundQueue
+2016.12.16 11:15:07 915 INFO    16 Hex dump (19) bytes:
+2016.12.16 11:15:07 915 INFO    16 00000013:80000004:00000000:00000002:
+2016.12.16 11:15:07 915 INFO    16 333600
+2016.12.16 11:15:07 915 INFO    16 cmd_len=0,cmd_id=-2147483644,cmd_status=0,seq_no=2,message_id=36
+2016.12.16 11:15:07 915 INFO    16  
+2016.12.16 11:15:07 915 INFO    16 SubmitSM processing - response written to connection
+2016.12.16 11:15:07 916 INFO    16 : UNBIND:
+2016.12.16 11:15:07 916 INFO    16 Hex dump (16) bytes:
+2016.12.16 11:15:07 916 INFO    16 00000010:00000006:00000000:00000003:
+2016.12.16 11:15:07 916 INFO    16 
+2016.12.16 11:15:07 916 INFO    16 cmd_len=16,cmd_id=6,cmd_status=0,seq_no=3
+2016.12.16 11:15:07 916 INFO    16  
+2016.12.16 11:15:07 916 INFO    16 : UNBIND_RESP
+2016.12.16 11:15:07 916 INFO    16 Hex dump (16) bytes:
+2016.12.16 11:15:07 916 INFO    16 00000010:80000006:00000000:00000003:
+2016.12.16 11:15:07 916 INFO    16 
+2016.12.16 11:15:07 916 INFO    16 cmd_len=0,cmd_id=-2147483642,cmd_status=0,seq_no=3
+2016.12.16 11:15:07 916 INFO    16  
+2016.12.16 11:15:07 916 INFO    16 StandardConnectionHandler waiting for connection
+2016.12.16 11:15:12 920 INFO    22 Assessing state of 1 messages in the OutboundQueue
+2016.12.16 11:15:17 920 INFO    22 Assessing state of 1 messages in the OutboundQueue
+2016.12.16 11:15:17 922 INFO    22 Message:2 state=DELIVERED
+2016.12.16 11:15:17 922 INFO    22 Delivery Receipt requested
+2016.12.16 11:15:17 922 INFO    21 InboundQueue: no available receiver sessions - moving message(s) to pending queue
+2016.12.16 11:15:17 922 INFO    21 Moved 1 MO messages to the pending queue
+2016.12.16 11:15:22 923 INFO    22 Assessing state of 1 messages in the OutboundQueue
+2016.12.16 11:15:27 927 INFO    22 Assessing state of 1 messages in the OutboundQueue
+2016.12.16 11:15:32 932 INFO    22 Assessing state of 1 messages in the OutboundQueue
+2016.12.16 11:15:37 933 INFO    22 Assessing state of 1 messages in the OutboundQueue
+2016.12.16 11:15:42 937 INFO    22 Assessing state of 1 messages in the OutboundQueue
+2016.12.16 11:15:47 941 INFO    22 Assessing state of 1 messages in the OutboundQueue
+2016.12.16 11:15:52 945 INFO    22 Assessing state of 1 messages in the OutboundQueue
+2016.12.16 11:15:53 641 INFO    24 Processing 0 messages in the delayed inbound queue
+2016.12.16 11:15:57 949 INFO    22 Assessing state of 1 messages in the OutboundQueue
+2016.12.16 11:16:02 952 INFO    22 Assessing state of 1 messages in the OutboundQueue
+2016.12.16 11:16:07 957 INFO    22 Assessing state of 1 messages in the OutboundQueue
+2016.12.16 11:16:12 960 INFO    22 Lifecycle Service: OutboundQueue is empty  - waiting
+2016.12.16 11:16:53 647 INFO    24 Processing 0 messages in the delayed inbound queue
+2016.12.16 11:17:53 656 INFO    24 Processing 0 messages in the delayed inbound queue
+2016.12.16 11:18:53 660 INFO    24 Processing 0 messages in the delayed inbound queue
+2016.12.16 11:19:05 661 INFO    16 StandardConnectionHandler accepted a connection
+2016.12.16 11:19:05 661 INFO    16 Protocol handler is of type StandardProtocolHandler
+2016.12.16 11:19:05 663 INFO    16 : BIND_RECEIVER:
+2016.12.16 11:19:05 663 INFO    16 Hex dump (45) bytes:
+2016.12.16 11:19:05 663 INFO    16 0000002D:00000001:00000000:00000001:
+2016.12.16 11:19:05 663 INFO    16 736D7070:636C6965:6E743100:70617373:
+2016.12.16 11:19:05 664 INFO    16 776F7264:00575757:00340000:00
+2016.12.16 11:19:05 664 INFO    16 cmd_len=45,cmd_id=1,cmd_status=0,seq_no=1,system_id=smppclient1
+2016.12.16 11:19:05 664 INFO    16 password=password,system_type=WWW,interface_version=52,addr_ton=0,addr_npi=0
+2016.12.16 11:19:05 664 INFO    16 address_range=
+2016.12.16 11:19:05 664 INFO    16  
+2016.12.16 11:19:05 664 INFO    16 StandardProtocolHandler: setting address range to 
+2016.12.16 11:19:05 669 INFO    16 New receiver session bound to SMPPSim
+2016.12.16 11:19:05 669 INFO    16 : BIND_RECEIVER_RESP:
+2016.12.16 11:19:05 669 INFO    16 Hex dump (24) bytes:
+2016.12.16 11:19:05 669 INFO    16 00000018:80000001:00000000:00000001:
+2016.12.16 11:19:05 669 INFO    16 534D5050:53696D00:
+2016.12.16 11:19:05 670 INFO    16 cmd_len=0,cmd_id=-2147483647,cmd_status=0,seq_no=1,system_id=SMPPSim
+2016.12.16 11:19:05 670 INFO    16  
+2016.12.16 11:19:05 670 INFO    16 DELIVER_SM (receipt):
+2016.12.16 11:19:05 670 INFO    16 Hex dump (169) bytes:
+2016.12.16 11:19:05 670 INFO    16 000000A9:00000005:00000000:00000001:
+2016.12.16 11:19:05 670 INFO    16 00010131:32333132:33000500:00040000:
+2016.12.16 11:19:05 670 INFO    16 00000000:00006969:643A3420:7375623A:
+2016.12.16 11:19:05 670 INFO    16 30303120:646C7672:643A3030:31207375:
+2016.12.16 11:19:05 670 INFO    16 626D6974:20646174:653A3136:31323136:
+2016.12.16 11:19:05 670 INFO    16 31313037:20646F6E:65206461:74653A31:
+2016.12.16 11:19:05 670 INFO    16 36313231:36313130:37207374:61743A44:
+2016.12.16 11:19:05 670 INFO    16 454C4956:52442065:72723A30:30302054:
+2016.12.16 11:19:05 670 INFO    16 6578743A:54657374:204D6573:73616765:
+2016.12.16 11:19:05 670 INFO    16 001E0002:34000427:00010214:03000A34:
+2016.12.16 11:19:05 670 INFO    16 34313233:34353637:38
+2016.12.16 11:19:05 671 INFO    16 cmd_len=0,cmd_id=5,cmd_status=0,seq_no=1,service_type=,source_addr_ton=1
+2016.12.16 11:19:05 671 INFO    16 source_addr_npi=1,source_addr=123123,dest_addr_ton=5,dest_addr_npi=0
+2016.12.16 11:19:05 671 INFO    16 destination_addr=,esm_class=4,protocol_ID=0,priority_flag=0
+2016.12.16 11:19:05 671 INFO    16 schedule_delivery_time=,validity_period=,registered_delivery_flag=0
+2016.12.16 11:19:05 671 INFO    16 replace_if_present_flag=0,data_coding=0,sm_default_msg_id=0,sm_length=105
+2016.12.16 11:19:05 671 INFO    16 short_message=id:4 sub:001 dlvrd:001 submit date:1612161107 done date:1612161107 stat:DELIVRD err:000 Text:Test Message
+2016.12.16 11:19:05 671 INFO    16 TLV=30/2/3400,TLV=1063/1/02,TLV=5123/10/34343132333435363738
+2016.12.16 11:19:05 671 INFO    16  
+2016.12.16 11:19:05 671 INFO    16 DELIVER_SM (receipt):
+2016.12.16 11:19:05 671 INFO    16 Hex dump (176) bytes:
+2016.12.16 11:19:05 671 INFO    16 000000B0:00000005:00000000:00000002:
+2016.12.16 11:19:05 671 INFO    16 00010131:32333132:33000500:00040000:
+2016.12.16 11:19:05 672 INFO    16 00000000:00006969:643A3920:7375623A:
+2016.12.16 11:19:05 672 INFO    16 30303120:646C7672:643A3030:31207375:
+2016.12.16 11:19:05 672 INFO    16 626D6974:20646174:653A3136:31323136:
+2016.12.16 11:19:05 672 INFO    16 31313037:20646F6E:65206461:74653A31:
+2016.12.16 11:19:05 672 INFO    16 36313231:36313130:37207374:61743A55:
+2016.12.16 11:19:05 672 INFO    16 4E44454C:49562065:72723A30:30302054:
+2016.12.16 11:19:05 672 INFO    16 6578743A:54657374:204D6573:73616765:
+2016.12.16 11:19:05 672 INFO    16 001E0002:39000427:00010504:23000303:
+2016.12.16 11:19:05 672 INFO    16 00011403:000A3434:31323334:35363738:
+2016.12.16 11:19:05 672 INFO    16 
+2016.12.16 11:19:05 672 INFO    16 cmd_len=0,cmd_id=5,cmd_status=0,seq_no=2,service_type=,source_addr_ton=1
+2016.12.16 11:19:05 672 INFO    16 source_addr_npi=1,source_addr=123123,dest_addr_ton=5,dest_addr_npi=0
+2016.12.16 11:19:05 672 INFO    16 destination_addr=,esm_class=4,protocol_ID=0,priority_flag=0
+2016.12.16 11:19:05 672 INFO    16 schedule_delivery_time=,validity_period=,registered_delivery_flag=0
+2016.12.16 11:19:05 672 INFO    16 replace_if_present_flag=0,data_coding=0,sm_default_msg_id=0,sm_length=105
+2016.12.16 11:19:05 672 INFO    16 short_message=id:9 sub:001 dlvrd:001 submit date:1612161107 done date:1612161107 stat:UNDELIV err:000 Text:Test Message
+2016.12.16 11:19:05 672 INFO    16 TLV=30/2/3900,TLV=1063/1/05,TLV=1059/3/030001,TLV=5123/10/34343132333435363738
+2016.12.16 11:19:05 672 INFO    16  
+2016.12.16 11:19:05 673 INFO    16 DELIVER_SM (receipt):
+2016.12.16 11:19:05 673 INFO    16 Hex dump (174) bytes:
+2016.12.16 11:19:05 673 INFO    16 000000AE:00000005:00000000:00000003:
+2016.12.16 11:19:05 673 INFO    16 00010131:32333435:36373839:00050000:
+2016.12.16 11:19:05 673 INFO    16 04000000:00000000:006A6964:3A313020:
+2016.12.16 11:19:05 673 INFO    16 7375623A:30303120:646C7672:643A3030:
+2016.12.16 11:19:05 673 INFO    16 31207375:626D6974:20646174:653A3136:
+2016.12.16 11:19:05 673 INFO    16 31323136:31313038:20646F6E:65206461:
+2016.12.16 11:19:05 673 INFO    16 74653A31:36313231:36313130:38207374:
+2016.12.16 11:19:05 673 INFO    16 61743A44:454C4956:52442065:72723A30:
+2016.12.16 11:19:05 673 INFO    16 30302054:6578743A:54657374:204D6573:
+2016.12.16 11:19:05 673 INFO    16 73616765:001E0003:31300004:27000102:
+2016.12.16 11:19:05 673 INFO    16 1403000A:34343132:33343536:3738
+2016.12.16 11:19:05 673 INFO    16 cmd_len=0,cmd_id=5,cmd_status=0,seq_no=3,service_type=,source_addr_ton=1
+2016.12.16 11:19:05 673 INFO    16 source_addr_npi=1,source_addr=123456789,dest_addr_ton=5,dest_addr_npi=0
+2016.12.16 11:19:05 673 INFO    16 destination_addr=,esm_class=4,protocol_ID=0,priority_flag=0
+2016.12.16 11:19:05 673 INFO    16 schedule_delivery_time=,validity_period=,registered_delivery_flag=0
+2016.12.16 11:19:05 673 INFO    16 replace_if_present_flag=0,data_coding=0,sm_default_msg_id=0,sm_length=106
+2016.12.16 11:19:05 673 INFO    16 short_message=id:10 sub:001 dlvrd:001 submit date:1612161108 done date:1612161108 stat:DELIVRD err:000 Text:Test Message
+2016.12.16 11:19:05 673 INFO    16 TLV=30/3/313000,TLV=1063/1/02,TLV=5123/10/34343132333435363738
+2016.12.16 11:19:05 673 INFO    16  
+2016.12.16 11:19:05 674 INFO    16 DELIVER_SM (receipt):
+2016.12.16 11:19:05 674 INFO    16 Hex dump (171) bytes:
+2016.12.16 11:19:05 674 INFO    16 000000AB:00000005:00000000:00000004:
+2016.12.16 11:19:05 674 INFO    16 00010131:32333132:33000500:00040000:
+2016.12.16 11:19:05 674 INFO    16 00000000:00006A69:643A3131:20737562:
+2016.12.16 11:19:05 674 INFO    16 3A303031:20646C76:72643A30:30312073:
+2016.12.16 11:19:05 674 INFO    16 75626D69:74206461:74653A31:36313231:
+2016.12.16 11:19:05 674 INFO    16 36313130:3820646F:6E652064:6174653A:
+2016.12.16 11:19:05 674 INFO    16 31363132:31363131:30382073:7461743A:
+2016.12.16 11:19:05 674 INFO    16 44454C49:56524420:6572723A:30303020:
+2016.12.16 11:19:05 674 INFO    16 54657874:3A546573:74204D65:73736167:
+2016.12.16 11:19:05 674 INFO    16 65001E00:03313100:04270001:02140300:
+2016.12.16 11:19:05 674 INFO    16 0A343431:32333435:363738
+2016.12.16 11:19:05 675 INFO    16 cmd_len=0,cmd_id=5,cmd_status=0,seq_no=4,service_type=,source_addr_ton=1
+2016.12.16 11:19:05 675 INFO    16 source_addr_npi=1,source_addr=123123,dest_addr_ton=5,dest_addr_npi=0
+2016.12.16 11:19:05 675 INFO    16 destination_addr=,esm_class=4,protocol_ID=0,priority_flag=0
+2016.12.16 11:19:05 675 INFO    16 schedule_delivery_time=,validity_period=,registered_delivery_flag=0
+2016.12.16 11:19:05 675 INFO    16 replace_if_present_flag=0,data_coding=0,sm_default_msg_id=0,sm_length=106
+2016.12.16 11:19:05 675 INFO    16 short_message=id:11 sub:001 dlvrd:001 submit date:1612161108 done date:1612161108 stat:DELIVRD err:000 Text:Test Message
+2016.12.16 11:19:05 675 INFO    16 TLV=30/3/313100,TLV=1063/1/02,TLV=5123/10/34343132333435363738
+2016.12.16 11:19:05 675 INFO    16  
+2016.12.16 11:19:05 675 INFO    16 DELIVER_SM (receipt):
+2016.12.16 11:19:05 675 INFO    16 Hex dump (174) bytes:
+2016.12.16 11:19:05 675 INFO    16 000000AE:00000005:00000000:00000005:
+2016.12.16 11:19:05 676 INFO    16 00010131:32333435:36373839:00050000:
+2016.12.16 11:19:05 676 INFO    16 04000000:00000000:006A6964:3A313220:
+2016.12.16 11:19:05 676 INFO    16 7375623A:30303120:646C7672:643A3030:
+2016.12.16 11:19:05 676 INFO    16 31207375:626D6974:20646174:653A3136:
+2016.12.16 11:19:05 676 INFO    16 31323136:31313038:20646F6E:65206461:
+2016.12.16 11:19:05 676 INFO    16 74653A31:36313231:36313130:38207374:
+2016.12.16 11:19:05 676 INFO    16 61743A44:454C4956:52442065:72723A30:
+2016.12.16 11:19:05 676 INFO    16 30302054:6578743A:54657374:204D6573:
+2016.12.16 11:19:05 676 INFO    16 73616765:001E0003:31320004:27000102:
+2016.12.16 11:19:05 676 INFO    16 1403000A:34343132:33343536:3738
+2016.12.16 11:19:05 676 INFO    16 cmd_len=0,cmd_id=5,cmd_status=0,seq_no=5,service_type=,source_addr_ton=1
+2016.12.16 11:19:05 676 INFO    16 source_addr_npi=1,source_addr=123456789,dest_addr_ton=5,dest_addr_npi=0
+2016.12.16 11:19:05 676 INFO    16 destination_addr=,esm_class=4,protocol_ID=0,priority_flag=0
+2016.12.16 11:19:05 676 INFO    16 schedule_delivery_time=,validity_period=,registered_delivery_flag=0
+2016.12.16 11:19:05 676 INFO    16 replace_if_present_flag=0,data_coding=0,sm_default_msg_id=0,sm_length=106
+2016.12.16 11:19:05 676 INFO    16 short_message=id:12 sub:001 dlvrd:001 submit date:1612161108 done date:1612161108 stat:DELIVRD err:000 Text:Test Message
+2016.12.16 11:19:05 676 INFO    16 TLV=30/3/313200,TLV=1063/1/02,TLV=5123/10/34343132333435363738
+2016.12.16 11:19:05 676 INFO    16  
+2016.12.16 11:19:05 677 INFO    16 DELIVER_SM (receipt):
+2016.12.16 11:19:05 677 INFO    16 Hex dump (171) bytes:
+2016.12.16 11:19:05 677 INFO    16 000000AB:00000005:00000000:00000006:
+2016.12.16 11:19:05 677 INFO    16 00010131:32333132:33000500:00040000:
+2016.12.16 11:19:05 677 INFO    16 00000000:00006A69:643A3133:20737562:
+2016.12.16 11:19:05 677 INFO    16 3A303031:20646C76:72643A30:30312073:
+2016.12.16 11:19:05 677 INFO    16 75626D69:74206461:74653A31:36313231:
+2016.12.16 11:19:05 677 INFO    16 36313130:3820646F:6E652064:6174653A:
+2016.12.16 11:19:05 677 INFO    16 31363132:31363131:30382073:7461743A:
+2016.12.16 11:19:05 677 INFO    16 44454C49:56524420:6572723A:30303020:
+2016.12.16 11:19:05 677 INFO    16 54657874:3A546573:74204D65:73736167:
+2016.12.16 11:19:05 677 INFO    16 65001E00:03313300:04270001:02140300:
+2016.12.16 11:19:05 677 INFO    16 0A343431:32333435:363738
+2016.12.16 11:19:05 677 INFO    16 cmd_len=0,cmd_id=5,cmd_status=0,seq_no=6,service_type=,source_addr_ton=1
+2016.12.16 11:19:05 678 INFO    16 source_addr_npi=1,source_addr=123123,dest_addr_ton=5,dest_addr_npi=0
+2016.12.16 11:19:05 678 INFO    16 destination_addr=,esm_class=4,protocol_ID=0,priority_flag=0
+2016.12.16 11:19:05 678 INFO    16 schedule_delivery_time=,validity_period=,registered_delivery_flag=0
+2016.12.16 11:19:05 678 INFO    16 replace_if_present_flag=0,data_coding=0,sm_default_msg_id=0,sm_length=106
+2016.12.16 11:19:05 678 INFO    16 short_message=id:13 sub:001 dlvrd:001 submit date:1612161108 done date:1612161108 stat:DELIVRD err:000 Text:Test Message
+2016.12.16 11:19:05 678 INFO    16 TLV=30/3/313300,TLV=1063/1/02,TLV=5123/10/34343132333435363738
+2016.12.16 11:19:05 678 INFO    16  
+2016.12.16 11:19:05 678 INFO    16 DELIVER_SM (receipt):
+2016.12.16 11:19:05 678 INFO    16 Hex dump (171) bytes:
+2016.12.16 11:19:05 678 INFO    16 000000AB:00000005:00000000:00000007:
+2016.12.16 11:19:05 678 INFO    16 00010131:32333132:33000500:00040000:
+2016.12.16 11:19:05 678 INFO    16 00000000:00006A69:643A3231:20737562:
+2016.12.16 11:19:05 678 INFO    16 3A303031:20646C76:72643A30:30312073:
+2016.12.16 11:19:05 678 INFO    16 75626D69:74206461:74653A31:36313231:
+2016.12.16 11:19:05 678 INFO    16 36313131:3020646F:6E652064:6174653A:
+2016.12.16 11:19:05 679 INFO    16 31363132:31363131:31302073:7461743A:
+2016.12.16 11:19:05 679 INFO    16 44454C49:56524420:6572723A:30303020:
+2016.12.16 11:19:05 679 INFO    16 54657874:3A546573:74204D65:73736167:
+2016.12.16 11:19:05 679 INFO    16 65001E00:03323100:04270001:02140300:
+2016.12.16 11:19:05 679 INFO    16 0A343431:32333435:363738
+2016.12.16 11:19:05 679 INFO    16 cmd_len=0,cmd_id=5,cmd_status=0,seq_no=7,service_type=,source_addr_ton=1
+2016.12.16 11:19:05 679 INFO    16 source_addr_npi=1,source_addr=123123,dest_addr_ton=5,dest_addr_npi=0
+2016.12.16 11:19:05 679 INFO    16 destination_addr=,esm_class=4,protocol_ID=0,priority_flag=0
+2016.12.16 11:19:05 679 INFO    16 schedule_delivery_time=,validity_period=,registered_delivery_flag=0
+2016.12.16 11:19:05 679 INFO    16 replace_if_present_flag=0,data_coding=0,sm_default_msg_id=0,sm_length=106
+2016.12.16 11:19:05 679 INFO    16 short_message=id:21 sub:001 dlvrd:001 submit date:1612161110 done date:1612161110 stat:DELIVRD err:000 Text:Test Message
+2016.12.16 11:19:05 679 INFO    16 TLV=30/3/323100,TLV=1063/1/02,TLV=5123/10/34343132333435363738
+2016.12.16 11:19:05 679 INFO    16  
+2016.12.16 11:19:05 679 INFO    16 DELIVER_SM (receipt):
+2016.12.16 11:19:05 679 INFO    16 Hex dump (171) bytes:
+2016.12.16 11:19:05 679 INFO    16 000000AB:00000005:00000000:00000008:
+2016.12.16 11:19:05 680 INFO    16 00010131:32333132:33000500:00040000:
+2016.12.16 11:19:05 680 INFO    16 00000000:00006A69:643A3236:20737562:
+2016.12.16 11:19:05 680 INFO    16 3A303031:20646C76:72643A30:30312073:
+2016.12.16 11:19:05 680 INFO    16 75626D69:74206461:74653A31:36313231:
+2016.12.16 11:19:05 680 INFO    16 36313131:3020646F:6E652064:6174653A:
+2016.12.16 11:19:05 680 INFO    16 31363132:31363131:31302073:7461743A:
+2016.12.16 11:19:05 680 INFO    16 41434345:50544420:6572723A:30303020:
+2016.12.16 11:19:05 680 INFO    16 54657874:3A546573:74204D65:73736167:
+2016.12.16 11:19:05 680 INFO    16 65001E00:03323600:04270001:06140300:
+2016.12.16 11:19:05 680 INFO    16 0A343431:32333435:363738
+2016.12.16 11:19:05 680 INFO    16 cmd_len=0,cmd_id=5,cmd_status=0,seq_no=8,service_type=,source_addr_ton=1
+2016.12.16 11:19:05 680 INFO    16 source_addr_npi=1,source_addr=123123,dest_addr_ton=5,dest_addr_npi=0
+2016.12.16 11:19:05 680 INFO    16 destination_addr=,esm_class=4,protocol_ID=0,priority_flag=0
+2016.12.16 11:19:05 680 INFO    16 schedule_delivery_time=,validity_period=,registered_delivery_flag=0
+2016.12.16 11:19:05 680 INFO    16 replace_if_present_flag=0,data_coding=0,sm_default_msg_id=0,sm_length=106
+2016.12.16 11:19:05 680 INFO    16 short_message=id:26 sub:001 dlvrd:001 submit date:1612161110 done date:1612161110 stat:ACCEPTD err:000 Text:Test Message
+2016.12.16 11:19:05 680 INFO    16 TLV=30/3/323600,TLV=1063/1/06,TLV=5123/10/34343132333435363738
+2016.12.16 11:19:05 680 INFO    16  
+2016.12.16 11:19:05 680 INFO    16 addressIsServicedByReceiver(TestFromX)
+2016.12.16 11:19:05 682 INFO    16 DELIVER_SM (receipt):
+2016.12.16 11:19:05 682 INFO    16 Hex dump (180) bytes:
+2016.12.16 11:19:05 682 INFO    16 000000B4:00000005:00000000:00000009:
+2016.12.16 11:19:05 682 INFO    16 00010131:32333132:33000500:54657374:
+2016.12.16 11:19:05 682 INFO    16 46726F6D:58000400:00000000:0000006A:
+2016.12.16 11:19:05 682 INFO    16 69643A33:31207375:623A3030:3120646C:
+2016.12.16 11:19:05 682 INFO    16 7672643A:30303120:7375626D:69742064:
+2016.12.16 11:19:05 682 INFO    16 6174653A:31363132:31363131:31312064:
+2016.12.16 11:19:05 682 INFO    16 6F6E6520:64617465:3A313631:32313631:
+2016.12.16 11:19:05 682 INFO    16 31313120:73746174:3A44454C:49565244:
+2016.12.16 11:19:05 682 INFO    16 20657272:3A303030:20546578:743A5465:
+2016.12.16 11:19:05 682 INFO    16 7374204D:65737361:6765001E:00033331:
+2016.12.16 11:19:05 682 INFO    16 00042700:01021403:000A3434:31323334:
+2016.12.16 11:19:05 682 INFO    16 35363738:
+2016.12.16 11:19:05 682 INFO    16 cmd_len=0,cmd_id=5,cmd_status=0,seq_no=9,service_type=,source_addr_ton=1
+2016.12.16 11:19:05 683 INFO    16 source_addr_npi=1,source_addr=123123,dest_addr_ton=5,dest_addr_npi=0
+2016.12.16 11:19:05 683 INFO    16 destination_addr=TestFromX,esm_class=4,protocol_ID=0,priority_flag=0
+2016.12.16 11:19:05 683 INFO    16 schedule_delivery_time=,validity_period=,registered_delivery_flag=0
+2016.12.16 11:19:05 683 INFO    16 replace_if_present_flag=0,data_coding=0,sm_default_msg_id=0,sm_length=106
+2016.12.16 11:19:05 683 INFO    16 short_message=id:31 sub:001 dlvrd:001 submit date:1612161111 done date:1612161111 stat:DELIVRD err:000 Text:Test Message
+2016.12.16 11:19:05 683 INFO    16 TLV=30/3/333100,TLV=1063/1/02,TLV=5123/10/34343132333435363738
+2016.12.16 11:19:05 683 INFO    16  
+2016.12.16 11:19:05 683 INFO    16 addressIsServicedByReceiver(TestFromX)
+2016.12.16 11:19:05 684 INFO    16 DELIVER_SM (receipt):
+2016.12.16 11:19:05 684 INFO    16 Hex dump (180) bytes:
+2016.12.16 11:19:05 684 INFO    16 000000B4:00000005:00000000:0000000A:
+2016.12.16 11:19:05 684 INFO    16 00010131:32333132:33000500:54657374:
+2016.12.16 11:19:05 684 INFO    16 46726F6D:58000400:00000000:0000006A:
+2016.12.16 11:19:05 684 INFO    16 69643A33:36207375:623A3030:3120646C:
+2016.12.16 11:19:05 684 INFO    16 7672643A:30303120:7375626D:69742064:
+2016.12.16 11:19:05 684 INFO    16 6174653A:31363132:31363131:31352064:
+2016.12.16 11:19:05 684 INFO    16 6F6E6520:64617465:3A313631:32313631:
+2016.12.16 11:19:05 684 INFO    16 31313520:73746174:3A44454C:49565244:
+2016.12.16 11:19:05 684 INFO    16 20657272:3A303030:20546578:743A5465:
+2016.12.16 11:19:05 684 INFO    16 7374204D:65737361:6765001E:00033336:
+2016.12.16 11:19:05 684 INFO    16 00042700:01021403:000A3434:31323334:
+2016.12.16 11:19:05 684 INFO    16 35363738:
+2016.12.16 11:19:05 686 INFO    16 cmd_len=0,cmd_id=5,cmd_status=0,seq_no=10,service_type=,source_addr_ton=1
+2016.12.16 11:19:05 687 INFO    16 source_addr_npi=1,source_addr=123123,dest_addr_ton=5,dest_addr_npi=0
+2016.12.16 11:19:05 687 INFO    16 destination_addr=TestFromX,esm_class=4,protocol_ID=0,priority_flag=0
+2016.12.16 11:19:05 687 INFO    16 schedule_delivery_time=,validity_period=,registered_delivery_flag=0
+2016.12.16 11:19:05 687 INFO    16 replace_if_present_flag=0,data_coding=0,sm_default_msg_id=0,sm_length=106
+2016.12.16 11:19:05 687 INFO    16 short_message=id:36 sub:001 dlvrd:001 submit date:1612161115 done date:1612161115 stat:DELIVRD err:000 Text:Test Message
+2016.12.16 11:19:05 687 INFO    16 TLV=30/3/333600,TLV=1063/1/02,TLV=5123/10/34343132333435363738
+2016.12.16 11:19:05 687 INFO    16  
+2016.12.16 11:19:05 687 INFO    16 1 receivers connected and bound
+2016.12.16 11:19:05 688 INFO    21 InboundQueue: empty  - waiting
+2016.12.16 11:19:05 688 INFO    16 : DELIVER_SM_RESP:
+2016.12.16 11:19:05 688 INFO    16 Hex dump (17) bytes:
+2016.12.16 11:19:05 688 INFO    16 00000011:80000005:00000000:00000001:
+2016.12.16 11:19:05 688 INFO    16 00
+2016.12.16 11:19:05 688 INFO    16 cmd_len=17,cmd_id=-2147483643,cmd_status=0,seq_no=1,system_id= 
+2016.12.16 11:19:05 688 INFO    16  
+2016.12.16 11:19:05 688 INFO    16 : UNBIND:
+2016.12.16 11:19:05 688 INFO    16 Hex dump (16) bytes:
+2016.12.16 11:19:05 689 INFO    16 00000010:00000006:00000000:00000002:
+2016.12.16 11:19:05 689 INFO    16 
+2016.12.16 11:19:05 689 INFO    16 cmd_len=16,cmd_id=6,cmd_status=0,seq_no=2
+2016.12.16 11:19:05 689 INFO    16  
+2016.12.16 11:19:05 689 INFO    16 0 receivers connected and bound
+2016.12.16 11:19:05 689 INFO    16 Set RxBoundCount to 0
+2016.12.16 11:19:05 689 INFO    16 : UNBIND_RESP
+2016.12.16 11:19:05 689 INFO    16 Hex dump (16) bytes:
+2016.12.16 11:19:05 689 INFO    16 00000010:80000006:00000000:00000002:
+2016.12.16 11:19:05 689 INFO    16 
+2016.12.16 11:19:05 690 INFO    16 cmd_len=0,cmd_id=-2147483642,cmd_status=0,seq_no=2
+2016.12.16 11:19:05 690 INFO    16  
+2016.12.16 11:19:05 690 INFO    16 StandardConnectionHandler waiting for connection
+2016.12.16 11:19:53 667 INFO    24 Processing 0 messages in the delayed inbound queue
+2016.12.16 11:20:53 678 INFO    24 Processing 0 messages in the delayed inbound queue
+2016.12.16 11:21:53 686 INFO    24 Processing 0 messages in the delayed inbound queue
+2016.12.16 11:22:53 694 INFO    24 Processing 0 messages in the delayed inbound queue
+2016.12.16 11:23:53 704 INFO    24 Processing 0 messages in the delayed inbound queue
+2016.12.16 11:24:53 707 INFO    24 Processing 0 messages in the delayed inbound queue
+2016.12.16 11:25:18 550 INFO    16 StandardConnectionHandler accepted a connection
+2016.12.16 11:25:18 551 INFO    16 Protocol handler is of type StandardProtocolHandler
+2016.12.16 11:25:18 551 INFO    16 : BIND_RECEIVER:
+2016.12.16 11:25:18 551 INFO    16 Hex dump (45) bytes:
+2016.12.16 11:25:18 552 INFO    16 0000002D:00000001:00000000:00000001:
+2016.12.16 11:25:18 552 INFO    16 736D7070:636C6965:6E743100:70617373:
+2016.12.16 11:25:18 552 INFO    16 776F7264:00575757:00340000:00
+2016.12.16 11:25:18 552 INFO    16 cmd_len=45,cmd_id=1,cmd_status=0,seq_no=1,system_id=smppclient1
+2016.12.16 11:25:18 552 INFO    16 password=password,system_type=WWW,interface_version=52,addr_ton=0,addr_npi=0
+2016.12.16 11:25:18 552 INFO    16 address_range=
+2016.12.16 11:25:18 553 INFO    16  
+2016.12.16 11:25:18 553 INFO    16 StandardProtocolHandler: setting address range to 
+2016.12.16 11:25:18 553 INFO    16 New receiver session bound to SMPPSim
+2016.12.16 11:25:18 553 INFO    16 : BIND_RECEIVER_RESP:
+2016.12.16 11:25:18 553 INFO    16 Hex dump (24) bytes:
+2016.12.16 11:25:18 553 INFO    16 00000018:80000001:00000000:00000001:
+2016.12.16 11:25:18 553 INFO    16 534D5050:53696D00:
+2016.12.16 11:25:18 553 INFO    16 cmd_len=0,cmd_id=-2147483647,cmd_status=0,seq_no=1,system_id=SMPPSim
+2016.12.16 11:25:18 553 INFO    16  
+2016.12.16 11:25:18 553 INFO    16 1 receivers connected and bound
+2016.12.16 11:25:18 554 INFO    21 InboundQueue: empty  - waiting
+2016.12.16 11:25:26 552 INFO    16 : BIND_RECEIVER:
+2016.12.16 11:25:26 552 INFO    16 Hex dump (45) bytes:
+2016.12.16 11:25:26 552 INFO    16 0000002D:00000001:00000000:00000001:
+2016.12.16 11:25:26 552 INFO    16 736D7070:636C6965:6E743100:70617373:
+2016.12.16 11:25:26 552 INFO    16 776F7264:00575757:00340000:00
+2016.12.16 11:25:26 552 INFO    16 cmd_len=45,cmd_id=1,cmd_status=0,seq_no=1,system_id=smppclient1
+2016.12.16 11:25:26 552 INFO    16 password=password,system_type=WWW,interface_version=52,addr_ton=0,addr_npi=0
+2016.12.16 11:25:26 552 INFO    16 address_range=
+2016.12.16 11:25:26 552 INFO    16  
+2016.12.16 11:25:26 553 WARNING 16 Session is already bound
+2016.12.16 11:25:26 553 INFO    16 : BIND_RECEIVER (ESME_RINVBNDSTS):
+2016.12.16 11:25:26 553 INFO    16 Hex dump (16) bytes:
+2016.12.16 11:25:26 553 INFO    16 00000010:80000001:00000004:00000001:
+2016.12.16 11:25:26 553 INFO    16 
+2016.12.16 11:25:26 553 INFO    16 cmd_len=16,cmd_id=-2147483647,cmd_status=4,seq_no=1,system_id=SMPPSim
+2016.12.16 11:25:26 553 INFO    16 StandardConnectionHandler waiting for connection
+2016.12.16 11:25:36 641 INFO    16 StandardConnectionHandler accepted a connection
+2016.12.16 11:25:36 641 INFO    16 Protocol handler is of type StandardProtocolHandler
+2016.12.16 11:25:36 642 INFO    16 : BIND_TRANSMITTER:
+2016.12.16 11:25:36 642 INFO    16 Hex dump (45) bytes:
+2016.12.16 11:25:36 642 INFO    16 0000002D:00000002:00000000:00000001:
+2016.12.16 11:25:36 642 INFO    16 736D7070:636C6965:6E743100:70617373:
+2016.12.16 11:25:36 643 INFO    16 776F7264:00575757:00340000:00
+2016.12.16 11:25:36 643 INFO    16 cmd_len=45,cmd_id=2,cmd_status=0,seq_no=1,system_id=smppclient1
+2016.12.16 11:25:36 643 INFO    16 password=password,system_type=WWW,interface_version=52,addr_ton=0,addr_npi=0
+2016.12.16 11:25:36 643 INFO    16 address_range=
+2016.12.16 11:25:36 643 INFO    16  
+2016.12.16 11:25:36 643 INFO    16 New transmitter session bound to SMPPSim
+2016.12.16 11:25:36 643 INFO    16 : BIND_TRANSMITTER_RESP:
+2016.12.16 11:25:36 643 INFO    16 Hex dump (24) bytes:
+2016.12.16 11:25:36 643 INFO    16 00000018:80000002:00000000:00000001:
+2016.12.16 11:25:36 643 INFO    16 534D5050:53696D00:
+2016.12.16 11:25:36 643 INFO    16 cmd_len=0,cmd_id=-2147483646,cmd_status=0,seq_no=1,system_id=SMPPSim
+2016.12.16 11:25:36 643 INFO    16  
+2016.12.16 11:25:36 644 INFO    16 : Standard SUBMIT_SM:
+2016.12.16 11:25:36 644 INFO    16 Hex dump (60) bytes:
+2016.12.16 11:25:36 644 INFO    16 0000003C:00000004:00000000:00000002:
+2016.12.16 11:25:36 644 INFO    16 00050054:65737446:726F6D58:00010131:
+2016.12.16 11:25:36 644 INFO    16 32333132:33000000:00000001:0000000C:
+2016.12.16 11:25:36 644 INFO    16 54657374:204D6573:73616765:
+2016.12.16 11:25:36 644 INFO    16 cmd_len=60,cmd_id=4,cmd_status=0,seq_no=2,service_type=,source_addr_ton=5
+2016.12.16 11:25:36 644 INFO    16 source_addr_npi=0,source_addr=TestFromX,dest_addr_ton=1,dest_addr_npi=1
+2016.12.16 11:25:36 644 INFO    16 dest_addr=123123,esm_class=0,protocol_ID=0,priority_flag=0
+2016.12.16 11:25:36 645 INFO    16 schedule_delivery_time=,validity_period=,registered_delivery_flag=1
+2016.12.16 11:25:36 645 INFO    16 replace_if_present_flag=0,data_coding=0,sm_default_msg_id=0,sm_length=12
+2016.12.16 11:25:36 645 INFO    16 short_message=Test Message
+2016.12.16 11:25:36 645 INFO    16  
+2016.12.16 11:25:36 645 INFO    16 Validity period is not set: defaulting to 5 minutes from now
+2016.12.16 11:25:36 646 INFO    16 Generated default validity period=161216113036000+
+2016.12.16 11:25:36 646 INFO    16 :SUBMIT_SM_RESP:
+2016.12.16 11:25:36 646 INFO    22 Assessing state of 1 messages in the OutboundQueue
+2016.12.16 11:25:36 646 INFO    16 Hex dump (19) bytes:
+2016.12.16 11:25:36 646 INFO    16 00000013:80000004:00000000:00000002:
+2016.12.16 11:25:36 646 INFO    16 333700
+2016.12.16 11:25:36 646 INFO    16 cmd_len=0,cmd_id=-2147483644,cmd_status=0,seq_no=2,message_id=37
+2016.12.16 11:25:36 646 INFO    16  
+2016.12.16 11:25:36 646 INFO    16 SubmitSM processing - response written to connection
+2016.12.16 11:25:36 647 INFO    16 : UNBIND:
+2016.12.16 11:25:36 647 INFO    16 Hex dump (16) bytes:
+2016.12.16 11:25:36 647 INFO    16 00000010:00000006:00000000:00000003:
+2016.12.16 11:25:36 647 INFO    16 
+2016.12.16 11:25:36 647 INFO    16 cmd_len=16,cmd_id=6,cmd_status=0,seq_no=3
+2016.12.16 11:25:36 647 INFO    16  
+2016.12.16 11:25:36 647 INFO    16 : UNBIND_RESP
+2016.12.16 11:25:36 647 INFO    16 Hex dump (16) bytes:
+2016.12.16 11:25:36 648 INFO    16 00000010:80000006:00000000:00000003:
+2016.12.16 11:25:36 648 INFO    16 
+2016.12.16 11:25:36 648 INFO    16 cmd_len=0,cmd_id=-2147483642,cmd_status=0,seq_no=3
+2016.12.16 11:25:36 648 INFO    16  
+2016.12.16 11:25:36 648 INFO    16 StandardConnectionHandler waiting for connection
+2016.12.16 11:25:36 661 INFO    18 StandardConnectionHandler accepted a connection
+2016.12.16 11:25:36 661 INFO    18 Protocol handler is of type StandardProtocolHandler
+2016.12.16 11:25:36 662 INFO    18 : BIND_RECEIVER:
+2016.12.16 11:25:36 662 INFO    18 Hex dump (45) bytes:
+2016.12.16 11:25:36 662 INFO    18 0000002D:00000001:00000000:00000001:
+2016.12.16 11:25:36 662 INFO    18 736D7070:636C6965:6E743100:70617373:
+2016.12.16 11:25:36 662 INFO    18 776F7264:00575757:00340000:00
+2016.12.16 11:25:36 663 INFO    18 cmd_len=45,cmd_id=1,cmd_status=0,seq_no=1,system_id=smppclient1
+2016.12.16 11:25:36 663 INFO    18 password=password,system_type=WWW,interface_version=52,addr_ton=0,addr_npi=0
+2016.12.16 11:25:36 663 INFO    18 address_range=
+2016.12.16 11:25:36 663 INFO    18  
+2016.12.16 11:25:36 663 INFO    18 StandardProtocolHandler: setting address range to 
+2016.12.16 11:25:36 663 INFO    18 New receiver session bound to SMPPSim
+2016.12.16 11:25:36 663 INFO    18 : BIND_RECEIVER_RESP:
+2016.12.16 11:25:36 663 INFO    18 Hex dump (24) bytes:
+2016.12.16 11:25:36 663 INFO    18 00000018:80000001:00000000:00000001:
+2016.12.16 11:25:36 663 INFO    18 534D5050:53696D00:
+2016.12.16 11:25:36 663 INFO    18 cmd_len=0,cmd_id=-2147483647,cmd_status=0,seq_no=1,system_id=SMPPSim
+2016.12.16 11:25:36 663 INFO    18  
+2016.12.16 11:25:36 663 INFO    18 2 receivers connected and bound
+2016.12.16 11:25:36 663 INFO    21 InboundQueue: empty  - waiting
+2016.12.16 11:25:41 647 INFO    22 Assessing state of 1 messages in the OutboundQueue
+2016.12.16 11:25:41 648 INFO    22 Message:2 state=DELIVERED
+2016.12.16 11:25:41 648 INFO    22 Delivery Receipt requested
+2016.12.16 11:25:41 648 INFO    21 addressIsServicedByReceiver(TestFromX)
+2016.12.16 11:25:41 648 INFO    21 DELIVER_SM (receipt):
+2016.12.16 11:25:41 648 INFO    21 Hex dump (180) bytes:
+2016.12.16 11:25:41 648 INFO    21 000000B4:00000005:00000000:0000000B:
+2016.12.16 11:25:41 648 INFO    21 00010131:32333132:33000500:54657374:
+2016.12.16 11:25:41 648 INFO    21 46726F6D:58000400:00000000:0000006A:
+2016.12.16 11:25:41 648 INFO    21 69643A33:37207375:623A3030:3120646C:
+2016.12.16 11:25:41 648 INFO    21 7672643A:30303120:7375626D:69742064:
+2016.12.16 11:25:41 648 INFO    21 6174653A:31363132:31363131:32352064:
+2016.12.16 11:25:41 648 INFO    21 6F6E6520:64617465:3A313631:32313631:
+2016.12.16 11:25:41 649 INFO    21 31323520:73746174:3A44454C:49565244:
+2016.12.16 11:25:41 649 INFO    21 20657272:3A303030:20546578:743A5465:
+2016.12.16 11:25:41 649 INFO    21 7374204D:65737361:6765001E:00033337:
+2016.12.16 11:25:41 649 INFO    21 00042700:01021403:000A3434:31323334:
+2016.12.16 11:25:41 649 INFO    21 35363738:
+2016.12.16 11:25:41 649 INFO    21 cmd_len=0,cmd_id=5,cmd_status=0,seq_no=11,service_type=,source_addr_ton=1
+2016.12.16 11:25:41 649 INFO    21 source_addr_npi=1,source_addr=123123,dest_addr_ton=5,dest_addr_npi=0
+2016.12.16 11:25:41 649 INFO    21 destination_addr=TestFromX,esm_class=4,protocol_ID=0,priority_flag=0
+2016.12.16 11:25:41 649 INFO    21 schedule_delivery_time=,validity_period=,registered_delivery_flag=0
+2016.12.16 11:25:41 649 INFO    21 replace_if_present_flag=0,data_coding=0,sm_default_msg_id=0,sm_length=106
+2016.12.16 11:25:41 649 INFO    21 short_message=id:37 sub:001 dlvrd:001 submit date:1612161125 done date:1612161125 stat:DELIVRD err:000 Text:Test Message
+2016.12.16 11:25:41 649 INFO    21 TLV=30/3/333700,TLV=1063/1/02,TLV=5123/10/34343132333435363738
+2016.12.16 11:25:41 649 INFO    21  
+2016.12.16 11:25:41 649 INFO    21 InboundQueue: empty  - waiting
+2016.12.16 11:25:41 650 INFO    18 : DELIVER_SM_RESP:
+2016.12.16 11:25:41 651 INFO    18 Hex dump (17) bytes:
+2016.12.16 11:25:41 651 INFO    18 00000011:80000005:00000000:0000000B:
+2016.12.16 11:25:41 651 INFO    18 00
+2016.12.16 11:25:41 651 INFO    18 cmd_len=17,cmd_id=-2147483643,cmd_status=0,seq_no=11,system_id= 
+2016.12.16 11:25:41 651 INFO    18  
+2016.12.16 11:25:41 651 INFO    18 : UNBIND:
+2016.12.16 11:25:41 651 INFO    18 Hex dump (16) bytes:
+2016.12.16 11:25:41 651 INFO    18 00000010:00000006:00000000:00000002:
+2016.12.16 11:25:41 651 INFO    18 
+2016.12.16 11:25:41 651 INFO    18 cmd_len=16,cmd_id=6,cmd_status=0,seq_no=2
+2016.12.16 11:25:41 651 INFO    18  
+2016.12.16 11:25:41 651 INFO    18 1 receivers connected and bound
+2016.12.16 11:25:41 651 INFO    18 Set RxBoundCount to 1
+2016.12.16 11:25:41 651 INFO    18 : UNBIND_RESP
+2016.12.16 11:25:41 651 INFO    18 Hex dump (16) bytes:
+2016.12.16 11:25:41 651 INFO    18 00000010:80000006:00000000:00000002:
+2016.12.16 11:25:41 651 INFO    18 
+2016.12.16 11:25:41 651 INFO    18 cmd_len=0,cmd_id=-2147483642,cmd_status=0,seq_no=2
+2016.12.16 11:25:41 651 INFO    18  
+2016.12.16 11:25:41 652 INFO    18 StandardConnectionHandler waiting for connection
+2016.12.16 11:25:46 652 INFO    22 Assessing state of 1 messages in the OutboundQueue
+2016.12.16 11:25:51 657 INFO    22 Assessing state of 1 messages in the OutboundQueue
+2016.12.16 11:25:53 711 INFO    24 Processing 0 messages in the delayed inbound queue
+2016.12.16 11:25:56 659 INFO    22 Assessing state of 1 messages in the OutboundQueue
+2016.12.16 11:26:01 661 INFO    22 Assessing state of 1 messages in the OutboundQueue
+2016.12.16 11:26:06 667 INFO    22 Assessing state of 1 messages in the OutboundQueue
+2016.12.16 11:26:11 671 INFO    22 Assessing state of 1 messages in the OutboundQueue
+2016.12.16 11:26:16 671 INFO    22 Assessing state of 1 messages in the OutboundQueue
+2016.12.16 11:26:21 675 INFO    22 Assessing state of 1 messages in the OutboundQueue
+2016.12.16 11:26:26 680 INFO    22 Assessing state of 1 messages in the OutboundQueue
+2016.12.16 11:26:31 684 INFO    22 Assessing state of 1 messages in the OutboundQueue
+2016.12.16 11:26:36 688 INFO    22 Assessing state of 1 messages in the OutboundQueue
+2016.12.16 11:26:41 692 INFO    22 Lifecycle Service: OutboundQueue is empty  - waiting
+2016.12.16 11:26:44 261 INFO    18 StandardConnectionHandler accepted a connection
+2016.12.16 11:26:44 261 INFO    18 Protocol handler is of type StandardProtocolHandler
+2016.12.16 11:26:44 262 INFO    18 : BIND_RECEIVER:
+2016.12.16 11:26:44 262 INFO    18 Hex dump (45) bytes:
+2016.12.16 11:26:44 262 INFO    18 0000002D:00000001:00000000:00000001:
+2016.12.16 11:26:44 262 INFO    18 736D7070:636C6965:6E743100:70617373:
+2016.12.16 11:26:44 262 INFO    18 776F7264:00575757:00340000:00
+2016.12.16 11:26:44 262 INFO    18 cmd_len=45,cmd_id=1,cmd_status=0,seq_no=1,system_id=smppclient1
+2016.12.16 11:26:44 262 INFO    18 password=password,system_type=WWW,interface_version=52,addr_ton=0,addr_npi=0
+2016.12.16 11:26:44 262 INFO    18 address_range=
+2016.12.16 11:26:44 262 INFO    18  
+2016.12.16 11:26:44 262 INFO    18 StandardProtocolHandler: setting address range to 
+2016.12.16 11:26:44 262 INFO    18 New receiver session bound to SMPPSim
+2016.12.16 11:26:44 262 INFO    18 : BIND_RECEIVER_RESP:
+2016.12.16 11:26:44 262 INFO    18 Hex dump (24) bytes:
+2016.12.16 11:26:44 262 INFO    18 00000018:80000001:00000000:00000001:
+2016.12.16 11:26:44 262 INFO    18 534D5050:53696D00:
+2016.12.16 11:26:44 262 INFO    18 cmd_len=0,cmd_id=-2147483647,cmd_status=0,seq_no=1,system_id=SMPPSim
+2016.12.16 11:26:44 262 INFO    18  
+2016.12.16 11:26:44 263 INFO    18 2 receivers connected and bound
+2016.12.16 11:26:44 263 INFO    21 InboundQueue: empty  - waiting
+2016.12.16 11:26:53 719 INFO    24 Processing 0 messages in the delayed inbound queue
+2016.12.16 11:26:54 635 INFO    18 : BIND_RECEIVER:
+2016.12.16 11:26:54 635 INFO    18 Hex dump (45) bytes:
+2016.12.16 11:26:54 635 INFO    18 0000002D:00000001:00000000:00000001:
+2016.12.16 11:26:54 635 INFO    18 736D7070:636C6965:6E743100:70617373:
+2016.12.16 11:26:54 635 INFO    18 776F7264:00575757:00340000:00
+2016.12.16 11:26:54 635 INFO    18 cmd_len=45,cmd_id=1,cmd_status=0,seq_no=1,system_id=smppclient1
+2016.12.16 11:26:54 636 INFO    18 password=password,system_type=WWW,interface_version=52,addr_ton=0,addr_npi=0
+2016.12.16 11:26:54 636 INFO    18 address_range=
+2016.12.16 11:26:54 636 INFO    18  
+2016.12.16 11:26:54 636 WARNING 18 Session is already bound
+2016.12.16 11:26:54 636 INFO    18 : BIND_RECEIVER (ESME_RINVBNDSTS):
+2016.12.16 11:26:54 636 INFO    18 Hex dump (16) bytes:
+2016.12.16 11:26:54 636 INFO    18 00000010:80000001:00000004:00000001:
+2016.12.16 11:26:54 636 INFO    18 
+2016.12.16 11:26:54 636 INFO    18 cmd_len=16,cmd_id=-2147483647,cmd_status=4,seq_no=1,system_id=SMPPSim
+2016.12.16 11:26:54 636 INFO    18 StandardConnectionHandler waiting for connection
+2016.12.16 11:27:06 60  INFO    18 StandardConnectionHandler accepted a connection
+2016.12.16 11:27:06 60  INFO    18 Protocol handler is of type StandardProtocolHandler
+2016.12.16 11:27:06 61  INFO    18 : BIND_TRANSMITTER:
+2016.12.16 11:27:06 61  INFO    18 Hex dump (45) bytes:
+2016.12.16 11:27:06 62  INFO    18 0000002D:00000002:00000000:00000001:
+2016.12.16 11:27:06 62  INFO    18 736D7070:636C6965:6E743100:70617373:
+2016.12.16 11:27:06 62  INFO    18 776F7264:00575757:00340000:00
+2016.12.16 11:27:06 62  INFO    18 cmd_len=45,cmd_id=2,cmd_status=0,seq_no=1,system_id=smppclient1
+2016.12.16 11:27:06 62  INFO    18 password=password,system_type=WWW,interface_version=52,addr_ton=0,addr_npi=0
+2016.12.16 11:27:06 62  INFO    18 address_range=
+2016.12.16 11:27:06 62  INFO    18  
+2016.12.16 11:27:06 62  INFO    18 New transmitter session bound to SMPPSim
+2016.12.16 11:27:06 62  INFO    18 : BIND_TRANSMITTER_RESP:
+2016.12.16 11:27:06 62  INFO    18 Hex dump (24) bytes:
+2016.12.16 11:27:06 62  INFO    18 00000018:80000002:00000000:00000001:
+2016.12.16 11:27:06 62  INFO    18 534D5050:53696D00:
+2016.12.16 11:27:06 62  INFO    18 cmd_len=0,cmd_id=-2147483646,cmd_status=0,seq_no=1,system_id=SMPPSim
+2016.12.16 11:27:06 62  INFO    18  
+2016.12.16 11:27:06 64  INFO    18 : Standard SUBMIT_SM:
+2016.12.16 11:27:06 64  INFO    18 Hex dump (60) bytes:
+2016.12.16 11:27:06 64  INFO    18 0000003C:00000004:00000000:00000002:
+2016.12.16 11:27:06 64  INFO    18 00050054:65737446:726F6D58:00010131:
+2016.12.16 11:27:06 64  INFO    18 32333132:33000000:00000001:0000000C:
+2016.12.16 11:27:06 64  INFO    18 54657374:204D6573:73616765:
+2016.12.16 11:27:06 64  INFO    18 cmd_len=60,cmd_id=4,cmd_status=0,seq_no=2,service_type=,source_addr_ton=5
+2016.12.16 11:27:06 64  INFO    18 source_addr_npi=0,source_addr=TestFromX,dest_addr_ton=1,dest_addr_npi=1
+2016.12.16 11:27:06 64  INFO    18 dest_addr=123123,esm_class=0,protocol_ID=0,priority_flag=0
+2016.12.16 11:27:06 64  INFO    18 schedule_delivery_time=,validity_period=,registered_delivery_flag=1
+2016.12.16 11:27:06 64  INFO    18 replace_if_present_flag=0,data_coding=0,sm_default_msg_id=0,sm_length=12
+2016.12.16 11:27:06 64  INFO    18 short_message=Test Message
+2016.12.16 11:27:06 64  INFO    18  
+2016.12.16 11:27:06 64  INFO    18 Validity period is not set: defaulting to 5 minutes from now
+2016.12.16 11:27:06 65  INFO    18 Generated default validity period=161216113206000+
+2016.12.16 11:27:06 65  INFO    18 :SUBMIT_SM_RESP:
+2016.12.16 11:27:06 65  INFO    22 Assessing state of 1 messages in the OutboundQueue
+2016.12.16 11:27:06 65  INFO    18 Hex dump (19) bytes:
+2016.12.16 11:27:06 65  INFO    18 00000013:80000004:00000000:00000002:
+2016.12.16 11:27:06 65  INFO    18 333800
+2016.12.16 11:27:06 65  INFO    18 cmd_len=0,cmd_id=-2147483644,cmd_status=0,seq_no=2,message_id=38
+2016.12.16 11:27:06 65  INFO    18  
+2016.12.16 11:27:06 65  INFO    18 SubmitSM processing - response written to connection
+2016.12.16 11:27:06 66  INFO    18 : UNBIND:
+2016.12.16 11:27:06 66  INFO    18 Hex dump (16) bytes:
+2016.12.16 11:27:06 66  INFO    18 00000010:00000006:00000000:00000003:
+2016.12.16 11:27:06 66  INFO    18 
+2016.12.16 11:27:06 66  INFO    18 cmd_len=16,cmd_id=6,cmd_status=0,seq_no=3
+2016.12.16 11:27:06 66  INFO    18  
+2016.12.16 11:27:06 66  INFO    18 : UNBIND_RESP
+2016.12.16 11:27:06 66  INFO    18 Hex dump (16) bytes:
+2016.12.16 11:27:06 66  INFO    18 00000010:80000006:00000000:00000003:
+2016.12.16 11:27:06 66  INFO    18 
+2016.12.16 11:27:06 66  INFO    18 cmd_len=0,cmd_id=-2147483642,cmd_status=0,seq_no=3
+2016.12.16 11:27:06 66  INFO    18  
+2016.12.16 11:27:06 66  INFO    18 StandardConnectionHandler waiting for connection
+2016.12.16 11:27:06 86  INFO    15 StandardConnectionHandler accepted a connection
+2016.12.16 11:27:06 86  INFO    15 Protocol handler is of type StandardProtocolHandler
+2016.12.16 11:27:06 86  INFO    15 : BIND_RECEIVER:
+2016.12.16 11:27:06 86  INFO    15 Hex dump (45) bytes:
+2016.12.16 11:27:06 86  INFO    15 0000002D:00000001:00000000:00000001:
+2016.12.16 11:27:06 86  INFO    15 736D7070:636C6965:6E743100:70617373:
+2016.12.16 11:27:06 86  INFO    15 776F7264:00575757:00340000:00
+2016.12.16 11:27:06 86  INFO    15 cmd_len=45,cmd_id=1,cmd_status=0,seq_no=1,system_id=smppclient1
+2016.12.16 11:27:06 87  INFO    15 password=password,system_type=WWW,interface_version=52,addr_ton=0,addr_npi=0
+2016.12.16 11:27:06 87  INFO    15 address_range=
+2016.12.16 11:27:06 87  INFO    15  
+2016.12.16 11:27:06 87  INFO    15 StandardProtocolHandler: setting address range to 
+2016.12.16 11:27:06 87  INFO    15 New receiver session bound to SMPPSim
+2016.12.16 11:27:06 87  INFO    15 : BIND_RECEIVER_RESP:
+2016.12.16 11:27:06 87  INFO    15 Hex dump (24) bytes:
+2016.12.16 11:27:06 87  INFO    15 00000018:80000001:00000000:00000001:
+2016.12.16 11:27:06 87  INFO    15 534D5050:53696D00:
+2016.12.16 11:27:06 87  INFO    15 cmd_len=0,cmd_id=-2147483647,cmd_status=0,seq_no=1,system_id=SMPPSim
+2016.12.16 11:27:06 87  INFO    15  
+2016.12.16 11:27:06 87  INFO    15 3 receivers connected and bound
+2016.12.16 11:27:06 87  INFO    21 InboundQueue: empty  - waiting
+2016.12.16 11:27:11 70  INFO    22 Assessing state of 1 messages in the OutboundQueue
+2016.12.16 11:27:16 72  INFO    22 Assessing state of 1 messages in the OutboundQueue
+2016.12.16 11:27:16 72  INFO    22 Message:2 state=UNDELIVERABLE
+2016.12.16 11:27:16 73  INFO    22 Delivery Receipt requested
+2016.12.16 11:27:16 73  INFO    21 addressIsServicedByReceiver(TestFromX)
+2016.12.16 11:27:16 73  INFO    21 DELIVER_SM (receipt):
+2016.12.16 11:27:16 73  INFO    21 Hex dump (187) bytes:
+2016.12.16 11:27:16 73  INFO    21 000000BB:00000005:00000000:0000000C:
+2016.12.16 11:27:16 73  INFO    21 00010131:32333132:33000500:54657374:
+2016.12.16 11:27:16 73  INFO    21 46726F6D:58000400:00000000:0000006A:
+2016.12.16 11:27:16 73  INFO    21 69643A33:38207375:623A3030:3120646C:
+2016.12.16 11:27:16 73  INFO    21 7672643A:30303120:7375626D:69742064:
+2016.12.16 11:27:16 73  INFO    21 6174653A:31363132:31363131:32372064:
+2016.12.16 11:27:16 73  INFO    21 6F6E6520:64617465:3A313631:32313631:
+2016.12.16 11:27:16 73  INFO    21 31323720:73746174:3A554E44:454C4956:
+2016.12.16 11:27:16 73  INFO    21 20657272:3A303030:20546578:743A5465:
+2016.12.16 11:27:16 73  INFO    21 7374204D:65737361:6765001E:00033338:
+2016.12.16 11:27:16 73  INFO    21 00042700:01050423:00030300:01140300:
+2016.12.16 11:27:16 73  INFO    21 0A343431:32333435:363738
+2016.12.16 11:27:16 73  INFO    21 cmd_len=0,cmd_id=5,cmd_status=0,seq_no=12,service_type=,source_addr_ton=1
+2016.12.16 11:27:16 73  INFO    21 source_addr_npi=1,source_addr=123123,dest_addr_ton=5,dest_addr_npi=0
+2016.12.16 11:27:16 73  INFO    21 destination_addr=TestFromX,esm_class=4,protocol_ID=0,priority_flag=0
+2016.12.16 11:27:16 73  INFO    21 schedule_delivery_time=,validity_period=,registered_delivery_flag=0
+2016.12.16 11:27:16 73  INFO    21 replace_if_present_flag=0,data_coding=0,sm_default_msg_id=0,sm_length=106
+2016.12.16 11:27:16 73  INFO    21 short_message=id:38 sub:001 dlvrd:001 submit date:1612161127 done date:1612161127 stat:UNDELIV err:000 Text:Test Message
+2016.12.16 11:27:16 74  INFO    21 TLV=30/3/333800,TLV=1063/1/05,TLV=1059/3/030001,TLV=5123/10/34343132333435363738
+2016.12.16 11:27:16 74  INFO    21  
+2016.12.16 11:27:16 74  INFO    21 InboundQueue: empty  - waiting
+2016.12.16 11:27:16 75  INFO    15 : DELIVER_SM_RESP:
+2016.12.16 11:27:16 75  INFO    15 Hex dump (17) bytes:
+2016.12.16 11:27:16 75  INFO    15 00000011:80000005:00000000:0000000C:
+2016.12.16 11:27:16 75  INFO    15 00
+2016.12.16 11:27:16 75  INFO    15 cmd_len=17,cmd_id=-2147483643,cmd_status=0,seq_no=12,system_id= 
+2016.12.16 11:27:16 75  INFO    15  
+2016.12.16 11:27:16 75  INFO    15 : UNBIND:
+2016.12.16 11:27:16 75  INFO    15 Hex dump (16) bytes:
+2016.12.16 11:27:16 75  INFO    15 00000010:00000006:00000000:00000002:
+2016.12.16 11:27:16 75  INFO    15 
+2016.12.16 11:27:16 75  INFO    15 cmd_len=16,cmd_id=6,cmd_status=0,seq_no=2
+2016.12.16 11:27:16 75  INFO    15  
+2016.12.16 11:27:16 75  INFO    15 2 receivers connected and bound
+2016.12.16 11:27:16 75  INFO    15 Set RxBoundCount to 2
+2016.12.16 11:27:16 75  INFO    15 : UNBIND_RESP
+2016.12.16 11:27:16 76  INFO    15 Hex dump (16) bytes:
+2016.12.16 11:27:16 76  INFO    15 00000010:80000006:00000000:00000002:
+2016.12.16 11:27:16 76  INFO    15 
+2016.12.16 11:27:16 76  INFO    15 cmd_len=0,cmd_id=-2147483642,cmd_status=0,seq_no=2
+2016.12.16 11:27:16 76  INFO    15  
+2016.12.16 11:27:16 76  INFO    15 StandardConnectionHandler waiting for connection
+2016.12.16 11:27:20 385 INFO    19 StandardConnectionHandler accepted a connection
+2016.12.16 11:27:20 386 INFO    19 Protocol handler is of type StandardProtocolHandler
+2016.12.16 11:27:20 386 INFO    19 : BIND_RECEIVER:
+2016.12.16 11:27:20 386 INFO    19 Hex dump (45) bytes:
+2016.12.16 11:27:20 386 INFO    19 0000002D:00000001:00000000:00000001:
+2016.12.16 11:27:20 386 INFO    19 736D7070:636C6965:6E743100:70617373:
+2016.12.16 11:27:20 387 INFO    19 776F7264:00575757:00340000:00
+2016.12.16 11:27:20 387 INFO    19 cmd_len=45,cmd_id=1,cmd_status=0,seq_no=1,system_id=smppclient1
+2016.12.16 11:27:20 387 INFO    19 password=password,system_type=WWW,interface_version=52,addr_ton=0,addr_npi=0
+2016.12.16 11:27:20 387 INFO    19 address_range=
+2016.12.16 11:27:20 387 INFO    19  
+2016.12.16 11:27:20 387 INFO    19 StandardProtocolHandler: setting address range to 
+2016.12.16 11:27:20 387 INFO    19 New receiver session bound to SMPPSim
+2016.12.16 11:27:20 387 INFO    19 : BIND_RECEIVER_RESP:
+2016.12.16 11:27:20 387 INFO    19 Hex dump (24) bytes:
+2016.12.16 11:27:20 387 INFO    19 00000018:80000001:00000000:00000001:
+2016.12.16 11:27:20 387 INFO    19 534D5050:53696D00:
+2016.12.16 11:27:20 387 INFO    19 cmd_len=0,cmd_id=-2147483647,cmd_status=0,seq_no=1,system_id=SMPPSim
+2016.12.16 11:27:20 387 INFO    19  
+2016.12.16 11:27:20 387 INFO    19 3 receivers connected and bound
+2016.12.16 11:27:20 388 INFO    21 InboundQueue: empty  - waiting
+2016.12.16 11:27:21 75  INFO    22 Assessing state of 1 messages in the OutboundQueue
+2016.12.16 11:27:26 80  INFO    22 Assessing state of 1 messages in the OutboundQueue
+2016.12.16 11:27:31 83  INFO    22 Assessing state of 1 messages in the OutboundQueue
+2016.12.16 11:27:36 87  INFO    22 Assessing state of 1 messages in the OutboundQueue
+2016.12.16 11:27:41 91  INFO    22 Assessing state of 1 messages in the OutboundQueue
+2016.12.16 11:27:44 600 INFO    19 : BIND_RECEIVER:
+2016.12.16 11:27:44 600 INFO    19 Hex dump (45) bytes:
+2016.12.16 11:27:44 600 INFO    19 0000002D:00000001:00000000:00000001:
+2016.12.16 11:27:44 600 INFO    19 736D7070:636C6965:6E743100:70617373:
+2016.12.16 11:27:44 600 INFO    19 776F7264:00575757:00340000:00
+2016.12.16 11:27:44 600 INFO    19 cmd_len=45,cmd_id=1,cmd_status=0,seq_no=1,system_id=smppclient1
+2016.12.16 11:27:44 600 INFO    19 password=password,system_type=WWW,interface_version=52,addr_ton=0,addr_npi=0
+2016.12.16 11:27:44 600 INFO    19 address_range=
+2016.12.16 11:27:44 600 INFO    19  
+2016.12.16 11:27:44 600 WARNING 19 Session is already bound
+2016.12.16 11:27:44 600 INFO    19 : BIND_RECEIVER (ESME_RINVBNDSTS):
+2016.12.16 11:27:44 600 INFO    19 Hex dump (16) bytes:
+2016.12.16 11:27:44 600 INFO    19 00000010:80000001:00000004:00000001:
+2016.12.16 11:27:44 600 INFO    19 
+2016.12.16 11:27:44 600 INFO    19 cmd_len=16,cmd_id=-2147483647,cmd_status=4,seq_no=1,system_id=SMPPSim
+2016.12.16 11:27:44 600 INFO    19 StandardConnectionHandler waiting for connection
+2016.12.16 11:27:46 94  INFO    22 Assessing state of 1 messages in the OutboundQueue
+2016.12.16 11:27:50 241 INFO    19 StandardConnectionHandler accepted a connection
+2016.12.16 11:27:50 241 INFO    19 Protocol handler is of type StandardProtocolHandler
+2016.12.16 11:27:50 242 INFO    19 : BIND_RECEIVER:
+2016.12.16 11:27:50 242 INFO    19 Hex dump (45) bytes:
+2016.12.16 11:27:50 242 INFO    19 0000002D:00000001:00000000:00000001:
+2016.12.16 11:27:50 242 INFO    19 736D7070:636C6965:6E743100:70617373:
+2016.12.16 11:27:50 242 INFO    19 776F7264:00575757:00340000:00
+2016.12.16 11:27:50 242 INFO    19 cmd_len=45,cmd_id=1,cmd_status=0,seq_no=1,system_id=smppclient1
+2016.12.16 11:27:50 242 INFO    19 password=password,system_type=WWW,interface_version=52,addr_ton=0,addr_npi=0
+2016.12.16 11:27:50 242 INFO    19 address_range=
+2016.12.16 11:27:50 242 INFO    19  
+2016.12.16 11:27:50 242 INFO    19 StandardProtocolHandler: setting address range to 
+2016.12.16 11:27:50 242 INFO    19 New receiver session bound to SMPPSim
+2016.12.16 11:27:50 242 INFO    19 : BIND_RECEIVER_RESP:
+2016.12.16 11:27:50 242 INFO    19 Hex dump (24) bytes:
+2016.12.16 11:27:50 242 INFO    19 00000018:80000001:00000000:00000001:
+2016.12.16 11:27:50 243 INFO    19 534D5050:53696D00:
+2016.12.16 11:27:50 243 INFO    19 cmd_len=0,cmd_id=-2147483647,cmd_status=0,seq_no=1,system_id=SMPPSim
+2016.12.16 11:27:50 243 INFO    19  
+2016.12.16 11:27:50 243 INFO    19 4 receivers connected and bound
+2016.12.16 11:27:50 243 INFO    21 InboundQueue: empty  - waiting
+2016.12.16 11:27:51 97  INFO    22 Assessing state of 1 messages in the OutboundQueue
+2016.12.16 11:27:53 725 INFO    24 Processing 0 messages in the delayed inbound queue
+2016.12.16 11:27:56 102 INFO    22 Assessing state of 1 messages in the OutboundQueue
+2016.12.16 11:28:01 106 INFO    22 Assessing state of 1 messages in the OutboundQueue
+2016.12.16 11:28:06 111 INFO    22 Assessing state of 1 messages in the OutboundQueue
+2016.12.16 11:28:11 116 INFO    22 Lifecycle Service: OutboundQueue is empty  - waiting
+2016.12.16 11:28:50 242 INFO    19 : UNBIND:
+2016.12.16 11:28:50 242 INFO    19 Hex dump (16) bytes:
+2016.12.16 11:28:50 242 INFO    19 00000010:00000006:00000000:00000002:
+2016.12.16 11:28:50 242 INFO    19 
+2016.12.16 11:28:50 242 INFO    19 cmd_len=16,cmd_id=6,cmd_status=0,seq_no=2
+2016.12.16 11:28:50 242 INFO    19  
+2016.12.16 11:28:50 243 INFO    19 3 receivers connected and bound
+2016.12.16 11:28:50 243 INFO    19 Set RxBoundCount to 3
+2016.12.16 11:28:50 243 INFO    19 : UNBIND_RESP
+2016.12.16 11:28:50 243 INFO    19 Hex dump (16) bytes:
+2016.12.16 11:28:50 243 INFO    19 00000010:80000006:00000000:00000002:
+2016.12.16 11:28:50 243 INFO    19 
+2016.12.16 11:28:50 243 INFO    19 cmd_len=0,cmd_id=-2147483642,cmd_status=0,seq_no=2
+2016.12.16 11:28:50 243 INFO    19  
+2016.12.16 11:28:50 243 INFO    19 StandardConnectionHandler waiting for connection
+2016.12.16 11:28:53 730 INFO    24 Processing 0 messages in the delayed inbound queue
+2016.12.16 11:29:53 737 INFO    24 Processing 0 messages in the delayed inbound queue
+2016.12.16 11:30:53 742 INFO    24 Processing 0 messages in the delayed inbound queue
+2016.12.16 11:31:34 128 INFO    12 StandardConnectionHandler accepted a connection
+2016.12.16 11:31:34 128 INFO    12 Protocol handler is of type StandardProtocolHandler
+2016.12.16 11:31:34 129 INFO    12 : BIND_TRANSMITTER:
+2016.12.16 11:31:34 129 INFO    12 Hex dump (45) bytes:
+2016.12.16 11:31:34 129 INFO    12 0000002D:00000002:00000000:00000001:
+2016.12.16 11:31:34 129 INFO    12 736D7070:636C6965:6E743100:70617373:
+2016.12.16 11:31:34 129 INFO    12 776F7264:00575757:00340000:00
+2016.12.16 11:31:34 129 INFO    12 cmd_len=45,cmd_id=2,cmd_status=0,seq_no=1,system_id=smppclient1
+2016.12.16 11:31:34 129 INFO    12 password=password,system_type=WWW,interface_version=52,addr_ton=0,addr_npi=0
+2016.12.16 11:31:34 129 INFO    12 address_range=
+2016.12.16 11:31:34 129 INFO    12  
+2016.12.16 11:31:34 129 INFO    12 New transmitter session bound to SMPPSim
+2016.12.16 11:31:34 129 INFO    12 : BIND_TRANSMITTER_RESP:
+2016.12.16 11:31:34 129 INFO    12 Hex dump (24) bytes:
+2016.12.16 11:31:34 129 INFO    12 00000018:80000002:00000000:00000001:
+2016.12.16 11:31:34 129 INFO    12 534D5050:53696D00:
+2016.12.16 11:31:34 129 INFO    12 cmd_len=0,cmd_id=-2147483646,cmd_status=0,seq_no=1,system_id=SMPPSim
+2016.12.16 11:31:34 129 INFO    12  
+2016.12.16 11:31:34 130 INFO    12 : BIND_TRANSMITTER:
+2016.12.16 11:31:34 130 INFO    12 Hex dump (45) bytes:
+2016.12.16 11:31:34 130 INFO    12 0000002D:00000002:00000000:00000001:
+2016.12.16 11:31:34 131 INFO    12 736D7070:636C6965:6E743100:70617373:
+2016.12.16 11:31:34 131 INFO    12 776F7264:00575757:00340000:00
+2016.12.16 11:31:34 131 INFO    12 cmd_len=45,cmd_id=2,cmd_status=0,seq_no=1,system_id=smppclient1
+2016.12.16 11:31:34 131 INFO    12 password=password,system_type=WWW,interface_version=52,addr_ton=0,addr_npi=0
+2016.12.16 11:31:34 131 INFO    12 address_range=
+2016.12.16 11:31:34 131 INFO    12  
+2016.12.16 11:31:34 131 WARNING 12 Session is already bound
+2016.12.16 11:31:34 131 INFO    12 : BIND_TRANSMITTER (ESME_RINVBNDSTS):
+2016.12.16 11:31:34 131 INFO    12 Hex dump (16) bytes:
+2016.12.16 11:31:34 131 INFO    12 00000010:80000002:00000004:00000001:
+2016.12.16 11:31:34 131 INFO    12 
+2016.12.16 11:31:34 131 INFO    12 cmd_len=16,cmd_id=-2147483646,cmd_status=4,seq_no=1,system_id=SMPPSim
+2016.12.16 11:31:34 131 INFO    12 StandardConnectionHandler waiting for connection
+2016.12.16 11:31:53 747 INFO    24 Processing 0 messages in the delayed inbound queue
+2016.12.16 11:32:18 850 INFO    12 StandardConnectionHandler accepted a connection
+2016.12.16 11:32:18 850 INFO    12 Protocol handler is of type StandardProtocolHandler
+2016.12.16 11:32:18 850 INFO    12 : BIND_TRANSMITTER:
+2016.12.16 11:32:18 851 INFO    12 Hex dump (45) bytes:
+2016.12.16 11:32:18 851 INFO    12 0000002D:00000002:00000000:00000001:
+2016.12.16 11:32:18 851 INFO    12 736D7070:636C6965:6E743100:70617373:
+2016.12.16 11:32:18 851 INFO    12 776F7264:00575757:00340000:00
+2016.12.16 11:32:18 851 INFO    12 cmd_len=45,cmd_id=2,cmd_status=0,seq_no=1,system_id=smppclient1
+2016.12.16 11:32:18 851 INFO    12 password=password,system_type=WWW,interface_version=52,addr_ton=0,addr_npi=0
+2016.12.16 11:32:18 851 INFO    12 address_range=
+2016.12.16 11:32:18 851 INFO    12  
+2016.12.16 11:32:18 851 INFO    12 New transmitter session bound to SMPPSim
+2016.12.16 11:32:18 851 INFO    12 : BIND_TRANSMITTER_RESP:
+2016.12.16 11:32:18 851 INFO    12 Hex dump (24) bytes:
+2016.12.16 11:32:18 851 INFO    12 00000018:80000002:00000000:00000001:
+2016.12.16 11:32:18 851 INFO    12 534D5050:53696D00:
+2016.12.16 11:32:18 851 INFO    12 cmd_len=0,cmd_id=-2147483646,cmd_status=0,seq_no=1,system_id=SMPPSim
+2016.12.16 11:32:18 851 INFO    12  
+2016.12.16 11:32:18 852 INFO    12 : Standard SUBMIT_SM:
+2016.12.16 11:32:18 853 INFO    12 Hex dump (63) bytes:
+2016.12.16 11:32:18 853 INFO    12 0000003F:00000004:00000000:00000002:
+2016.12.16 11:32:18 853 INFO    12 0005006D:656D7973:656C6600:01013132:
+2016.12.16 11:32:18 853 INFO    12 33343500:00000000:00010000:00114D65:
+2016.12.16 11:32:18 853 INFO    12 73736167:65206672:6F6D2074:657374
+2016.12.16 11:32:18 853 INFO    12 cmd_len=63,cmd_id=4,cmd_status=0,seq_no=2,service_type=,source_addr_ton=5
+2016.12.16 11:32:18 853 INFO    12 source_addr_npi=0,source_addr=memyself,dest_addr_ton=1,dest_addr_npi=1
+2016.12.16 11:32:18 853 INFO    12 dest_addr=12345,esm_class=0,protocol_ID=0,priority_flag=0
+2016.12.16 11:32:18 853 INFO    12 schedule_delivery_time=,validity_period=,registered_delivery_flag=1
+2016.12.16 11:32:18 853 INFO    12 replace_if_present_flag=0,data_coding=0,sm_default_msg_id=0,sm_length=17
+2016.12.16 11:32:18 853 INFO    12 short_message=Message from test
+2016.12.16 11:32:18 853 INFO    12  
+2016.12.16 11:32:18 853 INFO    12 Validity period is not set: defaulting to 5 minutes from now
+2016.12.16 11:32:18 853 INFO    12 Generated default validity period=161216113718000+
+2016.12.16 11:32:18 854 INFO    12 :SUBMIT_SM_RESP:
+2016.12.16 11:32:18 854 INFO    22 Assessing state of 1 messages in the OutboundQueue
+2016.12.16 11:32:18 854 INFO    12 Hex dump (19) bytes:
+2016.12.16 11:32:18 854 INFO    12 00000013:80000004:00000000:00000002:
+2016.12.16 11:32:18 854 INFO    12 333900
+2016.12.16 11:32:18 854 INFO    12 cmd_len=0,cmd_id=-2147483644,cmd_status=0,seq_no=2,message_id=39
+2016.12.16 11:32:18 854 INFO    12  
+2016.12.16 11:32:18 854 INFO    12 SubmitSM processing - response written to connection
+2016.12.16 11:32:18 855 INFO    12 : UNBIND:
+2016.12.16 11:32:18 855 INFO    12 Hex dump (16) bytes:
+2016.12.16 11:32:18 855 INFO    12 00000010:00000006:00000000:00000003:
+2016.12.16 11:32:18 855 INFO    12 
+2016.12.16 11:32:18 855 INFO    12 cmd_len=16,cmd_id=6,cmd_status=0,seq_no=3
+2016.12.16 11:32:18 855 INFO    12  
+2016.12.16 11:32:18 855 INFO    12 : UNBIND_RESP
+2016.12.16 11:32:18 855 INFO    12 Hex dump (16) bytes:
+2016.12.16 11:32:18 855 INFO    12 00000010:80000006:00000000:00000003:
+2016.12.16 11:32:18 855 INFO    12 
+2016.12.16 11:32:18 855 INFO    12 cmd_len=0,cmd_id=-2147483642,cmd_status=0,seq_no=3
+2016.12.16 11:32:18 855 INFO    12  
+2016.12.16 11:32:18 855 INFO    12 StandardConnectionHandler waiting for connection
+2016.12.16 11:32:18 860 INFO    13 StandardConnectionHandler accepted a connection
+2016.12.16 11:32:18 861 INFO    13 Protocol handler is of type StandardProtocolHandler
+2016.12.16 11:32:18 861 INFO    13 : BIND_RECEIVER:
+2016.12.16 11:32:18 861 INFO    13 Hex dump (45) bytes:
+2016.12.16 11:32:18 861 INFO    13 0000002D:00000001:00000000:00000001:
+2016.12.16 11:32:18 861 INFO    13 736D7070:636C6965:6E743100:70617373:
+2016.12.16 11:32:18 861 INFO    13 776F7264:00575757:00340000:00
+2016.12.16 11:32:18 861 INFO    13 cmd_len=45,cmd_id=1,cmd_status=0,seq_no=1,system_id=smppclient1
+2016.12.16 11:32:18 861 INFO    13 password=password,system_type=WWW,interface_version=52,addr_ton=0,addr_npi=0
+2016.12.16 11:32:18 861 INFO    13 address_range=
+2016.12.16 11:32:18 862 INFO    13  
+2016.12.16 11:32:18 862 INFO    13 StandardProtocolHandler: setting address range to 
+2016.12.16 11:32:18 862 INFO    13 New receiver session bound to SMPPSim
+2016.12.16 11:32:18 862 INFO    13 : BIND_RECEIVER_RESP:
+2016.12.16 11:32:18 862 INFO    13 Hex dump (24) bytes:
+2016.12.16 11:32:18 862 INFO    13 00000018:80000001:00000000:00000001:
+2016.12.16 11:32:18 862 INFO    13 534D5050:53696D00:
+2016.12.16 11:32:18 862 INFO    13 cmd_len=0,cmd_id=-2147483647,cmd_status=0,seq_no=1,system_id=SMPPSim
+2016.12.16 11:32:18 862 INFO    13  
+2016.12.16 11:32:18 862 INFO    13 4 receivers connected and bound
+2016.12.16 11:32:18 862 INFO    21 InboundQueue: empty  - waiting
+2016.12.16 11:32:23 858 INFO    22 Assessing state of 1 messages in the OutboundQueue
+2016.12.16 11:32:23 858 INFO    22 Message:2 state=DELIVERED
+2016.12.16 11:32:23 858 INFO    22 Delivery Receipt requested
+2016.12.16 11:32:23 858 INFO    21 addressIsServicedByReceiver(memyself)
+2016.12.16 11:32:23 858 INFO    21 DELIVER_SM (receipt):
+2016.12.16 11:32:23 859 INFO    21 Hex dump (183) bytes:
+2016.12.16 11:32:23 859 INFO    21 000000B7:00000005:00000000:0000000D:
+2016.12.16 11:32:23 859 INFO    21 00010131:32333435:0005006D:656D7973:
+2016.12.16 11:32:23 859 INFO    21 656C6600:04000000:00000000:006F6964:
+2016.12.16 11:32:23 859 INFO    21 3A333920:7375623A:30303120:646C7672:
+2016.12.16 11:32:23 859 INFO    21 643A3030:31207375:626D6974:20646174:
+2016.12.16 11:32:23 859 INFO    21 653A3136:31323136:31313332:20646F6E:
+2016.12.16 11:32:23 859 INFO    21 65206461:74653A31:36313231:36313133:
+2016.12.16 11:32:23 859 INFO    21 32207374:61743A44:454C4956:52442065:
+2016.12.16 11:32:23 859 INFO    21 72723A30:30302054:6578743A:4D657373:
+2016.12.16 11:32:23 859 INFO    21 61676520:66726F6D:20746573:74001E00:
+2016.12.16 11:32:23 859 INFO    21 03333900:04270001:02140300:0A343431:
+2016.12.16 11:32:23 859 INFO    21 32333435:363738
+2016.12.16 11:32:23 859 INFO    21 cmd_len=0,cmd_id=5,cmd_status=0,seq_no=13,service_type=,source_addr_ton=1
+2016.12.16 11:32:23 859 INFO    21 source_addr_npi=1,source_addr=12345,dest_addr_ton=5,dest_addr_npi=0
+2016.12.16 11:32:23 859 INFO    21 destination_addr=memyself,esm_class=4,protocol_ID=0,priority_flag=0
+2016.12.16 11:32:23 859 INFO    21 schedule_delivery_time=,validity_period=,registered_delivery_flag=0
+2016.12.16 11:32:23 860 INFO    21 replace_if_present_flag=0,data_coding=0,sm_default_msg_id=0,sm_length=111
+2016.12.16 11:32:23 860 INFO    21 short_message=id:39 sub:001 dlvrd:001 submit date:1612161132 done date:1612161132 stat:DELIVRD err:000 Text:Message from test
+2016.12.16 11:32:23 860 INFO    21 TLV=30/3/333900,TLV=1063/1/02,TLV=5123/10/34343132333435363738
+2016.12.16 11:32:23 860 INFO    21  
+2016.12.16 11:32:23 860 INFO    21 InboundQueue: empty  - waiting
+2016.12.16 11:32:23 861 INFO    13 : DELIVER_SM_RESP:
+2016.12.16 11:32:23 861 INFO    13 Hex dump (17) bytes:
+2016.12.16 11:32:23 861 INFO    13 00000011:80000005:00000000:0000000D:
+2016.12.16 11:32:23 861 INFO    13 00
+2016.12.16 11:32:23 861 INFO    13 cmd_len=17,cmd_id=-2147483643,cmd_status=0,seq_no=13,system_id= 
+2016.12.16 11:32:23 861 INFO    13  
+2016.12.16 11:32:23 861 INFO    13 : UNBIND:
+2016.12.16 11:32:23 862 INFO    13 Hex dump (16) bytes:
+2016.12.16 11:32:23 862 INFO    13 00000010:00000006:00000000:00000002:
+2016.12.16 11:32:23 862 INFO    13 
+2016.12.16 11:32:23 862 INFO    13 cmd_len=16,cmd_id=6,cmd_status=0,seq_no=2
+2016.12.16 11:32:23 862 INFO    13  
+2016.12.16 11:32:23 862 INFO    13 3 receivers connected and bound
+2016.12.16 11:32:23 862 INFO    13 Set RxBoundCount to 3
+2016.12.16 11:32:23 862 INFO    13 : UNBIND_RESP
+2016.12.16 11:32:23 862 INFO    13 Hex dump (16) bytes:
+2016.12.16 11:32:23 862 INFO    13 00000010:80000006:00000000:00000002:
+2016.12.16 11:32:23 862 INFO    13 
+2016.12.16 11:32:23 862 INFO    13 cmd_len=0,cmd_id=-2147483642,cmd_status=0,seq_no=2
+2016.12.16 11:32:23 862 INFO    13  
+2016.12.16 11:32:23 862 INFO    13 StandardConnectionHandler waiting for connection
+2016.12.16 11:32:28 863 INFO    22 Assessing state of 1 messages in the OutboundQueue
+2016.12.16 11:32:33 867 INFO    22 Assessing state of 1 messages in the OutboundQueue
+2016.12.16 11:32:38 870 INFO    22 Assessing state of 1 messages in the OutboundQueue
+2016.12.16 11:32:43 874 INFO    22 Assessing state of 1 messages in the OutboundQueue
+2016.12.16 11:32:48 878 INFO    22 Assessing state of 1 messages in the OutboundQueue
+2016.12.16 11:32:53 754 INFO    24 Processing 0 messages in the delayed inbound queue
+2016.12.16 11:32:53 879 INFO    22 Assessing state of 1 messages in the OutboundQueue
+2016.12.16 11:32:58 881 INFO    22 Assessing state of 1 messages in the OutboundQueue
+2016.12.16 11:33:03 886 INFO    22 Assessing state of 1 messages in the OutboundQueue
+2016.12.16 11:33:08 890 INFO    22 Assessing state of 1 messages in the OutboundQueue
+2016.12.16 11:33:13 891 INFO    22 Assessing state of 1 messages in the OutboundQueue
+2016.12.16 11:33:18 893 INFO    22 Assessing state of 1 messages in the OutboundQueue
+2016.12.16 11:33:23 897 INFO    22 Lifecycle Service: OutboundQueue is empty  - waiting
+2016.12.16 11:33:49 668 INFO    16 StandardConnectionHandler accepted a connection
+2016.12.16 11:33:49 668 INFO    16 Protocol handler is of type StandardProtocolHandler
+2016.12.16 11:33:49 669 INFO    16 : BIND_TRANSMITTER:
+2016.12.16 11:33:49 669 INFO    16 Hex dump (45) bytes:
+2016.12.16 11:33:49 669 INFO    16 0000002D:00000002:00000000:00000001:
+2016.12.16 11:33:49 669 INFO    16 736D7070:636C6965:6E743100:70617373:
+2016.12.16 11:33:49 669 INFO    16 776F7264:00575757:00340000:00
+2016.12.16 11:33:49 669 INFO    16 cmd_len=45,cmd_id=2,cmd_status=0,seq_no=1,system_id=smppclient1
+2016.12.16 11:33:49 669 INFO    16 password=password,system_type=WWW,interface_version=52,addr_ton=0,addr_npi=0
+2016.12.16 11:33:49 669 INFO    16 address_range=
+2016.12.16 11:33:49 669 INFO    16  
+2016.12.16 11:33:49 669 INFO    16 New transmitter session bound to SMPPSim
+2016.12.16 11:33:49 669 INFO    16 : BIND_TRANSMITTER_RESP:
+2016.12.16 11:33:49 670 INFO    16 Hex dump (24) bytes:
+2016.12.16 11:33:49 670 INFO    16 00000018:80000002:00000000:00000001:
+2016.12.16 11:33:49 670 INFO    16 534D5050:53696D00:
+2016.12.16 11:33:49 670 INFO    16 cmd_len=0,cmd_id=-2147483646,cmd_status=0,seq_no=1,system_id=SMPPSim
+2016.12.16 11:33:49 670 INFO    16  
+2016.12.16 11:33:49 671 INFO    16 : Standard SUBMIT_SM:
+2016.12.16 11:33:49 671 INFO    16 Hex dump (63) bytes:
+2016.12.16 11:33:49 671 INFO    16 0000003F:00000004:00000000:00000002:
+2016.12.16 11:33:49 671 INFO    16 0005006D:656D7973:656C6600:01013132:
+2016.12.16 11:33:49 671 INFO    16 33343500:00000000:00010000:00114D65:
+2016.12.16 11:33:49 671 INFO    16 73736167:65206672:6F6D2074:657374
+2016.12.16 11:33:49 671 INFO    16 cmd_len=63,cmd_id=4,cmd_status=0,seq_no=2,service_type=,source_addr_ton=5
+2016.12.16 11:33:49 671 INFO    16 source_addr_npi=0,source_addr=memyself,dest_addr_ton=1,dest_addr_npi=1
+2016.12.16 11:33:49 671 INFO    16 dest_addr=12345,esm_class=0,protocol_ID=0,priority_flag=0
+2016.12.16 11:33:49 672 INFO    16 schedule_delivery_time=,validity_period=,registered_delivery_flag=1
+2016.12.16 11:33:49 672 INFO    16 replace_if_present_flag=0,data_coding=0,sm_default_msg_id=0,sm_length=17
+2016.12.16 11:33:49 672 INFO    16 short_message=Message from test
+2016.12.16 11:33:49 672 INFO    16  
+2016.12.16 11:33:49 672 INFO    16 Validity period is not set: defaulting to 5 minutes from now
+2016.12.16 11:33:49 672 INFO    16 Generated default validity period=161216113849000+
+2016.12.16 11:33:49 672 INFO    16 :SUBMIT_SM_RESP:
+2016.12.16 11:33:49 672 INFO    22 Assessing state of 1 messages in the OutboundQueue
+2016.12.16 11:33:49 672 INFO    16 Hex dump (19) bytes:
+2016.12.16 11:33:49 672 INFO    16 00000013:80000004:00000000:00000002:
+2016.12.16 11:33:49 672 INFO    16 343000
+2016.12.16 11:33:49 672 INFO    16 cmd_len=0,cmd_id=-2147483644,cmd_status=0,seq_no=2,message_id=40
+2016.12.16 11:33:49 672 INFO    16  
+2016.12.16 11:33:49 673 INFO    16 SubmitSM processing - response written to connection
+2016.12.16 11:33:49 673 INFO    16 : UNBIND:
+2016.12.16 11:33:49 673 INFO    16 Hex dump (16) bytes:
+2016.12.16 11:33:49 674 INFO    16 00000010:00000006:00000000:00000003:
+2016.12.16 11:33:49 674 INFO    16 
+2016.12.16 11:33:49 674 INFO    16 cmd_len=16,cmd_id=6,cmd_status=0,seq_no=3
+2016.12.16 11:33:49 674 INFO    16  
+2016.12.16 11:33:49 674 INFO    16 : UNBIND_RESP
+2016.12.16 11:33:49 674 INFO    16 Hex dump (16) bytes:
+2016.12.16 11:33:49 674 INFO    16 00000010:80000006:00000000:00000003:
+2016.12.16 11:33:49 674 INFO    16 
+2016.12.16 11:33:49 674 INFO    16 cmd_len=0,cmd_id=-2147483642,cmd_status=0,seq_no=3
+2016.12.16 11:33:49 674 INFO    16  
+2016.12.16 11:33:49 674 INFO    16 StandardConnectionHandler waiting for connection
+2016.12.16 11:33:49 681 INFO    16 StandardConnectionHandler accepted a connection
+2016.12.16 11:33:49 681 INFO    16 Protocol handler is of type StandardProtocolHandler
+2016.12.16 11:33:49 683 INFO    16 : BIND_RECEIVER:
+2016.12.16 11:33:49 683 INFO    16 Hex dump (45) bytes:
+2016.12.16 11:33:49 683 INFO    16 0000002D:00000001:00000000:00000001:
+2016.12.16 11:33:49 683 INFO    16 736D7070:636C6965:6E743100:70617373:
+2016.12.16 11:33:49 683 INFO    16 776F7264:00575757:00340000:00
+2016.12.16 11:33:49 683 INFO    16 cmd_len=45,cmd_id=1,cmd_status=0,seq_no=1,system_id=smppclient1
+2016.12.16 11:33:49 683 INFO    16 password=password,system_type=WWW,interface_version=52,addr_ton=0,addr_npi=0
+2016.12.16 11:33:49 683 INFO    16 address_range=
+2016.12.16 11:33:49 684 INFO    16  
+2016.12.16 11:33:49 684 INFO    16 StandardProtocolHandler: setting address range to 
+2016.12.16 11:33:49 684 INFO    16 New receiver session bound to SMPPSim
+2016.12.16 11:33:49 684 INFO    16 : BIND_RECEIVER_RESP:
+2016.12.16 11:33:49 684 INFO    16 Hex dump (24) bytes:
+2016.12.16 11:33:49 684 INFO    16 00000018:80000001:00000000:00000001:
+2016.12.16 11:33:49 684 INFO    16 534D5050:53696D00:
+2016.12.16 11:33:49 684 INFO    16 cmd_len=0,cmd_id=-2147483647,cmd_status=0,seq_no=1,system_id=SMPPSim
+2016.12.16 11:33:49 684 INFO    16  
+2016.12.16 11:33:49 684 INFO    16 4 receivers connected and bound
+2016.12.16 11:33:49 684 INFO    21 InboundQueue: empty  - waiting
+2016.12.16 11:33:53 761 INFO    24 Processing 0 messages in the delayed inbound queue
+2016.12.16 11:33:54 674 INFO    22 Assessing state of 1 messages in the OutboundQueue
+2016.12.16 11:33:54 675 INFO    22 Message:2 state=DELIVERED
+2016.12.16 11:33:54 675 INFO    22 Delivery Receipt requested
+2016.12.16 11:33:54 675 INFO    21 addressIsServicedByReceiver(memyself)
+2016.12.16 11:33:54 675 INFO    21 DELIVER_SM (receipt):
+2016.12.16 11:33:54 675 INFO    21 Hex dump (183) bytes:
+2016.12.16 11:33:54 676 INFO    21 000000B7:00000005:00000000:0000000E:
+2016.12.16 11:33:54 676 INFO    21 00010131:32333435:0005006D:656D7973:
+2016.12.16 11:33:54 676 INFO    21 656C6600:04000000:00000000:006F6964:
+2016.12.16 11:33:54 676 INFO    21 3A343020:7375623A:30303120:646C7672:
+2016.12.16 11:33:54 676 INFO    21 643A3030:31207375:626D6974:20646174:
+2016.12.16 11:33:54 676 INFO    21 653A3136:31323136:31313333:20646F6E:
+2016.12.16 11:33:54 676 INFO    21 65206461:74653A31:36313231:36313133:
+2016.12.16 11:33:54 676 INFO    21 33207374:61743A44:454C4956:52442065:
+2016.12.16 11:33:54 676 INFO    21 72723A30:30302054:6578743A:4D657373:
+2016.12.16 11:33:54 676 INFO    21 61676520:66726F6D:20746573:74001E00:
+2016.12.16 11:33:54 676 INFO    21 03343000:04270001:02140300:0A343431:
+2016.12.16 11:33:54 676 INFO    21 32333435:363738
+2016.12.16 11:33:54 676 INFO    21 cmd_len=0,cmd_id=5,cmd_status=0,seq_no=14,service_type=,source_addr_ton=1
+2016.12.16 11:33:54 676 INFO    21 source_addr_npi=1,source_addr=12345,dest_addr_ton=5,dest_addr_npi=0
+2016.12.16 11:33:54 676 INFO    21 destination_addr=memyself,esm_class=4,protocol_ID=0,priority_flag=0
+2016.12.16 11:33:54 676 INFO    21 schedule_delivery_time=,validity_period=,registered_delivery_flag=0
+2016.12.16 11:33:54 676 INFO    21 replace_if_present_flag=0,data_coding=0,sm_default_msg_id=0,sm_length=111
+2016.12.16 11:33:54 676 INFO    21 short_message=id:40 sub:001 dlvrd:001 submit date:1612161133 done date:1612161133 stat:DELIVRD err:000 Text:Message from test
+2016.12.16 11:33:54 676 INFO    21 TLV=30/3/343000,TLV=1063/1/02,TLV=5123/10/34343132333435363738
+2016.12.16 11:33:54 676 INFO    21  
+2016.12.16 11:33:54 677 INFO    21 InboundQueue: empty  - waiting
+2016.12.16 11:33:54 679 INFO    16 : DELIVER_SM_RESP:
+2016.12.16 11:33:54 680 INFO    16 Hex dump (17) bytes:
+2016.12.16 11:33:54 680 INFO    16 00000011:80000005:00000000:0000000E:
+2016.12.16 11:33:54 680 INFO    16 00
+2016.12.16 11:33:54 680 INFO    16 cmd_len=17,cmd_id=-2147483643,cmd_status=0,seq_no=14,system_id= 
+2016.12.16 11:33:54 680 INFO    16  
+2016.12.16 11:33:54 680 INFO    16 : UNBIND:
+2016.12.16 11:33:54 680 INFO    16 Hex dump (16) bytes:
+2016.12.16 11:33:54 680 INFO    16 00000010:00000006:00000000:00000002:
+2016.12.16 11:33:54 680 INFO    16 
+2016.12.16 11:33:54 681 INFO    16 cmd_len=16,cmd_id=6,cmd_status=0,seq_no=2
+2016.12.16 11:33:54 681 INFO    16  
+2016.12.16 11:33:54 681 INFO    16 3 receivers connected and bound
+2016.12.16 11:33:54 681 INFO    16 Set RxBoundCount to 3
+2016.12.16 11:33:54 681 INFO    16 : UNBIND_RESP
+2016.12.16 11:33:54 681 INFO    16 Hex dump (16) bytes:
+2016.12.16 11:33:54 681 INFO    16 00000010:80000006:00000000:00000002:
+2016.12.16 11:33:54 681 INFO    16 
+2016.12.16 11:33:54 681 INFO    16 cmd_len=0,cmd_id=-2147483642,cmd_status=0,seq_no=2
+2016.12.16 11:33:54 681 INFO    16  
+2016.12.16 11:33:54 681 INFO    16 StandardConnectionHandler waiting for connection
+2016.12.16 11:33:59 679 INFO    22 Assessing state of 1 messages in the OutboundQueue
+2016.12.16 11:34:04 681 INFO    22 Assessing state of 1 messages in the OutboundQueue
+2016.12.16 11:34:09 685 INFO    22 Assessing state of 1 messages in the OutboundQueue
+2016.12.16 11:34:14 688 INFO    22 Assessing state of 1 messages in the OutboundQueue
+2016.12.16 11:34:19 692 INFO    22 Assessing state of 1 messages in the OutboundQueue
+2016.12.16 11:34:24 696 INFO    22 Assessing state of 1 messages in the OutboundQueue
+2016.12.16 11:34:29 701 INFO    22 Assessing state of 1 messages in the OutboundQueue
+2016.12.16 11:34:34 705 INFO    22 Assessing state of 1 messages in the OutboundQueue
+2016.12.16 11:34:39 708 INFO    22 Assessing state of 1 messages in the OutboundQueue
+2016.12.16 11:34:44 713 INFO    22 Assessing state of 1 messages in the OutboundQueue
+2016.12.16 11:34:49 714 INFO    22 Assessing state of 1 messages in the OutboundQueue
+2016.12.16 11:34:53 769 INFO    24 Processing 0 messages in the delayed inbound queue
+2016.12.16 11:34:54 717 INFO    22 Lifecycle Service: OutboundQueue is empty  - waiting
+2016.12.16 11:35:53 776 INFO    24 Processing 0 messages in the delayed inbound queue

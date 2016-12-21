@@ -1,0 +1,267 @@
+2016.12.19 15:18:21 884 INFO    1 ==============================================================
+2016.12.19 15:18:21 975 INFO    1 =  SMPPSim Copyright (C) 2006 Selenium Software Ltd
+2016.12.19 15:18:21 976 INFO    1 =  SMPPSim comes with ABSOLUTELY NO WARRANTY; for details
+2016.12.19 15:18:21 976 INFO    1 =  read the license.txt file that was included in the SMPPSim distribution
+2016.12.19 15:18:21 976 INFO    1 =  This is free software, and you are welcome to redistribute it under
+2016.12.19 15:18:21 977 INFO    1 =  certain conditions; Again, see license.txt for details or read the GNU
+2016.12.19 15:18:21 977 INFO    1 =  GPL license at http://www.gnu.org/licenses/gpl.html
+2016.12.19 15:18:21 977 INFO    1 =  ...... end of legal stuff ......
+2016.12.19 15:18:21 978 INFO    1 ==============================================================
+2016.12.19 15:18:21 978 INFO    1 =  
+2016.12.19 15:18:21 978 INFO    1 =  com.seleniumsoftware.SMPPSim 2.6.11
+2016.12.19 15:18:21 978 INFO    1 =  by Martin Woolley (martin@seleniumsoftware.com)
+2016.12.19 15:18:21 979 INFO    1 =  http://www.seleniumsoftware.com
+2016.12.19 15:18:21 979 INFO    1 =  Running with the following parameters:
+2016.12.19 15:18:21 979 INFO    1 =  SMPP_PORT                               :2775
+2016.12.19 15:18:21 980 INFO    1 =  SMPP_CONNECTION_HANDLERS                :10
+2016.12.19 15:18:21 980 INFO    1 =  CONNECTION_HANDLER_CLASS                :com.seleniumsoftware.SMPPSim.StandardConnectionHandler
+2016.12.19 15:18:21 980 INFO    1 =  PROTOCOL_HANDLER_CLASS                  :com.seleniumsoftware.SMPPSim.StandardProtocolHandler
+2016.12.19 15:18:21 981 INFO    1 =  LIFE_CYCLE_MANAGER                      :com.seleniumsoftware.SMPPSim.LifeCycleManager
+2016.12.19 15:18:21 981 INFO    1 =  SMPP_CONNECTION_HANDLERS                :10
+2016.12.19 15:18:21 981 INFO    1 =  INBOUND_QUEUE_CAPACITY                  :1000
+2016.12.19 15:18:21 981 INFO    1 =  OUTBOUND_QUEUE_CAPACITY                 :1000
+2016.12.19 15:18:21 981 INFO    1 =  MESSAGE_STATE_CHECK_FREQUENCY           :5000
+2016.12.19 15:18:21 982 INFO    1 =  MAX_TIME_ENROUTE                        :10000
+2016.12.19 15:18:21 982 INFO    1 =  PERCENTAGE_THAT_TRANSITION              :75
+2016.12.19 15:18:21 982 INFO    1 =  PERCENTAGE_DELIVERED                    :90
+2016.12.19 15:18:21 982 INFO    1 =  PERCENTAGE_UNDELIVERABLE                :6
+2016.12.19 15:18:21 983 INFO    1 =  PERCENTAGE_ACCEPTED                     :2
+2016.12.19 15:18:21 983 INFO    1 =  PERCENTAGE_REJECTED                     :2
+2016.12.19 15:18:21 983 INFO    1 =  DISCARD_FROM_QUEUE_AFTER                :60000
+2016.12.19 15:18:21 983 INFO    1 =  OUTBIND_ENABLED                         :false
+2016.12.19 15:18:21 983 INFO    1 =  OUTBIND_ESME_IP_ADDRESS                 :null
+2016.12.19 15:18:21 984 INFO    1 =  OUTBIND_ESME_PORT		                :0
+2016.12.19 15:18:21 984 INFO    1 =  OUTBIND_ESME_PASSWORD                   :password
+2016.12.19 15:18:21 984 INFO    1 =  HTTP_PORT                               :88
+2016.12.19 15:18:21 984 INFO    1 =  HTTP_THREADS                            :1
+2016.12.19 15:18:21 985 INFO    1 =  DOCROOT                                 :www
+2016.12.19 15:18:21 985 INFO    1 =  AUTHORISED_FILES                        :/css/style.css,/index.htm,/inject_mo.htm,/favicon.ico,/images/logo.gif,/images/dots.gif,/user-guide.htm,/images/homepage.gif,/images/inject_mo.gif
+2016.12.19 15:18:21 985 INFO    1 =  INJECT_MO_PAGE                          :/inject_mo.htm
+2016.12.19 15:18:21 985 INFO    1 =  SMSCID                                  :SMPPSim
+2016.12.19 15:18:21 985 INFO    1 =  DELIVERY_MESSAGES_PER_MINUTE            :0
+2016.12.19 15:18:21 985 INFO    1 =  DELIVER_MESSAGES_FILE                   :N/A
+2016.12.19 15:18:21 986 INFO    1 =  LOOPBACK                                :true
+2016.12.19 15:18:21 986 INFO    1 =  CAPTURE_REQUESTS_BINARY                 :false
+2016.12.19 15:18:21 986 INFO    1 =  CAPTURE_REQUESTS_BINARY_TO_FILE         :sme_binary.capture
+2016.12.19 15:18:21 986 INFO    1 =  CAPTURE_RESPONSES_BINARY                :false
+2016.12.19 15:18:21 986 INFO    1 =  CAPTURE_RESPONSES_BINARY_TO_FILE        :smppsim_binary.capture
+2016.12.19 15:18:21 987 INFO    1 =  CAPTURE_REQUESTS_DECODED                :false
+2016.12.19 15:18:21 987 INFO    1 =  CAPTURE_REQUESTS_DECODED_TO_FILE        :sme_decoded.capture
+2016.12.19 15:18:21 987 INFO    1 =  CAPTURE_RESPONSES_DECODED               :false
+2016.12.19 15:18:21 987 INFO    1 =  CAPTURE_RESPONSES_DECODED_TO_FILE       :smppsim_decoded.capture
+2016.12.19 15:18:21 987 INFO    1 =  CALLBACK                                :false
+2016.12.19 15:18:21 989 INFO    1 = Delivery receipts will always have optional parameter with TLV=5123/10/34343132333435363738
+2016.12.19 15:18:21 989 INFO    1 = Delivery receipts will include standard optional parameters if client supports 3.4 or later
+2016.12.19 15:18:21 989 INFO    1 =  
+2016.12.19 15:18:21 989 INFO    1 ==============================================================
+2016.12.19 15:18:22 23  INFO    10 StandardConnectionHandler waiting for connection
+2016.12.19 15:18:22 24  INFO    13 StandardConnectionHandler waiting for connection
+2016.12.19 15:18:22 24  INFO    12 StandardConnectionHandler waiting for connection
+2016.12.19 15:18:22 23  INFO    11 StandardConnectionHandler waiting for connection
+2016.12.19 15:18:22 25  INFO    14 StandardConnectionHandler waiting for connection
+2016.12.19 15:18:22 26  INFO    15 StandardConnectionHandler waiting for connection
+2016.12.19 15:18:22 26  INFO    16 StandardConnectionHandler waiting for connection
+2016.12.19 15:18:22 26  INFO    17 StandardConnectionHandler waiting for connection
+2016.12.19 15:18:22 27  INFO    18 StandardConnectionHandler waiting for connection
+2016.12.19 15:18:22 27  INFO    19 StandardConnectionHandler waiting for connection
+2016.12.19 15:18:22 33  INFO    20 Starting HttpHandler thread. Listening on port 88 for connections
+2016.12.19 15:18:22 34  INFO    22 Starting Lifecycle Service (OutboundQueue)
+2016.12.19 15:18:22 34  INFO    21 Starting InboundQueue service....
+2016.12.19 15:18:22 34  INFO    22 Lifecycle Service: OutboundQueue is empty  - waiting
+2016.12.19 15:18:22 36  INFO    21 InboundQueue: empty  - waiting
+2016.12.19 15:18:22 36  INFO    24 Starting DelayedInboundQueue service....
+2016.12.19 15:19:22 41  INFO    24 Processing 0 messages in the delayed inbound queue
+2016.12.19 15:20:22 43  INFO    24 Processing 0 messages in the delayed inbound queue
+2016.12.19 15:20:38 423 INFO    15 StandardConnectionHandler accepted a connection
+2016.12.19 15:20:38 439 INFO    15 Protocol handler is of type StandardProtocolHandler
+2016.12.19 15:20:38 440 INFO    15 : BIND_TRANSMITTER:
+2016.12.19 15:20:38 440 INFO    15 Hex dump (45) bytes:
+2016.12.19 15:20:38 441 INFO    15 0000002D:00000002:00000000:00000001:
+2016.12.19 15:20:38 441 INFO    15 736D7070:636C6965:6E743100:70617373:
+2016.12.19 15:20:38 441 INFO    15 776F7264:00575757:00340000:00
+2016.12.19 15:20:38 442 INFO    15 cmd_len=45,cmd_id=2,cmd_status=0,seq_no=1,system_id=smppclient1
+2016.12.19 15:20:38 442 INFO    15 password=password,system_type=WWW,interface_version=52,addr_ton=0,addr_npi=0
+2016.12.19 15:20:38 443 INFO    15 address_range=
+2016.12.19 15:20:38 443 INFO    15  
+2016.12.19 15:20:38 443 INFO    15 New transmitter session bound to SMPPSim
+2016.12.19 15:20:38 443 INFO    15 : BIND_TRANSMITTER_RESP:
+2016.12.19 15:20:38 444 INFO    15 Hex dump (24) bytes:
+2016.12.19 15:20:38 444 INFO    15 00000018:80000002:00000000:00000001:
+2016.12.19 15:20:38 444 INFO    15 534D5050:53696D00:
+2016.12.19 15:20:38 444 INFO    15 cmd_len=0,cmd_id=-2147483646,cmd_status=0,seq_no=1,system_id=SMPPSim
+2016.12.19 15:20:38 444 INFO    15  
+2016.12.19 15:20:38 447 INFO    15 : Standard SUBMIT_SM:
+2016.12.19 15:20:38 447 INFO    15 Hex dump (60) bytes:
+2016.12.19 15:20:38 447 INFO    15 0000003C:00000004:00000000:00000002:
+2016.12.19 15:20:38 448 INFO    15 00050054:65737446:726F6D58:00010131:
+2016.12.19 15:20:38 448 INFO    15 32333132:33000000:00000001:0000000C:
+2016.12.19 15:20:38 448 INFO    15 54657374:204D6573:73616765:
+2016.12.19 15:20:38 449 INFO    15 cmd_len=60,cmd_id=4,cmd_status=0,seq_no=2,service_type=,source_addr_ton=5
+2016.12.19 15:20:38 449 INFO    15 source_addr_npi=0,source_addr=TestFromX,dest_addr_ton=1,dest_addr_npi=1
+2016.12.19 15:20:38 449 INFO    15 dest_addr=123123,esm_class=0,protocol_ID=0,priority_flag=0
+2016.12.19 15:20:38 449 INFO    15 schedule_delivery_time=,validity_period=,registered_delivery_flag=1
+2016.12.19 15:20:38 449 INFO    15 replace_if_present_flag=0,data_coding=0,sm_default_msg_id=0,sm_length=12
+2016.12.19 15:20:38 449 INFO    15 short_message=Test Message
+2016.12.19 15:20:38 450 INFO    15  
+2016.12.19 15:20:38 451 INFO    15 Validity period is not set: defaulting to 5 minutes from now
+2016.12.19 15:20:38 453 INFO    15 Generated default validity period=161219152538000+
+2016.12.19 15:20:38 453 INFO    15 :SUBMIT_SM_RESP:
+2016.12.19 15:20:38 454 INFO    15 Hex dump (18) bytes:
+2016.12.19 15:20:38 454 INFO    22 Assessing state of 1 messages in the OutboundQueue
+2016.12.19 15:20:38 454 INFO    15 00000012:80000004:00000000:00000002:
+2016.12.19 15:20:38 454 INFO    15 3000
+2016.12.19 15:20:38 454 INFO    15 cmd_len=0,cmd_id=-2147483644,cmd_status=0,seq_no=2,message_id=0
+2016.12.19 15:20:38 454 INFO    15  
+2016.12.19 15:20:38 454 INFO    15 SubmitSM processing - response written to connection
+2016.12.19 15:20:38 457 INFO    15 : UNBIND:
+2016.12.19 15:20:38 457 INFO    15 Hex dump (16) bytes:
+2016.12.19 15:20:38 457 INFO    21 InboundQueue: no available receiver sessions - moving message(s) to pending queue
+2016.12.19 15:20:38 457 INFO    21 Moved 1 MO messages to the pending queue
+2016.12.19 15:20:38 457 INFO    15 00000010:00000006:00000000:00000003:
+2016.12.19 15:20:38 459 INFO    15 
+2016.12.19 15:20:38 460 INFO    15 cmd_len=16,cmd_id=6,cmd_status=0,seq_no=3
+2016.12.19 15:20:38 460 INFO    15  
+2016.12.19 15:20:38 460 INFO    15 : UNBIND_RESP
+2016.12.19 15:20:38 460 INFO    15 Hex dump (16) bytes:
+2016.12.19 15:20:38 460 INFO    15 00000010:80000006:00000000:00000003:
+2016.12.19 15:20:38 461 INFO    15 
+2016.12.19 15:20:38 461 INFO    15 cmd_len=0,cmd_id=-2147483642,cmd_status=0,seq_no=3
+2016.12.19 15:20:38 461 INFO    15  
+2016.12.19 15:20:38 461 INFO    15 StandardConnectionHandler waiting for connection
+2016.12.19 15:20:43 457 INFO    22 Assessing state of 1 messages in the OutboundQueue
+2016.12.19 15:20:43 460 INFO    22 Message:2 state=DELIVERED
+2016.12.19 15:20:43 460 INFO    22 Delivery Receipt requested
+2016.12.19 15:20:43 462 INFO    21 InboundQueue: no available receiver sessions - moving message(s) to pending queue
+2016.12.19 15:20:43 462 INFO    21 Moved 1 MO messages to the pending queue
+2016.12.19 15:20:48 462 INFO    22 Assessing state of 1 messages in the OutboundQueue
+2016.12.19 15:20:53 463 INFO    22 Assessing state of 1 messages in the OutboundQueue
+2016.12.19 15:20:58 467 INFO    22 Assessing state of 1 messages in the OutboundQueue
+2016.12.19 15:21:03 471 INFO    22 Assessing state of 1 messages in the OutboundQueue
+2016.12.19 15:21:08 475 INFO    22 Assessing state of 1 messages in the OutboundQueue
+2016.12.19 15:21:13 480 INFO    22 Assessing state of 1 messages in the OutboundQueue
+2016.12.19 15:21:18 484 INFO    22 Assessing state of 1 messages in the OutboundQueue
+2016.12.19 15:21:22 49  INFO    24 Processing 0 messages in the delayed inbound queue
+2016.12.19 15:21:23 484 INFO    22 Assessing state of 1 messages in the OutboundQueue
+2016.12.19 15:21:28 486 INFO    22 Assessing state of 1 messages in the OutboundQueue
+2016.12.19 15:21:33 487 INFO    22 Assessing state of 1 messages in the OutboundQueue
+2016.12.19 15:21:38 488 INFO    22 Assessing state of 1 messages in the OutboundQueue
+2016.12.19 15:21:43 491 INFO    22 Lifecycle Service: OutboundQueue is empty  - waiting
+2016.12.19 15:22:22 55  INFO    24 Processing 0 messages in the delayed inbound queue
+2016.12.19 15:23:22 60  INFO    24 Processing 0 messages in the delayed inbound queue
+2016.12.19 15:24:22 62  INFO    24 Processing 0 messages in the delayed inbound queue
+2016.12.19 15:25:22 66  INFO    24 Processing 0 messages in the delayed inbound queue
+2016.12.19 15:26:22 70  INFO    24 Processing 0 messages in the delayed inbound queue
+2016.12.19 15:27:22 75  INFO    24 Processing 0 messages in the delayed inbound queue
+2016.12.19 15:28:22 82  INFO    24 Processing 0 messages in the delayed inbound queue
+2016.12.19 15:29:22 88  INFO    24 Processing 0 messages in the delayed inbound queue
+2016.12.19 15:30:22 95  INFO    24 Processing 0 messages in the delayed inbound queue
+2016.12.19 15:31:22 103 INFO    24 Processing 0 messages in the delayed inbound queue
+2016.12.19 15:32:22 106 INFO    24 Processing 0 messages in the delayed inbound queue
+2016.12.19 15:33:22 108 INFO    24 Processing 0 messages in the delayed inbound queue
+2016.12.19 15:34:22 110 INFO    24 Processing 0 messages in the delayed inbound queue
+2016.12.19 15:35:22 115 INFO    24 Processing 0 messages in the delayed inbound queue
+2016.12.19 15:36:22 121 INFO    24 Processing 0 messages in the delayed inbound queue
+2016.12.19 15:37:22 129 INFO    24 Processing 0 messages in the delayed inbound queue
+2016.12.19 15:38:22 133 INFO    24 Processing 0 messages in the delayed inbound queue
+2016.12.19 15:39:22 136 INFO    24 Processing 0 messages in the delayed inbound queue
+2016.12.19 15:40:22 142 INFO    24 Processing 0 messages in the delayed inbound queue
+2016.12.19 15:41:22 147 INFO    24 Processing 0 messages in the delayed inbound queue
+2016.12.19 15:42:22 154 INFO    24 Processing 0 messages in the delayed inbound queue
+2016.12.19 15:42:46 656 INFO    15 StandardConnectionHandler accepted a connection
+2016.12.19 15:42:46 658 INFO    15 Protocol handler is of type StandardProtocolHandler
+2016.12.19 15:42:46 659 INFO    15 : BIND_TRANSMITTER:
+2016.12.19 15:42:46 659 INFO    15 Hex dump (45) bytes:
+2016.12.19 15:42:46 660 INFO    15 0000002D:00000002:00000000:00000001:
+2016.12.19 15:42:46 660 INFO    15 736D7070:636C6965:6E743100:70617373:
+2016.12.19 15:42:46 660 INFO    15 776F7264:00575757:00340000:00
+2016.12.19 15:42:46 661 INFO    15 cmd_len=45,cmd_id=2,cmd_status=0,seq_no=1,system_id=smppclient1
+2016.12.19 15:42:46 661 INFO    15 password=password,system_type=WWW,interface_version=52,addr_ton=0,addr_npi=0
+2016.12.19 15:42:46 661 INFO    15 address_range=
+2016.12.19 15:42:46 661 INFO    15  
+2016.12.19 15:42:46 661 INFO    15 New transmitter session bound to SMPPSim
+2016.12.19 15:42:46 662 INFO    15 : BIND_TRANSMITTER_RESP:
+2016.12.19 15:42:46 662 INFO    15 Hex dump (24) bytes:
+2016.12.19 15:42:46 662 INFO    15 00000018:80000002:00000000:00000001:
+2016.12.19 15:42:46 662 INFO    15 534D5050:53696D00:
+2016.12.19 15:42:46 663 INFO    15 cmd_len=0,cmd_id=-2147483646,cmd_status=0,seq_no=1,system_id=SMPPSim
+2016.12.19 15:42:46 663 INFO    15  
+2016.12.19 15:42:46 666 INFO    15 : Standard SUBMIT_SM:
+2016.12.19 15:42:46 666 INFO    15 Hex dump (60) bytes:
+2016.12.19 15:42:46 666 INFO    15 0000003C:00000004:00000000:00000002:
+2016.12.19 15:42:46 666 INFO    15 00050054:65737446:726F6D58:00010131:
+2016.12.19 15:42:46 667 INFO    15 32333132:33000000:00000001:0000000C:
+2016.12.19 15:42:46 667 INFO    15 54657374:204D6573:73616765:
+2016.12.19 15:42:46 667 INFO    15 cmd_len=60,cmd_id=4,cmd_status=0,seq_no=2,service_type=,source_addr_ton=5
+2016.12.19 15:42:46 667 INFO    15 source_addr_npi=0,source_addr=TestFromX,dest_addr_ton=1,dest_addr_npi=1
+2016.12.19 15:42:46 667 INFO    15 dest_addr=123123,esm_class=0,protocol_ID=0,priority_flag=0
+2016.12.19 15:42:46 667 INFO    15 schedule_delivery_time=,validity_period=,registered_delivery_flag=1
+2016.12.19 15:42:46 667 INFO    15 replace_if_present_flag=0,data_coding=0,sm_default_msg_id=0,sm_length=12
+2016.12.19 15:42:46 668 INFO    15 short_message=Test Message
+2016.12.19 15:42:46 668 INFO    15  
+2016.12.19 15:42:46 668 INFO    15 Validity period is not set: defaulting to 5 minutes from now
+2016.12.19 15:42:46 669 INFO    15 Generated default validity period=161219154746000+
+2016.12.19 15:42:46 669 INFO    15 :SUBMIT_SM_RESP:
+2016.12.19 15:42:46 669 INFO    15 Hex dump (18) bytes:
+2016.12.19 15:42:46 669 INFO    22 Assessing state of 1 messages in the OutboundQueue
+2016.12.19 15:42:46 670 INFO    15 00000012:80000004:00000000:00000002:
+2016.12.19 15:42:46 670 INFO    15 3100
+2016.12.19 15:42:46 670 INFO    15 cmd_len=0,cmd_id=-2147483644,cmd_status=0,seq_no=2,message_id=1
+2016.12.19 15:42:46 670 INFO    15  
+2016.12.19 15:42:46 670 INFO    15 SubmitSM processing - response written to connection
+2016.12.19 15:42:46 671 INFO    21 InboundQueue: no available receiver sessions - moving message(s) to pending queue
+2016.12.19 15:42:46 671 INFO    21 Moved 1 MO messages to the pending queue
+2016.12.19 15:42:46 672 INFO    15 : UNBIND:
+2016.12.19 15:42:46 673 INFO    15 Hex dump (16) bytes:
+2016.12.19 15:42:46 673 INFO    15 00000010:00000006:00000000:00000003:
+2016.12.19 15:42:46 673 INFO    15 
+2016.12.19 15:42:46 673 INFO    15 cmd_len=16,cmd_id=6,cmd_status=0,seq_no=3
+2016.12.19 15:42:46 673 INFO    15  
+2016.12.19 15:42:46 673 INFO    15 : UNBIND_RESP
+2016.12.19 15:42:46 673 INFO    15 Hex dump (16) bytes:
+2016.12.19 15:42:46 673 INFO    15 00000010:80000006:00000000:00000003:
+2016.12.19 15:42:46 674 INFO    15 
+2016.12.19 15:42:46 674 INFO    15 cmd_len=0,cmd_id=-2147483642,cmd_status=0,seq_no=3
+2016.12.19 15:42:46 674 INFO    15  
+2016.12.19 15:42:46 674 INFO    15 StandardConnectionHandler waiting for connection
+2016.12.19 15:42:51 673 INFO    22 Assessing state of 1 messages in the OutboundQueue
+2016.12.19 15:42:56 674 INFO    22 Assessing state of 1 messages in the OutboundQueue
+2016.12.19 15:42:56 675 INFO    22 Message:2 state=DELIVERED
+2016.12.19 15:42:56 676 INFO    22 Delivery Receipt requested
+2016.12.19 15:42:56 676 INFO    21 InboundQueue: no available receiver sessions - moving message(s) to pending queue
+2016.12.19 15:42:56 676 INFO    21 Moved 1 MO messages to the pending queue
+2016.12.19 15:43:01 679 INFO    22 Assessing state of 1 messages in the OutboundQueue
+2016.12.19 15:43:06 684 INFO    22 Assessing state of 1 messages in the OutboundQueue
+2016.12.19 15:43:11 688 INFO    22 Assessing state of 1 messages in the OutboundQueue
+2016.12.19 15:43:16 688 INFO    22 Assessing state of 1 messages in the OutboundQueue
+2016.12.19 15:43:21 689 INFO    22 Assessing state of 1 messages in the OutboundQueue
+2016.12.19 15:43:22 160 INFO    24 Processing 0 messages in the delayed inbound queue
+2016.12.19 15:43:26 694 INFO    22 Assessing state of 1 messages in the OutboundQueue
+2016.12.19 15:43:31 696 INFO    22 Assessing state of 1 messages in the OutboundQueue
+2016.12.19 15:43:36 699 INFO    22 Assessing state of 1 messages in the OutboundQueue
+2016.12.19 15:43:41 704 INFO    22 Assessing state of 1 messages in the OutboundQueue
+2016.12.19 15:43:46 710 INFO    22 Assessing state of 1 messages in the OutboundQueue
+2016.12.19 15:43:51 714 INFO    22 Lifecycle Service: OutboundQueue is empty  - waiting
+2016.12.19 15:44:22 162 INFO    24 Processing 0 messages in the delayed inbound queue
+2016.12.19 15:45:22 168 INFO    24 Processing 0 messages in the delayed inbound queue
+2016.12.19 15:46:22 174 INFO    24 Processing 0 messages in the delayed inbound queue
+2016.12.19 15:47:22 182 INFO    24 Processing 0 messages in the delayed inbound queue
+2016.12.19 15:48:22 185 INFO    24 Processing 0 messages in the delayed inbound queue
+2016.12.19 15:49:22 192 INFO    24 Processing 0 messages in the delayed inbound queue
+2016.12.19 15:50:22 196 INFO    24 Processing 0 messages in the delayed inbound queue
+2016.12.19 15:51:22 201 INFO    24 Processing 0 messages in the delayed inbound queue
+2016.12.19 15:52:22 206 INFO    24 Processing 0 messages in the delayed inbound queue
+2016.12.19 15:53:22 212 INFO    24 Processing 0 messages in the delayed inbound queue
+2016.12.19 15:54:22 217 INFO    24 Processing 0 messages in the delayed inbound queue
+2016.12.19 15:55:22 223 INFO    24 Processing 0 messages in the delayed inbound queue
+2016.12.19 15:56:22 228 INFO    24 Processing 0 messages in the delayed inbound queue
+2016.12.19 15:57:22 235 INFO    24 Processing 0 messages in the delayed inbound queue
+2016.12.19 15:58:22 239 INFO    24 Processing 0 messages in the delayed inbound queue
+2016.12.19 15:59:22 403 INFO    24 Processing 0 messages in the delayed inbound queue
+2016.12.19 16:00:22 412 INFO    24 Processing 0 messages in the delayed inbound queue
+2016.12.19 16:01:22 419 INFO    24 Processing 0 messages in the delayed inbound queue
+2016.12.19 16:02:22 427 INFO    24 Processing 0 messages in the delayed inbound queue
+2016.12.19 16:03:22 432 INFO    24 Processing 0 messages in the delayed inbound queue
+2016.12.19 16:04:22 439 INFO    24 Processing 0 messages in the delayed inbound queue
+2016.12.19 16:05:22 444 INFO    24 Processing 0 messages in the delayed inbound queue
+2016.12.19 16:06:22 448 INFO    24 Processing 0 messages in the delayed inbound queue
+2016.12.19 16:07:22 455 INFO    24 Processing 0 messages in the delayed inbound queue
